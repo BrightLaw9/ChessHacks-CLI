@@ -1,0 +1,11 @@
+Working directory: /u201/a44chhab/research/chessml/ChessHacks-CLI
+Testing environment with: conda run -n chesshacks python -c ...
+PyTorch: 2.9.0+cu128
+CUDA: True
+
+
+Loaded model from /u201/a44chhab/research/chessml/ChessHacks-CLI/src/models/trained_model.pth
+
+Training exited with code 0
+Check logs: /u201/a44chhab/research/chessml/ChessHacks-CLI/logs
+Per-game moves will be in files named logs/moves_game_*.txt

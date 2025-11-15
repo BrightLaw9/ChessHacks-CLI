@@ -40,13 +40,7 @@ echo ""
 # Activate conda environment
 # IMPORTANT: Replace 'chesshacks' with your actual conda environment name
 echo "Activating conda environment..."
-source /opt/conda/etc/profile.d/conda.sh
-conda activate chesshacks || {
-    echo "ERROR: Could not activate conda environment 'chesshacks'"
-    echo "Available environments:"
-    conda env list
-    exit 1
-}
+# Use conda run instead of activate for SLURM compatibility
 
 echo "Python: $(which python)"
 echo "PyTorch: $(python -c 'import torch; print(torch.__version__)')"
@@ -58,13 +52,20 @@ mkdir -p logs checkpoints
 
 # Check if Stockfish is available
 if ! command -v stockfish &> /dev/null; then
-    echo "ERROR: Stockfish not found in PATH"
-    echo "Please install Stockfish or add it to your PATH"
-    exit 1
+    echo "WARNING: Stockfish not found in PATH, using explicit path..."
+    STOCKFISH_PATH="/u201/a44chhab/research/chessml/chessengine/stockfish/stockfish-ubuntu-x86-64-avx2"
+    if [ ! -f "$STOCKFISH_PATH" ]; then
+        echo "ERROR: Stockfish not found at $STOCKFISH_PATH"
+        exit 1
+    fi
+    chmod +x "$STOCKFISH_PATH"
+    STOCKFISH_CMD="$STOCKFISH_PATH"
+else
+    STOCKFISH_CMD="stockfish"
 fi
 
-echo "Stockfish found: $(which stockfish)"
-echo "Stockfish version: $(stockfish --version 2>&1 | head -1)"
+echo "Stockfish command: $STOCKFISH_CMD"
+"$STOCKFISH_CMD" --version 2>&1 | head -1
 echo ""
 
 # Training parameters
@@ -89,7 +90,8 @@ echo "Training started: $START_TIME"
 echo ""
 
 # Run training
-python -m src.train_overnight \
+conda run -n chesshacks python -m src.train_overnight \
+    --stockfish-path "$STOCKFISH_CMD" \
     --stockfish-depth "$STOCKFISH_DEPTH" \
     --hours "$NUM_HOURS" \
     --batch-size "$BATCH_SIZE" \

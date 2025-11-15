@@ -187,8 +187,7 @@ class OvernightTrainer:
         """
         board = chess.Board()
         game_data = []
-
-        
+        move_list = []  # store SANs/UCIs of moves for per-game logging
         
         try:
             with chess.engine.SimpleEngine.popen_uci(self.stockfish_path) as engine:
@@ -278,7 +277,13 @@ class OvernightTrainer:
                         })
 
                         
-                        logger.info(f"Move {move_count + 1}: ChessEngine (White) plays {best_move.uci()} | Top MCTS moves: {sorted(mcts_policy.items(), key=lambda x: x[1], reverse=True)[:3]}")
+                        # record move SAN (fallback to UCI) and log SAN so logs match saved move files
+                        try:
+                            san = board.san(best_move)
+                        except Exception:
+                            san = best_move.uci()
+                        move_list.append(san)
+                        logger.info(f"Move {move_count + 1}: ChessEngine (White) plays {san} ({best_move.uci()}) | Top MCTS moves: {sorted(mcts_policy.items(), key=lambda x: x[1], reverse=True)[:3]}")
                         board.push(best_move)
 
                         # -----------------------------------------
@@ -286,7 +291,13 @@ class OvernightTrainer:
                         # -----------------------------------------
                     else:
                         result = engine.play(board, chess.engine.Limit(depth=self.stockfish_depth))
-                        logger.info(f"Move {move_count + 1}: Stockfish (Black) plays {result.move.uci()}")
+                        # compute SAN for consistency with white moves and saved move files
+                        try:
+                            san = board.san(result.move)
+                        except Exception:
+                            san = result.move.uci()
+                        move_list.append(san)
+                        logger.info(f"Move {move_count + 1}: Stockfish (Black) plays {san} ({result.move.uci()})")
                         board.push(result.move)
                             
                     move_count += 1
@@ -308,7 +319,7 @@ class OvernightTrainer:
             game_result = 0.0
             self.draws += 1
         
-        return game_data, game_result
+        return game_data, game_result, move_list
     
     def train_on_batch(self, boards, policies, values):
         """Train network on a batch of data"""
@@ -401,8 +412,29 @@ class OvernightTrainer:
                 
                 logger.info(f"\n--- Game {self.games_played + 1} ---")
                 
-                # Play a game
-                game_data, result = self.play_game_vs_stockfish()
+                # Play a game (returns game data, result, and list of moves)
+                game_data, result, move_list = self.play_game_vs_stockfish()
+                # game index for logging (next game number)
+                game_index = self.games_played + 1
+                # Save per-game move list for inspection
+                try:
+                    Path("logs").mkdir(exist_ok=True)
+                    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                    moves_file = Path("logs") / f"moves_game_{game_index}_{timestamp}.txt"
+                    # Convert moves into numbered string: "1. e4 e5 2. Nf3 Nc6 ..."
+                    numbered = []
+                    for i in range(0, len(move_list), 2):
+                        white_move = move_list[i]
+                        black_move = move_list[i+1] if i+1 < len(move_list) else ""
+                        ply = f"{(i//2)+1}. {white_move} {black_move}".strip()
+                        numbered.append(ply)
+                    moves_text = " ".join(numbered)
+                    with open(moves_file, "w") as f:
+                        f.write(moves_text + "\n")
+                    logger.info(f"Saved moves for game {game_index} to {moves_file}")
+                except Exception as e:
+                    logger.warning(f"Could not write moves file for game {game_index}: {e}")
+
                 self.games_played += 1
                 
                 result_str = {1.0: "WIN", -1.0: "LOSS", 0.0: "DRAW"}.get(result, "UNKNOWN")

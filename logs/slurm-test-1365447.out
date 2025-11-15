@@ -1,0 +1,59 @@
+================================================
+ChessHacks Quick Training Test
+================================================
+
+Job ID: 1365447
+Node: watgpu108
+
+Working directory: /u201/a44chhab/research/chessml/ChessHacks-CLI
+
+Python: /u201/a44chhab/.conda/envs/chesshacks/bin/python
+PyTorch: 2.9.0+cu128
+CUDA available: True
+
+Stockfish found: /u201/a44chhab/research/chessml/chessengine/stockfish/stockfish-ubuntu-x86-64-avx2
+
+Testing environment with: conda run -n chesshacks python -c ...
+PyTorch: 2.9.0+cu128
+CUDA: True
+
+
+Model file BEFORE training:
+-rw-r--r-- 1 a44chhab liush-group 41M Nov 15 09:58 src/models/trained_model.pth
+
+================================================
+Training Configuration
+================================================
+Stockfish: /u201/a44chhab/research/chessml/chessengine/stockfish/stockfish-ubuntu-x86-64-avx2
+Stockfish Depth: 10 (fast for testing)
+Max Games: 3 (quick test)
+Batch Size: 32 (small for quick iteration)
+Learning Rate: 0.0005
+================================================
+
+Training started: Sat Nov 15 10:00:56 AM UTC 2025
+
+Loaded model from /u201/a44chhab/research/chessml/ChessHacks-CLI/src/models/trained_model.pth
+
+
+Training completed with exit code: 0
+
+Model file AFTER training:
+-rw-r--r-- 1 a44chhab liush-group 41M Nov 15 10:01 src/models/trained_model.pth
+
+================================================
+Model File Verification
+================================================
+Size BEFORE: 42591667 bytes
+Size AFTER:  42591667 bytes
+Modified BEFORE: 2025-11-15 09:58:04
+Modified AFTER:  2025-11-15 10:01:54
+⚠ Model file size unchanged (check logs for errors)
+================================================
+
+✓ Quick test completed successfully!
+
+Model: /u201/a44chhab/research/chessml/ChessHacks-CLI/src/models/trained_model.pth
+Checkpoints: /u201/a44chhab/research/chessml/ChessHacks-CLI/checkpoints/
+Logs: /u201/a44chhab/research/chessml/ChessHacks-CLI/logs/
+
