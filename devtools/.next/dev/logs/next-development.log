@@ -1,0 +1,110 @@
+[00:00:01.712] Server  LOG      ✓ Ready in 1145ms
+[00:00:02.496] Server  LOG     [devtools env] {}
+[00:00:05.302] Browser LOG     AnalysisBoardWrapper: initializing board {"playerColor":"white"}
+[00:00:05.302] Browser LOG     initAnalysisBoard: enabling play-vs-bot mode {"playerColor":"white"}
+[00:00:07.400] Server  LOG     /api/bot POST received
+[00:00:07.403] Server  LOG     Starting serve.py process {}
+[00:00:07.417] Server  LOG     Waiting for serve.py to become ready
+[00:00:07.419] Server  LOG     Checking serve.py readiness {}
+[00:00:07.426] Browser LOG     initAnalysisBoard: human move detected
+[00:00:07.427] Browser LOG     initAnalysisBoard: sending request to /api/bot
+[00:00:07.429] Server  ERROR   Error checking serve.py readiness
+[00:00:07.631] Server  LOG     Checking serve.py readiness {}
+[00:00:07.633] Server  ERROR   Error checking serve.py readiness
+[00:00:07.846] Server  LOG     Checking serve.py readiness {}
+[00:00:07.848] Server  ERROR   Error checking serve.py readiness
+[00:00:08.063] Server  LOG     Checking serve.py readiness {}
+[00:00:08.065] Server  ERROR   Error checking serve.py readiness
+[00:00:08.268] Server  LOG     Checking serve.py readiness {}
+[00:00:08.269] Server  ERROR   Error checking serve.py readiness
+[00:00:08.473] Server  LOG     Checking serve.py readiness {}
+[00:00:08.475] Server  ERROR   Error checking serve.py readiness
+[00:00:08.675] Server  LOG     Checking serve.py readiness {}
+[00:00:08.677] Server  ERROR   Error checking serve.py readiness
+[00:00:08.879] Server  LOG     Checking serve.py readiness {}
+[00:00:08.880] Server  ERROR   Error checking serve.py readiness
+[00:00:09.082] Server  LOG     Checking serve.py readiness {}
+[00:00:09.084] Server  ERROR   Error checking serve.py readiness
+[00:00:09.292] Server  LOG     Checking serve.py readiness {}
+[00:00:09.294] Server  ERROR   Error checking serve.py readiness
+[00:00:09.497] Server  LOG     Checking serve.py readiness {}
+[00:00:09.498] Server  ERROR   Error checking serve.py readiness
+[00:00:09.707] Server  LOG     Checking serve.py readiness {}
+[00:00:09.708] Server  ERROR   Error checking serve.py readiness
+[00:00:09.913] Server  LOG     Checking serve.py readiness {}
+[00:00:09.914] Server  ERROR   Error checking serve.py readiness
+[00:00:10.120] Server  LOG     Checking serve.py readiness {}
+[00:00:10.121] Server  ERROR   Error checking serve.py readiness
+[00:00:10.323] Server  LOG     Checking serve.py readiness {}
+[00:00:10.324] Server  ERROR   Error checking serve.py readiness
+[00:00:10.534] Server  LOG     Checking serve.py readiness {}
+[00:00:10.535] Server  ERROR   Error checking serve.py readiness
+[00:00:10.747] Server  LOG     Checking serve.py readiness {}
+[00:00:10.748] Server  ERROR   Error checking serve.py readiness
+[00:00:10.876] Server  LOG     [serve.py stdout] "Loaded model from C:\\Users\\lawre\\chesshacks-base\\src\\models\\trained_model.pth"
+[00:00:10.906] Server  ERROR   [serve.py stderr] "INFO:     Started server process [31692]"
+[00:00:10.906] Server  ERROR   [serve.py stderr] "INFO:     Waiting for application startup.\r\nINFO:     Application startup complete."
+[00:00:10.906] Server  ERROR   [serve.py stderr] "INFO:     Uvicorn running on http://0.0.0.0:5058 (Press CTRL+C to quit)"
+[00:00:10.950] Server  LOG     Checking serve.py readiness {}
+[00:00:10.953] Server  LOG     [serve.py stdout] "INFO:     127.0.0.1:59910 - \"POST / HTTP/1.1\" 200 OK"
+[00:00:10.954] Server  LOG     serve.py is ready
+[00:00:10.955] Server  LOG     Proxying request to serve.py /move
+[00:00:10.965] Server  LOG     [serve.py stdout] "pgn 1. e4"
+[00:00:12.006] Server  LOG     [serve.py stdout] "INFO:src.utils.decorator:Model stdout/stderr:\r\nCooking move...\r\n[Move.from_uci('e2e4')]\r\n\r\nModel move e7e5"
+[00:00:12.008] Server  LOG     Received response from serve.py /move {}
+[00:00:12.011] Server  LOG     [serve.py stdout] "INFO:     127.0.0.1:59911 - \"POST /move HTTP/1.1\" 200 OK"
+[00:00:12.113] Browser LOG     initAnalysisBoard: applying bot move {"move":"e7e5"}
+[00:00:19.423] Server  LOG     /api/bot POST received
+[00:00:19.424] Server  LOG     Proxying request to serve.py /move
+[00:00:19.430] Server  LOG     [serve.py stdout] "pgn 1. e4 e5 2. c4"
+[00:00:19.519] Browser LOG     initAnalysisBoard: human move detected
+[00:00:19.519] Browser LOG     initAnalysisBoard: sending request to /api/bot
+[00:00:20.635] Server  LOG     [serve.py stdout] "INFO:src.utils.decorator:Model stdout/stderr:\r\nCooking move...\r\n[Move.from_uci('e2e4'), Move.from_uci('e7e5'), Move.from_uci('c2c4')]\r\n\r\nModel move g8f6"
+[00:00:20.636] Server  LOG     [serve.py stdout] "INFO:     127.0.0.1:61028 - \"POST /move HTTP/1.1\" 200 OK"
+[00:00:20.637] Server  LOG     Received response from serve.py /move {}
+[00:00:20.743] Browser LOG     initAnalysisBoard: applying bot move {"move":"g8f6"}
+[00:00:25.073] Server  LOG     /api/bot POST received
+[00:00:25.074] Server  LOG     Proxying request to serve.py /move
+[00:00:25.081] Server  LOG     [serve.py stdout] "pgn 1. e4 e5 2. c4 Nf6 3. g4"
+[00:00:25.170] Browser LOG     initAnalysisBoard: human move detected
+[00:00:25.170] Browser LOG     initAnalysisBoard: sending request to /api/bot
+[00:00:26.420] Server  LOG     [serve.py stdout] "INFO:src.utils.decorator:Model stdout/stderr:\r\nCooking move...\r\n[Move.from_uci('e2e4'), Move.from_uci('e7e5'), Move.from_uci('c2c4'), Move.from_uci('g8f6'), Move.from_uci('g2g4')]\r\n\r\nModel move f6e4"
+[00:00:26.422] Server  LOG     Received response from serve.py /move {}
+[00:00:26.425] Server  LOG     [serve.py stdout] "INFO:     127.0.0.1:54207 - \"POST /move HTTP/1.1\" 200 OK"
+[00:00:26.535] Browser LOG     initAnalysisBoard: applying bot move {"move":"f6e4"}
+[00:00:28.747] Server  LOG     /api/bot POST received
+[00:00:28.748] Server  LOG     Proxying request to serve.py /move
+[00:00:28.754] Server  LOG     [serve.py stdout] "pgn 1. e4 e5 2. c4 Nf6 3. g4 Nxe4 4. f3"
+[00:00:28.839] Browser LOG     initAnalysisBoard: human move detected
+[00:00:28.840] Browser LOG     initAnalysisBoard: sending request to /api/bot
+[00:00:30.076] Server  LOG     [serve.py stdout] "INFO:src.utils.decorator:Model stdout/stderr:\r\nCooking move...\r\n[Move.from_uci('e2e4'), Move.from_uci('e7e5'), Move.from_uci('c2c4'), Move.from_uci('g8f6'), Move.from_uci('g2g4'), Move.from_uci('f6e4'), Move.from_uci('f2f3')]\r\n\r\nModel move e8e7"
+[00:00:30.078] Server  LOG     Received response from serve.py /move {}
+[00:00:30.080] Server  LOG     [serve.py stdout] "INFO:     127.0.0.1:54207 - \"POST /move HTTP/1.1\" 200 OK"
+[00:00:30.183] Browser LOG     initAnalysisBoard: applying bot move {"move":"e8e7"}
+[00:00:31.918] Server  LOG     /api/bot POST received
+[00:00:31.919] Server  LOG     Proxying request to serve.py /move
+[00:00:31.923] Server  LOG     [serve.py stdout] "pgn 1. e4 e5 2. c4 Nf6 3. g4 Nxe4 4. f3 Ke7 5. fxe4"
+[00:00:32.020] Browser LOG     initAnalysisBoard: human move detected
+[00:00:32.020] Browser LOG     initAnalysisBoard: sending request to /api/bot
+[00:00:33.293] Server  LOG     [serve.py stdout] "INFO:src.utils.decorator:Model stdout/stderr:\r\nCooking move...\r\n[Move.from_uci('e2e4'), Move.from_uci('e7e5'), Move.from_uci('c2c4'), Move.from_uci('g8f6'), Move.from_uci('g2g4'), Move.from_uci('f6e4'), Move.from_uci('f2f3'), Move.from_uci('e8e7'), Move.from_uci('f3e4')]\r\n\r\nModel move d7d5"
+[00:00:33.295] Server  LOG     Received response from serve.py /move {}
+[00:00:33.298] Server  LOG     [serve.py stdout] "INFO:     127.0.0.1:54207 - \"POST /move HTTP/1.1\" 200 OK"
+[00:00:33.401] Browser LOG     initAnalysisBoard: applying bot move {"move":"d7d5"}
+[00:00:36.914] Server  LOG     /api/bot POST received
+[00:00:36.915] Server  LOG     Proxying request to serve.py /move
+[00:00:36.920] Server  LOG     [serve.py stdout] "pgn 1. e4 e5 2. c4 Nf6 3. g4 Nxe4 4. f3 Ke7 5. fxe4 d5 6. exd5"
+[00:00:37.005] Browser LOG     initAnalysisBoard: human move detected
+[00:00:37.006] Browser LOG     initAnalysisBoard: sending request to /api/bot
+[00:00:38.370] Server  LOG     [serve.py stdout] "INFO:src.utils.decorator:Model stdout/stderr:\r\nCooking move...\r\n[Move.from_uci('e2e4'), Move.from_uci('e7e5'), Move.from_uci('c2c4'), Move.from_uci('g8f6'), Move.from_uci('g2g4'), Move.from_uci('f6e4'), Move.from_uci('f2f3'), Move.from_uci('e8e7'), Move.from_uci('f3e4'), Move.from_uci('d7d5'), Move.from_uci('e4d5')]\r\n\r\nModel move h8g8"
+[00:00:38.372] Server  LOG     [serve.py stdout] "INFO:     127.0.0.1:54207 - \"POST /move HTTP/1.1\" 200 OK"
+[00:00:38.373] Server  LOG     Received response from serve.py /move {}
+[00:00:38.479] Browser LOG     initAnalysisBoard: applying bot move {"move":"h8g8"}
+[00:00:43.760] Server  LOG     /api/bot POST received
+[00:00:43.761] Server  LOG     Proxying request to serve.py /move
+[00:00:43.769] Server  LOG     [serve.py stdout] "pgn 1. e4 e5 2. c4 Nf6 3. g4 Nxe4 4. f3 Ke7 5. fxe4 d5 6. exd5 Rg8 7. d6+"
+[00:00:43.857] Browser LOG     initAnalysisBoard: human move detected
+[00:00:43.857] Browser LOG     initAnalysisBoard: sending request to /api/bot
+[00:00:45.347] Server  LOG     [serve.py stdout] "INFO:src.utils.decorator:Model stdout/stderr:\r\nCooking move...\r\n[Move.from_uci('e2e4'), Move.from_uci('e7e5'), Move.from_uci('c2c4'), Move.from_uci('g8f6'), Move.from_uci('g2g4'), Move.from_uci('f6e4'), Move.from_uci('f2f3'), Move.from_uci('e8e7'), Move.from_uci('f3e4'), Move.from_uci('d7d5'), Move.from_uci('e4d5'), Move.from_uci('h8g8'), Move.from_uci('d5d6')]\r\n\r\nModel move c7d6"
+[00:00:45.348] Server  LOG     Received response from serve.py /move {}
+[00:00:45.351] Server  LOG     [serve.py stdout] "INFO:     127.0.0.1:52039 - \"POST /move HTTP/1.1\" 200 OK"
+[00:00:45.452] Browser LOG     initAnalysisBoard: applying bot move {"move":"c7d6"}
