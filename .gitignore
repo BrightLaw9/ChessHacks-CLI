@@ -4,3 +4,4 @@ venv
 .env.local
 .env
 devtools/node_modules
+checkpoints/
