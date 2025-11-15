@@ -2,7 +2,7 @@
 
 # MCTS Configuration
 NUM_SIMULATIONS = 100        # Number of MCTS simulations per move
-C_PUCT = 1.5                 # Exploration constant for UCB
+C_PUCT = 3 # 1.5                 # Exploration constant for UCB
 
 # Network Configuration
 INPUT_CHANNELS = 13          # Number of input planes (6 own + 6 opponent + 1 metadata)

@@ -16,6 +16,7 @@ from torch.utils.data import DataLoader, TensorDataset
 import chess
 import chess.engine
 import numpy as np
+import random
 import argparse
 import logging
 import os
@@ -186,6 +187,8 @@ class OvernightTrainer:
         """
         board = chess.Board()
         game_data = []
+
+        
         
         try:
             with chess.engine.SimpleEngine.popen_uci(self.stockfish_path) as engine:
@@ -199,9 +202,37 @@ class OvernightTrainer:
                     white_player = "stockfish"
                     black_player = "our"
 
+                # Random injection: choose how many moves until the next injected random move
+                next_inject = random.choice([3, 5, 7])
+
                 while not board.is_game_over():
                     print(board.move_stack)
                     player = white_player if board.turn else black_player
+
+                    # Decrement injection counter and, if zero, inject a random legal move
+                    next_inject -= 1
+                    if next_inject <= 0:
+                        legal = list(board.legal_moves)
+                        if legal:
+                            injected = random.choice(legal)
+                            logger.info(f"Injecting random move for {player}: {injected.uci()}")
+                            board.push(injected)
+                            # reset counter and continue to next player's turn without recording
+                            next_inject = random.choice([3, 5, 7])
+                            mcts_policy = {}
+                            total_visits = sum(child.visit_count for child in root.children.values())
+                            if total_visits > 0:
+                                for move, child in root.children.items():
+                                    mcts_policy[move.uci()] = child.visit_count / total_visits
+
+                            # Save training data
+                            game_data.append({
+                                'board': board.copy(),
+                                'policy': mcts_policy,
+                                'player_color': chess.WHITE if white_player == "our" else chess.BLACK
+                            })
+                            move_count += 1
+                            continue
 
                     # -----------------------------------------
                     # OUR ENGINE MOVE
@@ -439,8 +470,8 @@ def main():
     parser.add_argument(
         "--stockfish-depth",
         type=int,
-        # default=15,
-        default=2,
+        default=15,
+        # default=2,
         help="Stockfish search depth (default: 15)"
     )
     parser.add_argument(
