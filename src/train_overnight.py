@@ -234,11 +234,13 @@ class OvernightTrainer:
                             'player_color': chess.WHITE
                         })
                         
+                        logger.info(f"Move {move_count + 1}: ChessEngine (White) plays {best_move.uci()} | Top MCTS moves: {sorted(mcts_policy.items(), key=lambda x: x[1], reverse=True)[:3]}")
                         board.push(best_move)
                     
                     else:  # Stockfish's turn (Black)
                         # Get move from Stockfish
                         result = engine.play(board, chess.engine.Limit(depth=self.stockfish_depth))
+                        logger.info(f"Move {move_count + 1}: Stockfish (Black) plays {result.move.uci()}")
                         board.push(result.move)
                     
                     move_count += 1
@@ -281,6 +283,9 @@ class OvernightTrainer:
         total_loss.backward()
         torch.nn.utils.clip_grad_norm_(self.network.parameters(), 1.0)
         self.optimizer.step()
+        
+        # CRITICAL: Sync updated weights to chess engine so it uses the latest model
+        self.chess_engine.network.load_state_dict(self.network.state_dict())
         
         return {
             'total_loss': total_loss.item(),
@@ -378,7 +383,8 @@ class OvernightTrainer:
                             f"Training step {self.training_steps} | "
                             f"Loss: {losses['total_loss']:.4f} | "
                             f"Policy: {losses['policy_loss']:.4f} | "
-                            f"Value: {losses['value_loss']:.4f}"
+                            f"Value: {losses['value_loss']:.4f} | "
+                            f"Weights synced to chess engine ✓"
                         )
                 
                 # Save checkpoint periodically
