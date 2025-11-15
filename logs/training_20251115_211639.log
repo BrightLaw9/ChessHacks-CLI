@@ -1,0 +1,27 @@
+2025-11-15 21:16:39,827 - INFO - Loaded model from /u201/a44chhab/research/chessml/ChessHacks-CLI/src/models/trained_model.pth
+2025-11-15 21:16:41,788 - INFO - ================================================================================
+2025-11-15 21:16:41,788 - INFO - Starting Overnight Training Loop
+2025-11-15 21:16:41,788 - INFO - Device: cpu
+2025-11-15 21:16:41,788 - INFO - Stockfish Depth: 12
+2025-11-15 21:16:41,788 - INFO - Batch Size: 64
+2025-11-15 21:16:41,788 - INFO - ================================================================================
+2025-11-15 21:16:41,788 - INFO - 
+--- Game 1 ---
+2025-11-15 21:16:43,800 - INFO - Move 1: ChessEngine (White) plays e4 (e2e4) | Top MCTS moves: [('e2e4', 0.9393939393939394), ('a2a3', 0.050505050505050504), ('e2e3', 0.010101010101010102)]
+2025-11-15 21:16:43,839 - INFO - Move 2: Stockfish (Black) plays e5 (e7e5)
+2025-11-15 21:16:45,298 - INFO - Move 3: ChessEngine (White) plays Qg4 (d1g4) | Top MCTS moves: [('d1g4', 0.6363636363636364), ('a2a3', 0.25252525252525254), ('b1a3', 0.050505050505050504)]
+2025-11-15 21:16:45,316 - INFO - Move 4: Stockfish (Black) plays Nf6 (g8f6)
+2025-11-15 21:16:47,085 - INFO - Received signal 2. Finishing current game and saving...
+2025-11-15 21:16:47,519 - INFO - Move 5: ChessEngine (White) plays Be2 (f1e2) | Top MCTS moves: [('f1e2', 0.6464646464646465), ('g4h4', 0.13131313131313133), ('g4e2', 0.08080808080808081)]
+2025-11-15 21:16:47,519 - ERROR - Error during game: engine event loop dead
+2025-11-15 21:16:47,521 - INFO - Saved moves for game 1 to logs/moves_game_1_20251115_211647.txt
+2025-11-15 21:16:47,521 - INFO - Game result: DRAW
+2025-11-15 21:16:47,521 - INFO - 
+================================================================================
+2025-11-15 21:16:47,521 - INFO - Training Complete - Final Stats
+2025-11-15 21:16:47,522 - INFO - ================================================================================
+2025-11-15 21:16:47,621 - INFO - Saved checkpoint: checkpoints/model_1_games_20251115_211647_final.pth
+2025-11-15 21:16:47,621 - INFO - Games: 1 | Positions: 3 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:16:47,622 - INFO - Total time: 0.00 hours
+2025-11-15 21:16:47,622 - INFO - Games per hour: 617.13
+2025-11-15 21:16:47,622 - INFO - Model saved to: /u201/a44chhab/research/chessml/ChessHacks-CLI/src/models/trained_model.pth

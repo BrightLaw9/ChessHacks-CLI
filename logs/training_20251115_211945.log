@@ -1,0 +1,1183 @@
+2025-11-15 21:19:45,623 - INFO - Loaded model from /u201/a44chhab/research/chessml/ChessHacks-CLI/src/models/trained_model.pth
+2025-11-15 21:19:46,815 - INFO - ================================================================================
+2025-11-15 21:19:46,815 - INFO - Starting Overnight Training Loop
+2025-11-15 21:19:46,815 - INFO - Device: cpu
+2025-11-15 21:19:46,815 - INFO - Stockfish Depth: 15
+2025-11-15 21:19:46,816 - INFO - Batch Size: 4
+2025-11-15 21:19:46,816 - INFO - ================================================================================
+2025-11-15 21:19:46,816 - INFO - 
+--- Game 1 ---
+2025-11-15 21:19:46,819 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:46,821 - INFO - Saved moves for game 1 to logs/moves_game_1_20251115_211946.txt
+2025-11-15 21:19:46,821 - INFO - Game result: DRAW
+2025-11-15 21:19:46,821 - INFO - 
+--- Game 2 ---
+2025-11-15 21:19:46,822 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:46,824 - INFO - Saved moves for game 2 to logs/moves_game_2_20251115_211946.txt
+2025-11-15 21:19:46,824 - INFO - Game result: DRAW
+2025-11-15 21:19:46,824 - INFO - 
+--- Game 3 ---
+2025-11-15 21:19:46,825 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:46,826 - INFO - Saved moves for game 3 to logs/moves_game_3_20251115_211946.txt
+2025-11-15 21:19:46,826 - INFO - Game result: DRAW
+2025-11-15 21:19:46,826 - INFO - 
+--- Game 4 ---
+2025-11-15 21:19:46,829 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:46,830 - INFO - Saved moves for game 4 to logs/moves_game_4_20251115_211946.txt
+2025-11-15 21:19:46,830 - INFO - Game result: DRAW
+2025-11-15 21:19:46,922 - INFO - Saved checkpoint: checkpoints/model_4_games_20251115_211946.pth
+2025-11-15 21:19:46,922 - INFO - Games: 4 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:46,922 - INFO - 
+--- Game 5 ---
+2025-11-15 21:19:46,927 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:46,928 - INFO - Saved moves for game 5 to logs/moves_game_5_20251115_211946.txt
+2025-11-15 21:19:46,928 - INFO - Game result: DRAW
+2025-11-15 21:19:46,928 - INFO - 
+--- Game 6 ---
+2025-11-15 21:19:46,929 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:46,931 - INFO - Saved moves for game 6 to logs/moves_game_6_20251115_211946.txt
+2025-11-15 21:19:46,931 - INFO - Game result: DRAW
+2025-11-15 21:19:46,931 - INFO - 
+--- Game 7 ---
+2025-11-15 21:19:46,932 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:46,933 - INFO - Saved moves for game 7 to logs/moves_game_7_20251115_211946.txt
+2025-11-15 21:19:46,933 - INFO - Game result: DRAW
+2025-11-15 21:19:46,933 - INFO - 
+--- Game 8 ---
+2025-11-15 21:19:46,934 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:46,935 - INFO - Saved moves for game 8 to logs/moves_game_8_20251115_211946.txt
+2025-11-15 21:19:46,935 - INFO - Game result: DRAW
+2025-11-15 21:19:47,003 - INFO - Saved checkpoint: checkpoints/model_8_games_20251115_211946.pth
+2025-11-15 21:19:47,003 - INFO - Games: 8 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:47,003 - INFO - 
+--- Game 9 ---
+2025-11-15 21:19:47,005 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,006 - INFO - Saved moves for game 9 to logs/moves_game_9_20251115_211947.txt
+2025-11-15 21:19:47,006 - INFO - Game result: DRAW
+2025-11-15 21:19:47,006 - INFO - 
+--- Game 10 ---
+2025-11-15 21:19:47,007 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,008 - INFO - Saved moves for game 10 to logs/moves_game_10_20251115_211947.txt
+2025-11-15 21:19:47,008 - INFO - Game result: DRAW
+2025-11-15 21:19:47,008 - INFO - 
+--- Game 11 ---
+2025-11-15 21:19:47,011 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,012 - INFO - Saved moves for game 11 to logs/moves_game_11_20251115_211947.txt
+2025-11-15 21:19:47,012 - INFO - Game result: DRAW
+2025-11-15 21:19:47,013 - INFO - 
+--- Game 12 ---
+2025-11-15 21:19:47,015 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,016 - INFO - Saved moves for game 12 to logs/moves_game_12_20251115_211947.txt
+2025-11-15 21:19:47,016 - INFO - Game result: DRAW
+2025-11-15 21:19:47,103 - INFO - Saved checkpoint: checkpoints/model_12_games_20251115_211947.pth
+2025-11-15 21:19:47,104 - INFO - Games: 12 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:47,104 - INFO - 
+--- Game 13 ---
+2025-11-15 21:19:47,107 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,108 - INFO - Saved moves for game 13 to logs/moves_game_13_20251115_211947.txt
+2025-11-15 21:19:47,108 - INFO - Game result: DRAW
+2025-11-15 21:19:47,108 - INFO - 
+--- Game 14 ---
+2025-11-15 21:19:47,110 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,111 - INFO - Saved moves for game 14 to logs/moves_game_14_20251115_211947.txt
+2025-11-15 21:19:47,111 - INFO - Game result: DRAW
+2025-11-15 21:19:47,111 - INFO - 
+--- Game 15 ---
+2025-11-15 21:19:47,112 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,113 - INFO - Saved moves for game 15 to logs/moves_game_15_20251115_211947.txt
+2025-11-15 21:19:47,113 - INFO - Game result: DRAW
+2025-11-15 21:19:47,113 - INFO - 
+--- Game 16 ---
+2025-11-15 21:19:47,114 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,115 - INFO - Saved moves for game 16 to logs/moves_game_16_20251115_211947.txt
+2025-11-15 21:19:47,115 - INFO - Game result: DRAW
+2025-11-15 21:19:47,217 - INFO - Saved checkpoint: checkpoints/model_16_games_20251115_211947.pth
+2025-11-15 21:19:47,217 - INFO - Games: 16 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:47,217 - INFO - 
+--- Game 17 ---
+2025-11-15 21:19:47,219 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,220 - INFO - Saved moves for game 17 to logs/moves_game_17_20251115_211947.txt
+2025-11-15 21:19:47,220 - INFO - Game result: DRAW
+2025-11-15 21:19:47,220 - INFO - 
+--- Game 18 ---
+2025-11-15 21:19:47,221 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,222 - INFO - Saved moves for game 18 to logs/moves_game_18_20251115_211947.txt
+2025-11-15 21:19:47,222 - INFO - Game result: DRAW
+2025-11-15 21:19:47,222 - INFO - 
+--- Game 19 ---
+2025-11-15 21:19:47,223 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,224 - INFO - Saved moves for game 19 to logs/moves_game_19_20251115_211947.txt
+2025-11-15 21:19:47,224 - INFO - Game result: DRAW
+2025-11-15 21:19:47,224 - INFO - 
+--- Game 20 ---
+2025-11-15 21:19:47,225 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,229 - INFO - Saved moves for game 20 to logs/moves_game_20_20251115_211947.txt
+2025-11-15 21:19:47,229 - INFO - Game result: DRAW
+2025-11-15 21:19:47,324 - INFO - Saved checkpoint: checkpoints/model_20_games_20251115_211947.pth
+2025-11-15 21:19:47,324 - INFO - Games: 20 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:47,324 - INFO - 
+--- Game 21 ---
+2025-11-15 21:19:47,327 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,328 - INFO - Saved moves for game 21 to logs/moves_game_21_20251115_211947.txt
+2025-11-15 21:19:47,328 - INFO - Game result: DRAW
+2025-11-15 21:19:47,329 - INFO - 
+--- Game 22 ---
+2025-11-15 21:19:47,332 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,333 - INFO - Saved moves for game 22 to logs/moves_game_22_20251115_211947.txt
+2025-11-15 21:19:47,333 - INFO - Game result: DRAW
+2025-11-15 21:19:47,333 - INFO - 
+--- Game 23 ---
+2025-11-15 21:19:47,334 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,335 - INFO - Saved moves for game 23 to logs/moves_game_23_20251115_211947.txt
+2025-11-15 21:19:47,335 - INFO - Game result: DRAW
+2025-11-15 21:19:47,335 - INFO - 
+--- Game 24 ---
+2025-11-15 21:19:47,335 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,336 - INFO - Saved moves for game 24 to logs/moves_game_24_20251115_211947.txt
+2025-11-15 21:19:47,336 - INFO - Game result: DRAW
+2025-11-15 21:19:47,419 - INFO - Saved checkpoint: checkpoints/model_24_games_20251115_211947.pth
+2025-11-15 21:19:47,419 - INFO - Games: 24 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:47,419 - INFO - 
+--- Game 25 ---
+2025-11-15 21:19:47,420 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,422 - INFO - Saved moves for game 25 to logs/moves_game_25_20251115_211947.txt
+2025-11-15 21:19:47,422 - INFO - Game result: DRAW
+2025-11-15 21:19:47,422 - INFO - 
+--- Game 26 ---
+2025-11-15 21:19:47,425 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,426 - INFO - Saved moves for game 26 to logs/moves_game_26_20251115_211947.txt
+2025-11-15 21:19:47,426 - INFO - Game result: DRAW
+2025-11-15 21:19:47,426 - INFO - 
+--- Game 27 ---
+2025-11-15 21:19:47,428 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,430 - INFO - Saved moves for game 27 to logs/moves_game_27_20251115_211947.txt
+2025-11-15 21:19:47,430 - INFO - Game result: DRAW
+2025-11-15 21:19:47,430 - INFO - 
+--- Game 28 ---
+2025-11-15 21:19:47,432 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,434 - INFO - Saved moves for game 28 to logs/moves_game_28_20251115_211947.txt
+2025-11-15 21:19:47,434 - INFO - Game result: DRAW
+2025-11-15 21:19:47,517 - INFO - Saved checkpoint: checkpoints/model_28_games_20251115_211947.pth
+2025-11-15 21:19:47,517 - INFO - Games: 28 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:47,517 - INFO - 
+--- Game 29 ---
+2025-11-15 21:19:47,521 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,522 - INFO - Saved moves for game 29 to logs/moves_game_29_20251115_211947.txt
+2025-11-15 21:19:47,522 - INFO - Game result: DRAW
+2025-11-15 21:19:47,522 - INFO - 
+--- Game 30 ---
+2025-11-15 21:19:47,525 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,527 - INFO - Saved moves for game 30 to logs/moves_game_30_20251115_211947.txt
+2025-11-15 21:19:47,527 - INFO - Game result: DRAW
+2025-11-15 21:19:47,527 - INFO - 
+--- Game 31 ---
+2025-11-15 21:19:47,529 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,531 - INFO - Saved moves for game 31 to logs/moves_game_31_20251115_211947.txt
+2025-11-15 21:19:47,531 - INFO - Game result: DRAW
+2025-11-15 21:19:47,531 - INFO - 
+--- Game 32 ---
+2025-11-15 21:19:47,534 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,536 - INFO - Saved moves for game 32 to logs/moves_game_32_20251115_211947.txt
+2025-11-15 21:19:47,536 - INFO - Game result: DRAW
+2025-11-15 21:19:47,629 - INFO - Saved checkpoint: checkpoints/model_32_games_20251115_211947.pth
+2025-11-15 21:19:47,630 - INFO - Games: 32 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:47,630 - INFO - 
+--- Game 33 ---
+2025-11-15 21:19:47,633 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,634 - INFO - Saved moves for game 33 to logs/moves_game_33_20251115_211947.txt
+2025-11-15 21:19:47,634 - INFO - Game result: DRAW
+2025-11-15 21:19:47,634 - INFO - 
+--- Game 34 ---
+2025-11-15 21:19:47,637 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,638 - INFO - Saved moves for game 34 to logs/moves_game_34_20251115_211947.txt
+2025-11-15 21:19:47,638 - INFO - Game result: DRAW
+2025-11-15 21:19:47,638 - INFO - 
+--- Game 35 ---
+2025-11-15 21:19:47,641 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,642 - INFO - Saved moves for game 35 to logs/moves_game_35_20251115_211947.txt
+2025-11-15 21:19:47,642 - INFO - Game result: DRAW
+2025-11-15 21:19:47,642 - INFO - 
+--- Game 36 ---
+2025-11-15 21:19:47,645 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,646 - INFO - Saved moves for game 36 to logs/moves_game_36_20251115_211947.txt
+2025-11-15 21:19:47,646 - INFO - Game result: DRAW
+2025-11-15 21:19:47,732 - INFO - Saved checkpoint: checkpoints/model_36_games_20251115_211947.pth
+2025-11-15 21:19:47,732 - INFO - Games: 36 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:47,732 - INFO - 
+--- Game 37 ---
+2025-11-15 21:19:47,738 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,745 - INFO - Saved moves for game 37 to logs/moves_game_37_20251115_211947.txt
+2025-11-15 21:19:47,745 - INFO - Game result: DRAW
+2025-11-15 21:19:47,745 - INFO - 
+--- Game 38 ---
+2025-11-15 21:19:47,746 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,747 - INFO - Saved moves for game 38 to logs/moves_game_38_20251115_211947.txt
+2025-11-15 21:19:47,747 - INFO - Game result: DRAW
+2025-11-15 21:19:47,747 - INFO - 
+--- Game 39 ---
+2025-11-15 21:19:47,750 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,753 - INFO - Saved moves for game 39 to logs/moves_game_39_20251115_211947.txt
+2025-11-15 21:19:47,753 - INFO - Game result: DRAW
+2025-11-15 21:19:47,753 - INFO - 
+--- Game 40 ---
+2025-11-15 21:19:47,756 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,758 - INFO - Saved moves for game 40 to logs/moves_game_40_20251115_211947.txt
+2025-11-15 21:19:47,758 - INFO - Game result: DRAW
+2025-11-15 21:19:47,859 - INFO - Saved checkpoint: checkpoints/model_40_games_20251115_211947.pth
+2025-11-15 21:19:47,860 - INFO - Games: 40 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:47,860 - INFO - 
+--- Game 41 ---
+2025-11-15 21:19:47,861 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,862 - INFO - Saved moves for game 41 to logs/moves_game_41_20251115_211947.txt
+2025-11-15 21:19:47,862 - INFO - Game result: DRAW
+2025-11-15 21:19:47,862 - INFO - 
+--- Game 42 ---
+2025-11-15 21:19:47,863 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,864 - INFO - Saved moves for game 42 to logs/moves_game_42_20251115_211947.txt
+2025-11-15 21:19:47,864 - INFO - Game result: DRAW
+2025-11-15 21:19:47,864 - INFO - 
+--- Game 43 ---
+2025-11-15 21:19:47,867 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,868 - INFO - Saved moves for game 43 to logs/moves_game_43_20251115_211947.txt
+2025-11-15 21:19:47,868 - INFO - Game result: DRAW
+2025-11-15 21:19:47,868 - INFO - 
+--- Game 44 ---
+2025-11-15 21:19:47,871 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,872 - INFO - Saved moves for game 44 to logs/moves_game_44_20251115_211947.txt
+2025-11-15 21:19:47,872 - INFO - Game result: DRAW
+2025-11-15 21:19:47,952 - INFO - Saved checkpoint: checkpoints/model_44_games_20251115_211947.pth
+2025-11-15 21:19:47,952 - INFO - Games: 44 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:47,952 - INFO - 
+--- Game 45 ---
+2025-11-15 21:19:47,954 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,956 - INFO - Saved moves for game 45 to logs/moves_game_45_20251115_211947.txt
+2025-11-15 21:19:47,956 - INFO - Game result: DRAW
+2025-11-15 21:19:47,956 - INFO - 
+--- Game 46 ---
+2025-11-15 21:19:47,959 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,960 - INFO - Saved moves for game 46 to logs/moves_game_46_20251115_211947.txt
+2025-11-15 21:19:47,960 - INFO - Game result: DRAW
+2025-11-15 21:19:47,960 - INFO - 
+--- Game 47 ---
+2025-11-15 21:19:47,963 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,964 - INFO - Saved moves for game 47 to logs/moves_game_47_20251115_211947.txt
+2025-11-15 21:19:47,964 - INFO - Game result: DRAW
+2025-11-15 21:19:47,964 - INFO - 
+--- Game 48 ---
+2025-11-15 21:19:47,967 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:47,968 - INFO - Saved moves for game 48 to logs/moves_game_48_20251115_211947.txt
+2025-11-15 21:19:47,971 - INFO - Game result: DRAW
+2025-11-15 21:19:48,048 - INFO - Saved checkpoint: checkpoints/model_48_games_20251115_211947.pth
+2025-11-15 21:19:48,049 - INFO - Games: 48 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:48,049 - INFO - 
+--- Game 49 ---
+2025-11-15 21:19:48,051 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,052 - INFO - Saved moves for game 49 to logs/moves_game_49_20251115_211948.txt
+2025-11-15 21:19:48,052 - INFO - Game result: DRAW
+2025-11-15 21:19:48,052 - INFO - 
+--- Game 50 ---
+2025-11-15 21:19:48,054 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,056 - INFO - Saved moves for game 50 to logs/moves_game_50_20251115_211948.txt
+2025-11-15 21:19:48,056 - INFO - Game result: DRAW
+2025-11-15 21:19:48,056 - INFO - 
+--- Game 51 ---
+2025-11-15 21:19:48,057 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,058 - INFO - Saved moves for game 51 to logs/moves_game_51_20251115_211948.txt
+2025-11-15 21:19:48,058 - INFO - Game result: DRAW
+2025-11-15 21:19:48,058 - INFO - 
+--- Game 52 ---
+2025-11-15 21:19:48,059 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,061 - INFO - Saved moves for game 52 to logs/moves_game_52_20251115_211948.txt
+2025-11-15 21:19:48,061 - INFO - Game result: DRAW
+2025-11-15 21:19:48,170 - INFO - Saved checkpoint: checkpoints/model_52_games_20251115_211948.pth
+2025-11-15 21:19:48,170 - INFO - Games: 52 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:48,170 - INFO - 
+--- Game 53 ---
+2025-11-15 21:19:48,172 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,173 - INFO - Saved moves for game 53 to logs/moves_game_53_20251115_211948.txt
+2025-11-15 21:19:48,173 - INFO - Game result: DRAW
+2025-11-15 21:19:48,173 - INFO - 
+--- Game 54 ---
+2025-11-15 21:19:48,174 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,176 - INFO - Saved moves for game 54 to logs/moves_game_54_20251115_211948.txt
+2025-11-15 21:19:48,176 - INFO - Game result: DRAW
+2025-11-15 21:19:48,176 - INFO - 
+--- Game 55 ---
+2025-11-15 21:19:48,179 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,180 - INFO - Saved moves for game 55 to logs/moves_game_55_20251115_211948.txt
+2025-11-15 21:19:48,180 - INFO - Game result: DRAW
+2025-11-15 21:19:48,180 - INFO - 
+--- Game 56 ---
+2025-11-15 21:19:48,183 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,184 - INFO - Saved moves for game 56 to logs/moves_game_56_20251115_211948.txt
+2025-11-15 21:19:48,184 - INFO - Game result: DRAW
+2025-11-15 21:19:48,265 - INFO - Saved checkpoint: checkpoints/model_56_games_20251115_211948.pth
+2025-11-15 21:19:48,266 - INFO - Games: 56 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:48,266 - INFO - 
+--- Game 57 ---
+2025-11-15 21:19:48,268 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,269 - INFO - Saved moves for game 57 to logs/moves_game_57_20251115_211948.txt
+2025-11-15 21:19:48,269 - INFO - Game result: DRAW
+2025-11-15 21:19:48,269 - INFO - 
+--- Game 58 ---
+2025-11-15 21:19:48,272 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,273 - INFO - Saved moves for game 58 to logs/moves_game_58_20251115_211948.txt
+2025-11-15 21:19:48,273 - INFO - Game result: DRAW
+2025-11-15 21:19:48,273 - INFO - 
+--- Game 59 ---
+2025-11-15 21:19:48,273 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,275 - INFO - Saved moves for game 59 to logs/moves_game_59_20251115_211948.txt
+2025-11-15 21:19:48,275 - INFO - Game result: DRAW
+2025-11-15 21:19:48,275 - INFO - 
+--- Game 60 ---
+2025-11-15 21:19:48,275 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,276 - INFO - Saved moves for game 60 to logs/moves_game_60_20251115_211948.txt
+2025-11-15 21:19:48,276 - INFO - Game result: DRAW
+2025-11-15 21:19:48,346 - INFO - Saved checkpoint: checkpoints/model_60_games_20251115_211948.pth
+2025-11-15 21:19:48,347 - INFO - Games: 60 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:48,347 - INFO - 
+--- Game 61 ---
+2025-11-15 21:19:48,351 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,352 - INFO - Saved moves for game 61 to logs/moves_game_61_20251115_211948.txt
+2025-11-15 21:19:48,352 - INFO - Game result: DRAW
+2025-11-15 21:19:48,352 - INFO - 
+--- Game 62 ---
+2025-11-15 21:19:48,354 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,356 - INFO - Saved moves for game 62 to logs/moves_game_62_20251115_211948.txt
+2025-11-15 21:19:48,356 - INFO - Game result: DRAW
+2025-11-15 21:19:48,356 - INFO - 
+--- Game 63 ---
+2025-11-15 21:19:48,357 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,358 - INFO - Saved moves for game 63 to logs/moves_game_63_20251115_211948.txt
+2025-11-15 21:19:48,358 - INFO - Game result: DRAW
+2025-11-15 21:19:48,358 - INFO - 
+--- Game 64 ---
+2025-11-15 21:19:48,360 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,361 - INFO - Saved moves for game 64 to logs/moves_game_64_20251115_211948.txt
+2025-11-15 21:19:48,361 - INFO - Game result: DRAW
+2025-11-15 21:19:48,449 - INFO - Saved checkpoint: checkpoints/model_64_games_20251115_211948.pth
+2025-11-15 21:19:48,449 - INFO - Games: 64 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:48,450 - INFO - 
+--- Game 65 ---
+2025-11-15 21:19:48,451 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,454 - INFO - Saved moves for game 65 to logs/moves_game_65_20251115_211948.txt
+2025-11-15 21:19:48,454 - INFO - Game result: DRAW
+2025-11-15 21:19:48,454 - INFO - 
+--- Game 66 ---
+2025-11-15 21:19:48,455 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,456 - INFO - Saved moves for game 66 to logs/moves_game_66_20251115_211948.txt
+2025-11-15 21:19:48,456 - INFO - Game result: DRAW
+2025-11-15 21:19:48,456 - INFO - 
+--- Game 67 ---
+2025-11-15 21:19:48,457 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,458 - INFO - Saved moves for game 67 to logs/moves_game_67_20251115_211948.txt
+2025-11-15 21:19:48,458 - INFO - Game result: DRAW
+2025-11-15 21:19:48,458 - INFO - 
+--- Game 68 ---
+2025-11-15 21:19:48,459 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,459 - INFO - Saved moves for game 68 to logs/moves_game_68_20251115_211948.txt
+2025-11-15 21:19:48,459 - INFO - Game result: DRAW
+2025-11-15 21:19:48,533 - INFO - Saved checkpoint: checkpoints/model_68_games_20251115_211948.pth
+2025-11-15 21:19:48,534 - INFO - Games: 68 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:48,534 - INFO - 
+--- Game 69 ---
+2025-11-15 21:19:48,535 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,536 - INFO - Saved moves for game 69 to logs/moves_game_69_20251115_211948.txt
+2025-11-15 21:19:48,536 - INFO - Game result: DRAW
+2025-11-15 21:19:48,536 - INFO - 
+--- Game 70 ---
+2025-11-15 21:19:48,536 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,537 - INFO - Saved moves for game 70 to logs/moves_game_70_20251115_211948.txt
+2025-11-15 21:19:48,537 - INFO - Game result: DRAW
+2025-11-15 21:19:48,537 - INFO - 
+--- Game 71 ---
+2025-11-15 21:19:48,538 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,539 - INFO - Saved moves for game 71 to logs/moves_game_71_20251115_211948.txt
+2025-11-15 21:19:48,539 - INFO - Game result: DRAW
+2025-11-15 21:19:48,539 - INFO - 
+--- Game 72 ---
+2025-11-15 21:19:48,541 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,542 - INFO - Saved moves for game 72 to logs/moves_game_72_20251115_211948.txt
+2025-11-15 21:19:48,542 - INFO - Game result: DRAW
+2025-11-15 21:19:48,628 - INFO - Saved checkpoint: checkpoints/model_72_games_20251115_211948.pth
+2025-11-15 21:19:48,628 - INFO - Games: 72 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:48,628 - INFO - 
+--- Game 73 ---
+2025-11-15 21:19:48,630 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,632 - INFO - Saved moves for game 73 to logs/moves_game_73_20251115_211948.txt
+2025-11-15 21:19:48,632 - INFO - Game result: DRAW
+2025-11-15 21:19:48,632 - INFO - 
+--- Game 74 ---
+2025-11-15 21:19:48,634 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,637 - INFO - Saved moves for game 74 to logs/moves_game_74_20251115_211948.txt
+2025-11-15 21:19:48,637 - INFO - Game result: DRAW
+2025-11-15 21:19:48,637 - INFO - 
+--- Game 75 ---
+2025-11-15 21:19:48,638 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,640 - INFO - Saved moves for game 75 to logs/moves_game_75_20251115_211948.txt
+2025-11-15 21:19:48,640 - INFO - Game result: DRAW
+2025-11-15 21:19:48,640 - INFO - 
+--- Game 76 ---
+2025-11-15 21:19:48,642 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,645 - INFO - Saved moves for game 76 to logs/moves_game_76_20251115_211948.txt
+2025-11-15 21:19:48,645 - INFO - Game result: DRAW
+2025-11-15 21:19:48,721 - INFO - Saved checkpoint: checkpoints/model_76_games_20251115_211948.pth
+2025-11-15 21:19:48,721 - INFO - Games: 76 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:48,721 - INFO - 
+--- Game 77 ---
+2025-11-15 21:19:48,722 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,724 - INFO - Saved moves for game 77 to logs/moves_game_77_20251115_211948.txt
+2025-11-15 21:19:48,724 - INFO - Game result: DRAW
+2025-11-15 21:19:48,724 - INFO - 
+--- Game 78 ---
+2025-11-15 21:19:48,725 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,726 - INFO - Saved moves for game 78 to logs/moves_game_78_20251115_211948.txt
+2025-11-15 21:19:48,726 - INFO - Game result: DRAW
+2025-11-15 21:19:48,726 - INFO - 
+--- Game 79 ---
+2025-11-15 21:19:48,727 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,728 - INFO - Saved moves for game 79 to logs/moves_game_79_20251115_211948.txt
+2025-11-15 21:19:48,728 - INFO - Game result: DRAW
+2025-11-15 21:19:48,728 - INFO - 
+--- Game 80 ---
+2025-11-15 21:19:48,729 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,730 - INFO - Saved moves for game 80 to logs/moves_game_80_20251115_211948.txt
+2025-11-15 21:19:48,730 - INFO - Game result: DRAW
+2025-11-15 21:19:48,806 - INFO - Saved checkpoint: checkpoints/model_80_games_20251115_211948.pth
+2025-11-15 21:19:48,806 - INFO - Games: 80 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:48,806 - INFO - 
+--- Game 81 ---
+2025-11-15 21:19:48,808 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,810 - INFO - Saved moves for game 81 to logs/moves_game_81_20251115_211948.txt
+2025-11-15 21:19:48,810 - INFO - Game result: DRAW
+2025-11-15 21:19:48,810 - INFO - 
+--- Game 82 ---
+2025-11-15 21:19:48,811 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,812 - INFO - Saved moves for game 82 to logs/moves_game_82_20251115_211948.txt
+2025-11-15 21:19:48,812 - INFO - Game result: DRAW
+2025-11-15 21:19:48,812 - INFO - 
+--- Game 83 ---
+2025-11-15 21:19:48,813 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,815 - INFO - Saved moves for game 83 to logs/moves_game_83_20251115_211948.txt
+2025-11-15 21:19:48,815 - INFO - Game result: DRAW
+2025-11-15 21:19:48,815 - INFO - 
+--- Game 84 ---
+2025-11-15 21:19:48,816 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,817 - INFO - Saved moves for game 84 to logs/moves_game_84_20251115_211948.txt
+2025-11-15 21:19:48,817 - INFO - Game result: DRAW
+2025-11-15 21:19:48,907 - INFO - Saved checkpoint: checkpoints/model_84_games_20251115_211948.pth
+2025-11-15 21:19:48,907 - INFO - Games: 84 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:48,907 - INFO - 
+--- Game 85 ---
+2025-11-15 21:19:48,909 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,910 - INFO - Saved moves for game 85 to logs/moves_game_85_20251115_211948.txt
+2025-11-15 21:19:48,910 - INFO - Game result: DRAW
+2025-11-15 21:19:48,910 - INFO - 
+--- Game 86 ---
+2025-11-15 21:19:48,911 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,912 - INFO - Saved moves for game 86 to logs/moves_game_86_20251115_211948.txt
+2025-11-15 21:19:48,912 - INFO - Game result: DRAW
+2025-11-15 21:19:48,912 - INFO - 
+--- Game 87 ---
+2025-11-15 21:19:48,913 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,914 - INFO - Saved moves for game 87 to logs/moves_game_87_20251115_211948.txt
+2025-11-15 21:19:48,914 - INFO - Game result: DRAW
+2025-11-15 21:19:48,914 - INFO - 
+--- Game 88 ---
+2025-11-15 21:19:48,915 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:48,916 - INFO - Saved moves for game 88 to logs/moves_game_88_20251115_211948.txt
+2025-11-15 21:19:48,916 - INFO - Game result: DRAW
+2025-11-15 21:19:49,000 - INFO - Saved checkpoint: checkpoints/model_88_games_20251115_211948.pth
+2025-11-15 21:19:49,001 - INFO - Games: 88 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:49,001 - INFO - 
+--- Game 89 ---
+2025-11-15 21:19:49,001 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,003 - INFO - Saved moves for game 89 to logs/moves_game_89_20251115_211949.txt
+2025-11-15 21:19:49,003 - INFO - Game result: DRAW
+2025-11-15 21:19:49,003 - INFO - 
+--- Game 90 ---
+2025-11-15 21:19:49,003 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,004 - INFO - Saved moves for game 90 to logs/moves_game_90_20251115_211949.txt
+2025-11-15 21:19:49,004 - INFO - Game result: DRAW
+2025-11-15 21:19:49,004 - INFO - 
+--- Game 91 ---
+2025-11-15 21:19:49,005 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,006 - INFO - Saved moves for game 91 to logs/moves_game_91_20251115_211949.txt
+2025-11-15 21:19:49,006 - INFO - Game result: DRAW
+2025-11-15 21:19:49,006 - INFO - 
+--- Game 92 ---
+2025-11-15 21:19:49,006 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,007 - INFO - Saved moves for game 92 to logs/moves_game_92_20251115_211949.txt
+2025-11-15 21:19:49,007 - INFO - Game result: DRAW
+2025-11-15 21:19:49,072 - INFO - Saved checkpoint: checkpoints/model_92_games_20251115_211949.pth
+2025-11-15 21:19:49,072 - INFO - Games: 92 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:49,073 - INFO - 
+--- Game 93 ---
+2025-11-15 21:19:49,074 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,075 - INFO - Saved moves for game 93 to logs/moves_game_93_20251115_211949.txt
+2025-11-15 21:19:49,075 - INFO - Game result: DRAW
+2025-11-15 21:19:49,076 - INFO - 
+--- Game 94 ---
+2025-11-15 21:19:49,077 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,078 - INFO - Saved moves for game 94 to logs/moves_game_94_20251115_211949.txt
+2025-11-15 21:19:49,078 - INFO - Game result: DRAW
+2025-11-15 21:19:49,078 - INFO - 
+--- Game 95 ---
+2025-11-15 21:19:49,080 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,080 - INFO - Saved moves for game 95 to logs/moves_game_95_20251115_211949.txt
+2025-11-15 21:19:49,080 - INFO - Game result: DRAW
+2025-11-15 21:19:49,080 - INFO - 
+--- Game 96 ---
+2025-11-15 21:19:49,081 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,083 - INFO - Saved moves for game 96 to logs/moves_game_96_20251115_211949.txt
+2025-11-15 21:19:49,083 - INFO - Game result: DRAW
+2025-11-15 21:19:49,160 - INFO - Saved checkpoint: checkpoints/model_96_games_20251115_211949.pth
+2025-11-15 21:19:49,160 - INFO - Games: 96 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:49,160 - INFO - 
+--- Game 97 ---
+2025-11-15 21:19:49,162 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,163 - INFO - Saved moves for game 97 to logs/moves_game_97_20251115_211949.txt
+2025-11-15 21:19:49,163 - INFO - Game result: DRAW
+2025-11-15 21:19:49,163 - INFO - 
+--- Game 98 ---
+2025-11-15 21:19:49,164 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,165 - INFO - Saved moves for game 98 to logs/moves_game_98_20251115_211949.txt
+2025-11-15 21:19:49,165 - INFO - Game result: DRAW
+2025-11-15 21:19:49,165 - INFO - 
+--- Game 99 ---
+2025-11-15 21:19:49,166 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,167 - INFO - Saved moves for game 99 to logs/moves_game_99_20251115_211949.txt
+2025-11-15 21:19:49,167 - INFO - Game result: DRAW
+2025-11-15 21:19:49,167 - INFO - 
+--- Game 100 ---
+2025-11-15 21:19:49,167 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,168 - INFO - Saved moves for game 100 to logs/moves_game_100_20251115_211949.txt
+2025-11-15 21:19:49,168 - INFO - Game result: DRAW
+2025-11-15 21:19:49,241 - INFO - Saved checkpoint: checkpoints/model_100_games_20251115_211949.pth
+2025-11-15 21:19:49,241 - INFO - Games: 100 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:49,241 - INFO - 
+--- Game 101 ---
+2025-11-15 21:19:49,242 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,244 - INFO - Saved moves for game 101 to logs/moves_game_101_20251115_211949.txt
+2025-11-15 21:19:49,244 - INFO - Game result: DRAW
+2025-11-15 21:19:49,244 - INFO - 
+--- Game 102 ---
+2025-11-15 21:19:49,244 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,245 - INFO - Saved moves for game 102 to logs/moves_game_102_20251115_211949.txt
+2025-11-15 21:19:49,245 - INFO - Game result: DRAW
+2025-11-15 21:19:49,245 - INFO - 
+--- Game 103 ---
+2025-11-15 21:19:49,246 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,247 - INFO - Saved moves for game 103 to logs/moves_game_103_20251115_211949.txt
+2025-11-15 21:19:49,247 - INFO - Game result: DRAW
+2025-11-15 21:19:49,247 - INFO - 
+--- Game 104 ---
+2025-11-15 21:19:49,248 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,249 - INFO - Saved moves for game 104 to logs/moves_game_104_20251115_211949.txt
+2025-11-15 21:19:49,249 - INFO - Game result: DRAW
+2025-11-15 21:19:49,320 - INFO - Saved checkpoint: checkpoints/model_104_games_20251115_211949.pth
+2025-11-15 21:19:49,321 - INFO - Games: 104 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:49,321 - INFO - 
+--- Game 105 ---
+2025-11-15 21:19:49,322 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,324 - INFO - Saved moves for game 105 to logs/moves_game_105_20251115_211949.txt
+2025-11-15 21:19:49,324 - INFO - Game result: DRAW
+2025-11-15 21:19:49,324 - INFO - 
+--- Game 106 ---
+2025-11-15 21:19:49,324 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,325 - INFO - Saved moves for game 106 to logs/moves_game_106_20251115_211949.txt
+2025-11-15 21:19:49,325 - INFO - Game result: DRAW
+2025-11-15 21:19:49,325 - INFO - 
+--- Game 107 ---
+2025-11-15 21:19:49,326 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,327 - INFO - Saved moves for game 107 to logs/moves_game_107_20251115_211949.txt
+2025-11-15 21:19:49,327 - INFO - Game result: DRAW
+2025-11-15 21:19:49,327 - INFO - 
+--- Game 108 ---
+2025-11-15 21:19:49,328 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,329 - INFO - Saved moves for game 108 to logs/moves_game_108_20251115_211949.txt
+2025-11-15 21:19:49,329 - INFO - Game result: DRAW
+2025-11-15 21:19:49,406 - INFO - Saved checkpoint: checkpoints/model_108_games_20251115_211949.pth
+2025-11-15 21:19:49,406 - INFO - Games: 108 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:49,406 - INFO - 
+--- Game 109 ---
+2025-11-15 21:19:49,408 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,409 - INFO - Saved moves for game 109 to logs/moves_game_109_20251115_211949.txt
+2025-11-15 21:19:49,409 - INFO - Game result: DRAW
+2025-11-15 21:19:49,412 - INFO - 
+--- Game 110 ---
+2025-11-15 21:19:49,419 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,420 - INFO - Saved moves for game 110 to logs/moves_game_110_20251115_211949.txt
+2025-11-15 21:19:49,420 - INFO - Game result: DRAW
+2025-11-15 21:19:49,420 - INFO - 
+--- Game 111 ---
+2025-11-15 21:19:49,423 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,424 - INFO - Saved moves for game 111 to logs/moves_game_111_20251115_211949.txt
+2025-11-15 21:19:49,424 - INFO - Game result: DRAW
+2025-11-15 21:19:49,424 - INFO - 
+--- Game 112 ---
+2025-11-15 21:19:49,428 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,429 - INFO - Saved moves for game 112 to logs/moves_game_112_20251115_211949.txt
+2025-11-15 21:19:49,429 - INFO - Game result: DRAW
+2025-11-15 21:19:49,526 - INFO - Saved checkpoint: checkpoints/model_112_games_20251115_211949.pth
+2025-11-15 21:19:49,526 - INFO - Games: 112 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:49,527 - INFO - 
+--- Game 113 ---
+2025-11-15 21:19:49,528 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,539 - INFO - Saved moves for game 113 to logs/moves_game_113_20251115_211949.txt
+2025-11-15 21:19:49,539 - INFO - Game result: DRAW
+2025-11-15 21:19:49,539 - INFO - 
+--- Game 114 ---
+2025-11-15 21:19:49,545 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,547 - INFO - Saved moves for game 114 to logs/moves_game_114_20251115_211949.txt
+2025-11-15 21:19:49,547 - INFO - Game result: DRAW
+2025-11-15 21:19:49,547 - INFO - 
+--- Game 115 ---
+2025-11-15 21:19:49,547 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,548 - INFO - Saved moves for game 115 to logs/moves_game_115_20251115_211949.txt
+2025-11-15 21:19:49,549 - INFO - Game result: DRAW
+2025-11-15 21:19:49,549 - INFO - 
+--- Game 116 ---
+2025-11-15 21:19:49,551 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,552 - INFO - Saved moves for game 116 to logs/moves_game_116_20251115_211949.txt
+2025-11-15 21:19:49,552 - INFO - Game result: DRAW
+2025-11-15 21:19:49,629 - INFO - Saved checkpoint: checkpoints/model_116_games_20251115_211949.pth
+2025-11-15 21:19:49,629 - INFO - Games: 116 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:49,629 - INFO - 
+--- Game 117 ---
+2025-11-15 21:19:49,633 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,635 - INFO - Saved moves for game 117 to logs/moves_game_117_20251115_211949.txt
+2025-11-15 21:19:49,635 - INFO - Game result: DRAW
+2025-11-15 21:19:49,635 - INFO - 
+--- Game 118 ---
+2025-11-15 21:19:49,640 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,641 - INFO - Saved moves for game 118 to logs/moves_game_118_20251115_211949.txt
+2025-11-15 21:19:49,642 - INFO - Game result: DRAW
+2025-11-15 21:19:49,642 - INFO - 
+--- Game 119 ---
+2025-11-15 21:19:49,644 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,647 - INFO - Saved moves for game 119 to logs/moves_game_119_20251115_211949.txt
+2025-11-15 21:19:49,647 - INFO - Game result: DRAW
+2025-11-15 21:19:49,647 - INFO - 
+--- Game 120 ---
+2025-11-15 21:19:49,652 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,659 - INFO - Saved moves for game 120 to logs/moves_game_120_20251115_211949.txt
+2025-11-15 21:19:49,659 - INFO - Game result: DRAW
+2025-11-15 21:19:49,786 - INFO - Saved checkpoint: checkpoints/model_120_games_20251115_211949.pth
+2025-11-15 21:19:49,786 - INFO - Games: 120 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:49,786 - INFO - 
+--- Game 121 ---
+2025-11-15 21:19:49,787 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,788 - INFO - Saved moves for game 121 to logs/moves_game_121_20251115_211949.txt
+2025-11-15 21:19:49,788 - INFO - Game result: DRAW
+2025-11-15 21:19:49,788 - INFO - 
+--- Game 122 ---
+2025-11-15 21:19:49,789 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,792 - INFO - Saved moves for game 122 to logs/moves_game_122_20251115_211949.txt
+2025-11-15 21:19:49,792 - INFO - Game result: DRAW
+2025-11-15 21:19:49,792 - INFO - 
+--- Game 123 ---
+2025-11-15 21:19:49,793 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,794 - INFO - Saved moves for game 123 to logs/moves_game_123_20251115_211949.txt
+2025-11-15 21:19:49,794 - INFO - Game result: DRAW
+2025-11-15 21:19:49,794 - INFO - 
+--- Game 124 ---
+2025-11-15 21:19:49,796 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,800 - INFO - Saved moves for game 124 to logs/moves_game_124_20251115_211949.txt
+2025-11-15 21:19:49,800 - INFO - Game result: DRAW
+2025-11-15 21:19:49,916 - INFO - Saved checkpoint: checkpoints/model_124_games_20251115_211949.pth
+2025-11-15 21:19:49,917 - INFO - Games: 124 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:49,917 - INFO - 
+--- Game 125 ---
+2025-11-15 21:19:49,922 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,923 - INFO - Saved moves for game 125 to logs/moves_game_125_20251115_211949.txt
+2025-11-15 21:19:49,923 - INFO - Game result: DRAW
+2025-11-15 21:19:49,923 - INFO - 
+--- Game 126 ---
+2025-11-15 21:19:49,926 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,927 - INFO - Saved moves for game 126 to logs/moves_game_126_20251115_211949.txt
+2025-11-15 21:19:49,927 - INFO - Game result: DRAW
+2025-11-15 21:19:49,927 - INFO - 
+--- Game 127 ---
+2025-11-15 21:19:49,929 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,930 - INFO - Saved moves for game 127 to logs/moves_game_127_20251115_211949.txt
+2025-11-15 21:19:49,930 - INFO - Game result: DRAW
+2025-11-15 21:19:49,930 - INFO - 
+--- Game 128 ---
+2025-11-15 21:19:49,934 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:49,935 - INFO - Saved moves for game 128 to logs/moves_game_128_20251115_211949.txt
+2025-11-15 21:19:49,935 - INFO - Game result: DRAW
+2025-11-15 21:19:50,048 - INFO - Saved checkpoint: checkpoints/model_128_games_20251115_211949.pth
+2025-11-15 21:19:50,049 - INFO - Games: 128 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:50,049 - INFO - 
+--- Game 129 ---
+2025-11-15 21:19:50,052 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,055 - INFO - Saved moves for game 129 to logs/moves_game_129_20251115_211950.txt
+2025-11-15 21:19:50,055 - INFO - Game result: DRAW
+2025-11-15 21:19:50,055 - INFO - 
+--- Game 130 ---
+2025-11-15 21:19:50,060 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,062 - INFO - Saved moves for game 130 to logs/moves_game_130_20251115_211950.txt
+2025-11-15 21:19:50,062 - INFO - Game result: DRAW
+2025-11-15 21:19:50,062 - INFO - 
+--- Game 131 ---
+2025-11-15 21:19:50,065 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,068 - INFO - Saved moves for game 131 to logs/moves_game_131_20251115_211950.txt
+2025-11-15 21:19:50,068 - INFO - Game result: DRAW
+2025-11-15 21:19:50,068 - INFO - 
+--- Game 132 ---
+2025-11-15 21:19:50,069 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,070 - INFO - Saved moves for game 132 to logs/moves_game_132_20251115_211950.txt
+2025-11-15 21:19:50,070 - INFO - Game result: DRAW
+2025-11-15 21:19:50,166 - INFO - Saved checkpoint: checkpoints/model_132_games_20251115_211950.pth
+2025-11-15 21:19:50,166 - INFO - Games: 132 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:50,166 - INFO - 
+--- Game 133 ---
+2025-11-15 21:19:50,171 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,175 - INFO - Saved moves for game 133 to logs/moves_game_133_20251115_211950.txt
+2025-11-15 21:19:50,175 - INFO - Game result: DRAW
+2025-11-15 21:19:50,175 - INFO - 
+--- Game 134 ---
+2025-11-15 21:19:50,181 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,183 - INFO - Saved moves for game 134 to logs/moves_game_134_20251115_211950.txt
+2025-11-15 21:19:50,183 - INFO - Game result: DRAW
+2025-11-15 21:19:50,183 - INFO - 
+--- Game 135 ---
+2025-11-15 21:19:50,187 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,187 - INFO - Saved moves for game 135 to logs/moves_game_135_20251115_211950.txt
+2025-11-15 21:19:50,188 - INFO - Game result: DRAW
+2025-11-15 21:19:50,188 - INFO - 
+--- Game 136 ---
+2025-11-15 21:19:50,192 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,195 - INFO - Saved moves for game 136 to logs/moves_game_136_20251115_211950.txt
+2025-11-15 21:19:50,195 - INFO - Game result: DRAW
+2025-11-15 21:19:50,306 - INFO - Saved checkpoint: checkpoints/model_136_games_20251115_211950.pth
+2025-11-15 21:19:50,306 - INFO - Games: 136 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:50,307 - INFO - 
+--- Game 137 ---
+2025-11-15 21:19:50,313 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,319 - INFO - Saved moves for game 137 to logs/moves_game_137_20251115_211950.txt
+2025-11-15 21:19:50,319 - INFO - Game result: DRAW
+2025-11-15 21:19:50,319 - INFO - 
+--- Game 138 ---
+2025-11-15 21:19:50,328 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,330 - INFO - Saved moves for game 138 to logs/moves_game_138_20251115_211950.txt
+2025-11-15 21:19:50,332 - INFO - Game result: DRAW
+2025-11-15 21:19:50,333 - INFO - 
+--- Game 139 ---
+2025-11-15 21:19:50,348 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,350 - INFO - Saved moves for game 139 to logs/moves_game_139_20251115_211950.txt
+2025-11-15 21:19:50,350 - INFO - Game result: DRAW
+2025-11-15 21:19:50,350 - INFO - 
+--- Game 140 ---
+2025-11-15 21:19:50,360 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,362 - INFO - Saved moves for game 140 to logs/moves_game_140_20251115_211950.txt
+2025-11-15 21:19:50,362 - INFO - Game result: DRAW
+2025-11-15 21:19:50,487 - INFO - Saved checkpoint: checkpoints/model_140_games_20251115_211950.pth
+2025-11-15 21:19:50,487 - INFO - Games: 140 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:50,487 - INFO - 
+--- Game 141 ---
+2025-11-15 21:19:50,493 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,494 - INFO - Saved moves for game 141 to logs/moves_game_141_20251115_211950.txt
+2025-11-15 21:19:50,494 - INFO - Game result: DRAW
+2025-11-15 21:19:50,494 - INFO - 
+--- Game 142 ---
+2025-11-15 21:19:50,500 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,504 - INFO - Saved moves for game 142 to logs/moves_game_142_20251115_211950.txt
+2025-11-15 21:19:50,504 - INFO - Game result: DRAW
+2025-11-15 21:19:50,504 - INFO - 
+--- Game 143 ---
+2025-11-15 21:19:50,509 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,511 - INFO - Saved moves for game 143 to logs/moves_game_143_20251115_211950.txt
+2025-11-15 21:19:50,512 - INFO - Game result: DRAW
+2025-11-15 21:19:50,512 - INFO - 
+--- Game 144 ---
+2025-11-15 21:19:50,514 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,516 - INFO - Saved moves for game 144 to logs/moves_game_144_20251115_211950.txt
+2025-11-15 21:19:50,516 - INFO - Game result: DRAW
+2025-11-15 21:19:50,639 - INFO - Saved checkpoint: checkpoints/model_144_games_20251115_211950.pth
+2025-11-15 21:19:50,639 - INFO - Games: 144 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:50,639 - INFO - 
+--- Game 145 ---
+2025-11-15 21:19:50,645 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,647 - INFO - Saved moves for game 145 to logs/moves_game_145_20251115_211950.txt
+2025-11-15 21:19:50,647 - INFO - Game result: DRAW
+2025-11-15 21:19:50,647 - INFO - 
+--- Game 146 ---
+2025-11-15 21:19:50,651 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,653 - INFO - Saved moves for game 146 to logs/moves_game_146_20251115_211950.txt
+2025-11-15 21:19:50,653 - INFO - Game result: DRAW
+2025-11-15 21:19:50,653 - INFO - 
+--- Game 147 ---
+2025-11-15 21:19:50,657 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,658 - INFO - Saved moves for game 147 to logs/moves_game_147_20251115_211950.txt
+2025-11-15 21:19:50,658 - INFO - Game result: DRAW
+2025-11-15 21:19:50,658 - INFO - 
+--- Game 148 ---
+2025-11-15 21:19:50,661 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,662 - INFO - Saved moves for game 148 to logs/moves_game_148_20251115_211950.txt
+2025-11-15 21:19:50,662 - INFO - Game result: DRAW
+2025-11-15 21:19:50,784 - INFO - Saved checkpoint: checkpoints/model_148_games_20251115_211950.pth
+2025-11-15 21:19:50,784 - INFO - Games: 148 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:50,784 - INFO - 
+--- Game 149 ---
+2025-11-15 21:19:50,790 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,797 - INFO - Saved moves for game 149 to logs/moves_game_149_20251115_211950.txt
+2025-11-15 21:19:50,797 - INFO - Game result: DRAW
+2025-11-15 21:19:50,797 - INFO - 
+--- Game 150 ---
+2025-11-15 21:19:50,802 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,805 - INFO - Saved moves for game 150 to logs/moves_game_150_20251115_211950.txt
+2025-11-15 21:19:50,805 - INFO - Game result: DRAW
+2025-11-15 21:19:50,806 - INFO - 
+--- Game 151 ---
+2025-11-15 21:19:50,810 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,812 - INFO - Saved moves for game 151 to logs/moves_game_151_20251115_211950.txt
+2025-11-15 21:19:50,812 - INFO - Game result: DRAW
+2025-11-15 21:19:50,812 - INFO - 
+--- Game 152 ---
+2025-11-15 21:19:50,814 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,816 - INFO - Saved moves for game 152 to logs/moves_game_152_20251115_211950.txt
+2025-11-15 21:19:50,816 - INFO - Game result: DRAW
+2025-11-15 21:19:50,949 - INFO - Saved checkpoint: checkpoints/model_152_games_20251115_211950.pth
+2025-11-15 21:19:50,949 - INFO - Games: 152 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:50,949 - INFO - 
+--- Game 153 ---
+2025-11-15 21:19:50,951 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,953 - INFO - Saved moves for game 153 to logs/moves_game_153_20251115_211950.txt
+2025-11-15 21:19:50,953 - INFO - Game result: DRAW
+2025-11-15 21:19:50,953 - INFO - 
+--- Game 154 ---
+2025-11-15 21:19:50,957 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,960 - INFO - Saved moves for game 154 to logs/moves_game_154_20251115_211950.txt
+2025-11-15 21:19:50,960 - INFO - Game result: DRAW
+2025-11-15 21:19:50,960 - INFO - 
+--- Game 155 ---
+2025-11-15 21:19:50,964 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,966 - INFO - Saved moves for game 155 to logs/moves_game_155_20251115_211950.txt
+2025-11-15 21:19:50,966 - INFO - Game result: DRAW
+2025-11-15 21:19:50,966 - INFO - 
+--- Game 156 ---
+2025-11-15 21:19:50,967 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:50,970 - INFO - Saved moves for game 156 to logs/moves_game_156_20251115_211950.txt
+2025-11-15 21:19:50,970 - INFO - Game result: DRAW
+2025-11-15 21:19:51,114 - INFO - Saved checkpoint: checkpoints/model_156_games_20251115_211950.pth
+2025-11-15 21:19:51,114 - INFO - Games: 156 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:51,115 - INFO - 
+--- Game 157 ---
+2025-11-15 21:19:51,121 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:51,125 - INFO - Saved moves for game 157 to logs/moves_game_157_20251115_211951.txt
+2025-11-15 21:19:51,125 - INFO - Game result: DRAW
+2025-11-15 21:19:51,125 - INFO - 
+--- Game 158 ---
+2025-11-15 21:19:51,130 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:51,135 - INFO - Saved moves for game 158 to logs/moves_game_158_20251115_211951.txt
+2025-11-15 21:19:51,135 - INFO - Game result: DRAW
+2025-11-15 21:19:51,135 - INFO - 
+--- Game 159 ---
+2025-11-15 21:19:51,137 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:51,138 - INFO - Saved moves for game 159 to logs/moves_game_159_20251115_211951.txt
+2025-11-15 21:19:51,138 - INFO - Game result: DRAW
+2025-11-15 21:19:51,138 - INFO - 
+--- Game 160 ---
+2025-11-15 21:19:51,143 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:51,145 - INFO - Saved moves for game 160 to logs/moves_game_160_20251115_211951.txt
+2025-11-15 21:19:51,145 - INFO - Game result: DRAW
+2025-11-15 21:19:51,293 - INFO - Saved checkpoint: checkpoints/model_160_games_20251115_211951.pth
+2025-11-15 21:19:51,293 - INFO - Games: 160 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:51,293 - INFO - 
+--- Game 161 ---
+2025-11-15 21:19:51,303 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:51,309 - INFO - Saved moves for game 161 to logs/moves_game_161_20251115_211951.txt
+2025-11-15 21:19:51,310 - INFO - Game result: DRAW
+2025-11-15 21:19:51,311 - INFO - 
+--- Game 162 ---
+2025-11-15 21:19:51,320 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:51,325 - INFO - Saved moves for game 162 to logs/moves_game_162_20251115_211951.txt
+2025-11-15 21:19:51,325 - INFO - Game result: DRAW
+2025-11-15 21:19:51,325 - INFO - 
+--- Game 163 ---
+2025-11-15 21:19:51,331 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:51,334 - INFO - Saved moves for game 163 to logs/moves_game_163_20251115_211951.txt
+2025-11-15 21:19:51,334 - INFO - Game result: DRAW
+2025-11-15 21:19:51,334 - INFO - 
+--- Game 164 ---
+2025-11-15 21:19:51,335 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:51,338 - INFO - Saved moves for game 164 to logs/moves_game_164_20251115_211951.txt
+2025-11-15 21:19:51,338 - INFO - Game result: DRAW
+2025-11-15 21:19:51,476 - INFO - Saved checkpoint: checkpoints/model_164_games_20251115_211951.pth
+2025-11-15 21:19:51,476 - INFO - Games: 164 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:51,476 - INFO - 
+--- Game 165 ---
+2025-11-15 21:19:51,480 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:51,481 - INFO - Saved moves for game 165 to logs/moves_game_165_20251115_211951.txt
+2025-11-15 21:19:51,481 - INFO - Game result: DRAW
+2025-11-15 21:19:51,481 - INFO - 
+--- Game 166 ---
+2025-11-15 21:19:51,490 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:51,493 - INFO - Saved moves for game 166 to logs/moves_game_166_20251115_211951.txt
+2025-11-15 21:19:51,493 - INFO - Game result: DRAW
+2025-11-15 21:19:51,493 - INFO - 
+--- Game 167 ---
+2025-11-15 21:19:51,496 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:51,498 - INFO - Saved moves for game 167 to logs/moves_game_167_20251115_211951.txt
+2025-11-15 21:19:51,498 - INFO - Game result: DRAW
+2025-11-15 21:19:51,498 - INFO - 
+--- Game 168 ---
+2025-11-15 21:19:51,506 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:51,510 - INFO - Saved moves for game 168 to logs/moves_game_168_20251115_211951.txt
+2025-11-15 21:19:51,510 - INFO - Game result: DRAW
+2025-11-15 21:19:51,626 - INFO - Saved checkpoint: checkpoints/model_168_games_20251115_211951.pth
+2025-11-15 21:19:51,626 - INFO - Games: 168 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:51,626 - INFO - 
+--- Game 169 ---
+2025-11-15 21:19:51,627 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:51,629 - INFO - Saved moves for game 169 to logs/moves_game_169_20251115_211951.txt
+2025-11-15 21:19:51,629 - INFO - Game result: DRAW
+2025-11-15 21:19:51,629 - INFO - 
+--- Game 170 ---
+2025-11-15 21:19:51,630 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:51,632 - INFO - Saved moves for game 170 to logs/moves_game_170_20251115_211951.txt
+2025-11-15 21:19:51,632 - INFO - Game result: DRAW
+2025-11-15 21:19:51,632 - INFO - 
+--- Game 171 ---
+2025-11-15 21:19:51,633 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:51,635 - INFO - Saved moves for game 171 to logs/moves_game_171_20251115_211951.txt
+2025-11-15 21:19:51,635 - INFO - Game result: DRAW
+2025-11-15 21:19:51,635 - INFO - 
+--- Game 172 ---
+2025-11-15 21:19:51,641 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:51,642 - INFO - Saved moves for game 172 to logs/moves_game_172_20251115_211951.txt
+2025-11-15 21:19:51,642 - INFO - Game result: DRAW
+2025-11-15 21:19:51,759 - INFO - Saved checkpoint: checkpoints/model_172_games_20251115_211951.pth
+2025-11-15 21:19:51,759 - INFO - Games: 172 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:51,759 - INFO - 
+--- Game 173 ---
+2025-11-15 21:19:51,767 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:51,772 - INFO - Saved moves for game 173 to logs/moves_game_173_20251115_211951.txt
+2025-11-15 21:19:51,772 - INFO - Game result: DRAW
+2025-11-15 21:19:51,772 - INFO - 
+--- Game 174 ---
+2025-11-15 21:19:51,775 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:51,776 - INFO - Saved moves for game 174 to logs/moves_game_174_20251115_211951.txt
+2025-11-15 21:19:51,776 - INFO - Game result: DRAW
+2025-11-15 21:19:51,776 - INFO - 
+--- Game 175 ---
+2025-11-15 21:19:51,779 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:51,785 - INFO - Saved moves for game 175 to logs/moves_game_175_20251115_211951.txt
+2025-11-15 21:19:51,785 - INFO - Game result: DRAW
+2025-11-15 21:19:51,785 - INFO - 
+--- Game 176 ---
+2025-11-15 21:19:51,789 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:51,790 - INFO - Saved moves for game 176 to logs/moves_game_176_20251115_211951.txt
+2025-11-15 21:19:51,791 - INFO - Game result: DRAW
+2025-11-15 21:19:51,869 - INFO - Saved checkpoint: checkpoints/model_176_games_20251115_211951.pth
+2025-11-15 21:19:51,869 - INFO - Games: 176 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:51,873 - INFO - 
+--- Game 177 ---
+2025-11-15 21:19:51,877 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:51,879 - INFO - Saved moves for game 177 to logs/moves_game_177_20251115_211951.txt
+2025-11-15 21:19:51,879 - INFO - Game result: DRAW
+2025-11-15 21:19:51,879 - INFO - 
+--- Game 178 ---
+2025-11-15 21:19:51,883 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:51,887 - INFO - Saved moves for game 178 to logs/moves_game_178_20251115_211951.txt
+2025-11-15 21:19:51,887 - INFO - Game result: DRAW
+2025-11-15 21:19:51,887 - INFO - 
+--- Game 179 ---
+2025-11-15 21:19:51,888 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:51,889 - INFO - Saved moves for game 179 to logs/moves_game_179_20251115_211951.txt
+2025-11-15 21:19:51,889 - INFO - Game result: DRAW
+2025-11-15 21:19:51,890 - INFO - 
+--- Game 180 ---
+2025-11-15 21:19:51,891 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:51,892 - INFO - Saved moves for game 180 to logs/moves_game_180_20251115_211951.txt
+2025-11-15 21:19:51,892 - INFO - Game result: DRAW
+2025-11-15 21:19:52,016 - INFO - Saved checkpoint: checkpoints/model_180_games_20251115_211951.pth
+2025-11-15 21:19:52,016 - INFO - Games: 180 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:52,017 - INFO - 
+--- Game 181 ---
+2025-11-15 21:19:52,020 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,021 - INFO - Saved moves for game 181 to logs/moves_game_181_20251115_211952.txt
+2025-11-15 21:19:52,021 - INFO - Game result: DRAW
+2025-11-15 21:19:52,021 - INFO - 
+--- Game 182 ---
+2025-11-15 21:19:52,022 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,023 - INFO - Saved moves for game 182 to logs/moves_game_182_20251115_211952.txt
+2025-11-15 21:19:52,023 - INFO - Game result: DRAW
+2025-11-15 21:19:52,024 - INFO - 
+--- Game 183 ---
+2025-11-15 21:19:52,024 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,027 - INFO - Saved moves for game 183 to logs/moves_game_183_20251115_211952.txt
+2025-11-15 21:19:52,027 - INFO - Game result: DRAW
+2025-11-15 21:19:52,027 - INFO - 
+--- Game 184 ---
+2025-11-15 21:19:52,034 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,035 - INFO - Saved moves for game 184 to logs/moves_game_184_20251115_211952.txt
+2025-11-15 21:19:52,035 - INFO - Game result: DRAW
+2025-11-15 21:19:52,132 - INFO - Saved checkpoint: checkpoints/model_184_games_20251115_211952.pth
+2025-11-15 21:19:52,132 - INFO - Games: 184 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:52,132 - INFO - 
+--- Game 185 ---
+2025-11-15 21:19:52,136 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,138 - INFO - Saved moves for game 185 to logs/moves_game_185_20251115_211952.txt
+2025-11-15 21:19:52,138 - INFO - Game result: DRAW
+2025-11-15 21:19:52,138 - INFO - 
+--- Game 186 ---
+2025-11-15 21:19:52,139 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,141 - INFO - Saved moves for game 186 to logs/moves_game_186_20251115_211952.txt
+2025-11-15 21:19:52,141 - INFO - Game result: DRAW
+2025-11-15 21:19:52,141 - INFO - 
+--- Game 187 ---
+2025-11-15 21:19:52,144 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,146 - INFO - Saved moves for game 187 to logs/moves_game_187_20251115_211952.txt
+2025-11-15 21:19:52,146 - INFO - Game result: DRAW
+2025-11-15 21:19:52,146 - INFO - 
+--- Game 188 ---
+2025-11-15 21:19:52,148 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,149 - INFO - Saved moves for game 188 to logs/moves_game_188_20251115_211952.txt
+2025-11-15 21:19:52,149 - INFO - Game result: DRAW
+2025-11-15 21:19:52,232 - INFO - Saved checkpoint: checkpoints/model_188_games_20251115_211952.pth
+2025-11-15 21:19:52,232 - INFO - Games: 188 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:52,232 - INFO - 
+--- Game 189 ---
+2025-11-15 21:19:52,236 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,237 - INFO - Saved moves for game 189 to logs/moves_game_189_20251115_211952.txt
+2025-11-15 21:19:52,237 - INFO - Game result: DRAW
+2025-11-15 21:19:52,237 - INFO - 
+--- Game 190 ---
+2025-11-15 21:19:52,239 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,240 - INFO - Saved moves for game 190 to logs/moves_game_190_20251115_211952.txt
+2025-11-15 21:19:52,240 - INFO - Game result: DRAW
+2025-11-15 21:19:52,240 - INFO - 
+--- Game 191 ---
+2025-11-15 21:19:52,243 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,244 - INFO - Saved moves for game 191 to logs/moves_game_191_20251115_211952.txt
+2025-11-15 21:19:52,244 - INFO - Game result: DRAW
+2025-11-15 21:19:52,244 - INFO - 
+--- Game 192 ---
+2025-11-15 21:19:52,247 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,248 - INFO - Saved moves for game 192 to logs/moves_game_192_20251115_211952.txt
+2025-11-15 21:19:52,248 - INFO - Game result: DRAW
+2025-11-15 21:19:52,333 - INFO - Saved checkpoint: checkpoints/model_192_games_20251115_211952.pth
+2025-11-15 21:19:52,333 - INFO - Games: 192 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:52,333 - INFO - 
+--- Game 193 ---
+2025-11-15 21:19:52,337 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,338 - INFO - Saved moves for game 193 to logs/moves_game_193_20251115_211952.txt
+2025-11-15 21:19:52,338 - INFO - Game result: DRAW
+2025-11-15 21:19:52,338 - INFO - 
+--- Game 194 ---
+2025-11-15 21:19:52,341 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,342 - INFO - Saved moves for game 194 to logs/moves_game_194_20251115_211952.txt
+2025-11-15 21:19:52,342 - INFO - Game result: DRAW
+2025-11-15 21:19:52,342 - INFO - 
+--- Game 195 ---
+2025-11-15 21:19:52,346 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,348 - INFO - Saved moves for game 195 to logs/moves_game_195_20251115_211952.txt
+2025-11-15 21:19:52,348 - INFO - Game result: DRAW
+2025-11-15 21:19:52,348 - INFO - 
+--- Game 196 ---
+2025-11-15 21:19:52,349 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,350 - INFO - Saved moves for game 196 to logs/moves_game_196_20251115_211952.txt
+2025-11-15 21:19:52,350 - INFO - Game result: DRAW
+2025-11-15 21:19:52,437 - INFO - Saved checkpoint: checkpoints/model_196_games_20251115_211952.pth
+2025-11-15 21:19:52,438 - INFO - Games: 196 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:52,438 - INFO - 
+--- Game 197 ---
+2025-11-15 21:19:52,439 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,441 - INFO - Saved moves for game 197 to logs/moves_game_197_20251115_211952.txt
+2025-11-15 21:19:52,441 - INFO - Game result: DRAW
+2025-11-15 21:19:52,441 - INFO - 
+--- Game 198 ---
+2025-11-15 21:19:52,442 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,443 - INFO - Saved moves for game 198 to logs/moves_game_198_20251115_211952.txt
+2025-11-15 21:19:52,443 - INFO - Game result: DRAW
+2025-11-15 21:19:52,443 - INFO - 
+--- Game 199 ---
+2025-11-15 21:19:52,446 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,447 - INFO - Saved moves for game 199 to logs/moves_game_199_20251115_211952.txt
+2025-11-15 21:19:52,447 - INFO - Game result: DRAW
+2025-11-15 21:19:52,447 - INFO - 
+--- Game 200 ---
+2025-11-15 21:19:52,449 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,450 - INFO - Saved moves for game 200 to logs/moves_game_200_20251115_211952.txt
+2025-11-15 21:19:52,450 - INFO - Game result: DRAW
+2025-11-15 21:19:52,533 - INFO - Saved checkpoint: checkpoints/model_200_games_20251115_211952.pth
+2025-11-15 21:19:52,533 - INFO - Games: 200 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:52,533 - INFO - 
+--- Game 201 ---
+2025-11-15 21:19:52,535 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,536 - INFO - Saved moves for game 201 to logs/moves_game_201_20251115_211952.txt
+2025-11-15 21:19:52,536 - INFO - Game result: DRAW
+2025-11-15 21:19:52,536 - INFO - 
+--- Game 202 ---
+2025-11-15 21:19:52,538 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,539 - INFO - Saved moves for game 202 to logs/moves_game_202_20251115_211952.txt
+2025-11-15 21:19:52,539 - INFO - Game result: DRAW
+2025-11-15 21:19:52,539 - INFO - 
+--- Game 203 ---
+2025-11-15 21:19:52,540 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,541 - INFO - Saved moves for game 203 to logs/moves_game_203_20251115_211952.txt
+2025-11-15 21:19:52,541 - INFO - Game result: DRAW
+2025-11-15 21:19:52,541 - INFO - 
+--- Game 204 ---
+2025-11-15 21:19:52,542 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,544 - INFO - Saved moves for game 204 to logs/moves_game_204_20251115_211952.txt
+2025-11-15 21:19:52,544 - INFO - Game result: DRAW
+2025-11-15 21:19:52,625 - INFO - Saved checkpoint: checkpoints/model_204_games_20251115_211952.pth
+2025-11-15 21:19:52,625 - INFO - Games: 204 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:52,625 - INFO - 
+--- Game 205 ---
+2025-11-15 21:19:52,627 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,629 - INFO - Saved moves for game 205 to logs/moves_game_205_20251115_211952.txt
+2025-11-15 21:19:52,629 - INFO - Game result: DRAW
+2025-11-15 21:19:52,629 - INFO - 
+--- Game 206 ---
+2025-11-15 21:19:52,630 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,631 - INFO - Saved moves for game 206 to logs/moves_game_206_20251115_211952.txt
+2025-11-15 21:19:52,631 - INFO - Game result: DRAW
+2025-11-15 21:19:52,631 - INFO - 
+--- Game 207 ---
+2025-11-15 21:19:52,633 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,633 - INFO - Saved moves for game 207 to logs/moves_game_207_20251115_211952.txt
+2025-11-15 21:19:52,634 - INFO - Game result: DRAW
+2025-11-15 21:19:52,634 - INFO - 
+--- Game 208 ---
+2025-11-15 21:19:52,635 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,638 - INFO - Saved moves for game 208 to logs/moves_game_208_20251115_211952.txt
+2025-11-15 21:19:52,638 - INFO - Game result: DRAW
+2025-11-15 21:19:52,730 - INFO - Saved checkpoint: checkpoints/model_208_games_20251115_211952.pth
+2025-11-15 21:19:52,730 - INFO - Games: 208 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:52,730 - INFO - 
+--- Game 209 ---
+2025-11-15 21:19:52,732 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,733 - INFO - Saved moves for game 209 to logs/moves_game_209_20251115_211952.txt
+2025-11-15 21:19:52,733 - INFO - Game result: DRAW
+2025-11-15 21:19:52,733 - INFO - 
+--- Game 210 ---
+2025-11-15 21:19:52,735 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,736 - INFO - Saved moves for game 210 to logs/moves_game_210_20251115_211952.txt
+2025-11-15 21:19:52,736 - INFO - Game result: DRAW
+2025-11-15 21:19:52,736 - INFO - 
+--- Game 211 ---
+2025-11-15 21:19:52,737 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,738 - INFO - Saved moves for game 211 to logs/moves_game_211_20251115_211952.txt
+2025-11-15 21:19:52,739 - INFO - Game result: DRAW
+2025-11-15 21:19:52,739 - INFO - 
+--- Game 212 ---
+2025-11-15 21:19:52,740 - ERROR - Error during game: [Errno 2] No such file or directory: 'C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe'
+2025-11-15 21:19:52,741 - INFO - Saved moves for game 212 to logs/moves_game_212_20251115_211952.txt
+2025-11-15 21:19:52,741 - INFO - Game result: DRAW
+2025-11-15 21:19:52,822 - INFO - Received signal 2. Finishing current game and saving...
+2025-11-15 21:19:52,822 - INFO - Saved checkpoint: checkpoints/model_212_games_20251115_211952.pth
+2025-11-15 21:19:52,822 - INFO - Games: 212 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:52,822 - INFO - 
+================================================================================
+2025-11-15 21:19:52,823 - INFO - Training Complete - Final Stats
+2025-11-15 21:19:52,823 - INFO - ================================================================================
+2025-11-15 21:19:52,917 - INFO - Saved checkpoint: checkpoints/model_212_games_20251115_211952_final.pth
+2025-11-15 21:19:52,917 - INFO - Games: 212 | Positions: 0 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 21:19:52,917 - INFO - Total time: 0.00 hours
+2025-11-15 21:19:52,918 - INFO - Games per hour: 125078.02
+2025-11-15 21:19:52,918 - INFO - Model saved to: /u201/a44chhab/research/chessml/ChessHacks-CLI/src/models/trained_model.pth

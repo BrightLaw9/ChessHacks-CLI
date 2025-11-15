@@ -11,10 +11,10 @@ HIDDEN_CHANNELS = 128        # Channels in hidden layers
 POLICY_OUTPUT_SIZE = 4096    # 64 * 64 possible moves
 
 # Training Configuration
-BATCH_SIZE = 4 # 32 # 256
+BATCH_SIZE = 100 # 256
 LEARNING_RATE = 0.001
 EPOCHS = 10
-BATCHES_PER_CHECKPOINT = 1 # Number of batches before saving a checkpoint
+GAMES_PER_CHECKPOINT = 3 # Number of batches before saving a checkpoint
 
 # Model Path
 import os

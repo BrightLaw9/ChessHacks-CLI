@@ -26,12 +26,72 @@ import time
 from datetime import datetime
 from pathlib import Path
 from collections import deque
+import math  # NEW
 
 from .chess_engine import ChessEngine
 from .network_architecture import ChessNetwork
 from .board_state import board_to_tensor
-from .config import MODEL_PATH, BATCH_SIZE, BATCHES_PER_CHECKPOINT, LEARNING_RATE, NUM_SIMULATIONS
+from .config import MODEL_PATH, BATCH_SIZE, GAMES_PER_CHECKPOINT, LEARNING_RATE, NUM_SIMULATIONS
 from .MCTSAlgorithm import MCTS, MCTSNode
+
+
+# ==============================
+# Stockfish-based helper funcs
+# ==============================
+
+LOGISTIC_K = 0.00368208   # from lichess-style mapping
+CP_CLIP = 1000             # clip centipawns
+POLICY_TAU = 200.0         # temperature for policy softmax
+LAMBDA_VALUE = 1.0         # weight on value loss vs policy loss
+
+
+def cp_to_value(cp, k=LOGISTIC_K, clip=CP_CLIP):
+    """
+    Convert Stockfish cp eval → [-1,1] value using logistic mapping.
+    """
+    cp = max(-clip, min(clip, cp))
+    p = 1.0 / (1.0 + math.exp(-k * cp))  # 0–1
+    value = 2.0 * p - 1.0  # → [-1,1]
+    return value
+
+
+def build_sf_policy_vector(board, engine, depth, clip=CP_CLIP, tau=POLICY_TAU, vec_size=4096):
+    """
+    Build a 4096-d policy target vector using Stockfish:
+    - For each legal move, evaluate resulting position in cp.
+    - Softmax over scaled cp's to get probabilities.
+    - Map probabilities into a 4096 vector using (from * 64 + to) indexing.
+
+    Returns:
+        policy_vec (np.ndarray of shape [4096], float32) or None if no legal moves.
+    """
+    legal_moves = list(board.legal_moves)
+    if not legal_moves:
+        return None
+
+    cp_vals = []
+    for move in legal_moves:
+        board.push(move)
+        info = engine.analyse(board, chess.engine.Limit(depth=depth))
+        cp = info["score"].pov(board.turn).score(mate_score=100000)
+        board.pop()
+        cp = max(-clip, min(clip, cp))
+        cp_vals.append(cp)
+
+    cp_tensor = torch.tensor(cp_vals, dtype=torch.float32)
+    logits = cp_tensor / tau
+    probs = torch.softmax(logits, dim=0).detach().cpu().numpy()
+
+    policy_vec = np.zeros(vec_size, dtype=np.float32)
+    for move, p in zip(legal_moves, probs):
+        idx = move.from_square * 64 + move.to_square
+        policy_vec[idx] = p
+
+    policy_sum = policy_vec.sum()
+    if policy_sum > 0:
+        policy_vec /= policy_sum
+
+    return policy_vec
 
 
 # Configure logging
@@ -63,6 +123,7 @@ class TrainingBuffer:
         self.boards = deque(maxlen=max_size)
         self.policy_targets = deque(maxlen=max_size)
         self.value_targets = deque(maxlen=max_size)
+        self.board_fens = deque(maxlen=max_size)  # NEW: store FENs for SF evaluation
     
     def add_position(self, board, mcts_policy, game_result, player_color):
         """
@@ -77,7 +138,7 @@ class TrainingBuffer:
         # Convert board to tensor
         board_tensor = board_to_tensor(board)
         
-        # Create policy target (4096-size array)
+        # Create policy target (4096-size array) from MCTS policy (original)
         policy_target = np.zeros(4096, dtype=np.float32)
         for move_uci, prob in mcts_policy.items():
             move = chess.Move.from_uci(move_uci)
@@ -91,7 +152,7 @@ class TrainingBuffer:
         if policy_sum > 0:
             policy_target /= policy_sum
         
-        # Calculate value from player's perspective
+        # Calculate value from player's perspective (original AlphaZero-style)
         if board.turn == player_color:
             value_target = game_result
         else:
@@ -100,6 +161,7 @@ class TrainingBuffer:
         self.boards.append(board_tensor)
         self.policy_targets.append(policy_target)
         self.value_targets.append(np.array([value_target], dtype=np.float32))
+        self.board_fens.append(board.fen())  # NEW: store FEN for SF targets
     
     def get_batch(self, batch_size):
         """Get random batch from buffer"""
@@ -110,8 +172,9 @@ class TrainingBuffer:
         boards = torch.FloatTensor(np.array([self.boards[i] for i in indices]))
         policies = torch.FloatTensor(np.array([self.policy_targets[i] for i in indices]))
         values = torch.FloatTensor(np.array([self.value_targets[i] for i in indices]))
+        fens = [self.board_fens[i] for i in indices]  # NEW
         
-        return boards, policies, values
+        return boards, policies, values, fens
     
     def __len__(self):
         return len(self.boards)
@@ -164,12 +227,14 @@ class OvernightTrainer:
         self.draws = 0
         
         # Checkpointing
-        self.checkpoint_frequency = BATCH_SIZE * BATCHES_PER_CHECKPOINT  # Save every N games
+        self.checkpoint_frequency = GAMES_PER_CHECKPOINT  # Save every N games
         
         # Signal handling for graceful shutdown
         signal.signal(signal.SIGINT, self._signal_handler)
         signal.signal(signal.SIGTERM, self._signal_handler)
         self.should_exit = False
+
+        self.current_game_positions = []   # <-- store (board_tensor, sf_policy, sf_value)
     
     def _signal_handler(self, signum, frame):
         """Handle shutdown signals gracefully"""
@@ -182,7 +247,7 @@ class OvernightTrainer:
         Our model plays White, Stockfish plays Black.
         
         Returns:
-            tuple: (game_positions_data, result)
+            tuple: (game_positions_data, result, move_list)
                    result: 1.0 (our win), -1.0 (our loss), 0.0 (draw)
         """
         board = chess.Board()
@@ -205,7 +270,7 @@ class OvernightTrainer:
                 next_inject = random.choice([3, 5, 7])
 
                 while not board.is_game_over():
-                    print(board.move_stack)
+                    # print(board.move_stack)
                     player = white_player if board.turn else black_player
 
                     # Decrement injection counter and, if zero, inject a random legal move
@@ -284,6 +349,13 @@ class OvernightTrainer:
                             san = best_move.uci()
                         move_list.append(san)
                         logger.info(f"Move {move_count + 1}: ChessEngine (White) plays {san} ({best_move.uci()}) | Top MCTS moves: {sorted(mcts_policy.items(), key=lambda x: x[1], reverse=True)[:3]}")
+                        # Train the classifier immediately after selecting the move
+                        try:
+                            self.collect_sf_labels(board, best_move)
+                        except Exception as e:
+                            logger.error(f"train_after_move failed: {e}")
+
+                        print("Move made: ", best_move.uci())
                         board.push(best_move)
 
                         # -----------------------------------------
@@ -298,13 +370,14 @@ class OvernightTrainer:
                             san = result.move.uci()
                         move_list.append(san)
                         logger.info(f"Move {move_count + 1}: Stockfish (Black) plays {san} ({result.move.uci()})")
+                        print("Stockfish move: ", result.move.uci())
                         board.push(result.move)
                             
                     move_count += 1
             
         except Exception as e:
             logger.error(f"Error during game: {e}")
-            return game_data, 0.0
+            return game_data, 0.0, move_list
             
         print("Ran ", move_count, " number of moves")
         # Determine result
@@ -321,20 +394,83 @@ class OvernightTrainer:
         
         return game_data, game_result, move_list
     
-    def train_on_batch(self, boards, policies, values):
-        """Train network on a batch of data"""
+    def train_on_batch(self, boards, policies, values, board_fens):
+        """
+        Train network on a batch of data.
+
+        Now uses Stockfish as:
+          - Value target (cp → logistic [-1,1])
+          - Policy target (softmax over SF move evals → 4096 vector)
+
+        Falls back to original MCTS policy/value targets when SF targets
+        can't be built (e.g., no legal moves).
+        """
         boards = boards.to(self.device)
         policies = policies.to(self.device)
         values = values.to(self.device)
         
+        batch_size = boards.size(0)
+
         # Forward pass
         policy_output, value_output = self.network(boards)
-        
-        # Compute losses
-        policy_loss = nn.CrossEntropyLoss()(policy_output, policies.argmax(dim=1))
-        value_loss = nn.MSELoss()(value_output, values)
-        
-        total_loss = policy_loss + value_loss
+        # policy_output: [B, 4096] logits
+        # value_output:  [B, 1]     predicted value in [-1,1] (ideally)
+
+        # --- Build Stockfish targets for this batch ---
+        sf_policy_targets = np.zeros_like(policies.cpu().numpy(), dtype=np.float32)
+        sf_value_targets = np.zeros_like(values.cpu().numpy(), dtype=np.float32)
+
+        try:
+            with chess.engine.SimpleEngine.popen_uci(self.stockfish_path) as engine:
+                for i, fen in enumerate(board_fens):
+                    board = chess.Board(fen)
+
+                    # 1) Value target from SF eval of current position
+                    try:
+                        info = engine.analyse(board, chess.engine.Limit(depth=self.stockfish_depth))
+                        cp = info["score"].pov(board.turn).score(mate_score=100000)
+                        sf_value_targets[i, 0] = cp_to_value(cp)
+                    except Exception as e:
+                        # Fallback to original self-play value if SF fails
+                        sf_value_targets[i, 0] = values[i].item()
+
+                    # 2) Policy target from SF eval of next positions
+                    try:
+                        policy_vec = build_sf_policy_vector(
+                            board,
+                            engine,
+                            depth=self.stockfish_depth,
+                            clip=CP_CLIP,
+                            tau=POLICY_TAU,
+                            vec_size=policies.shape[1]
+                        )
+                        if policy_vec is None:
+                            # fallback: use MCTS policy target
+                            sf_policy_targets[i] = policies[i].cpu().numpy()
+                        else:
+                            sf_policy_targets[i] = policy_vec
+                    except Exception as e:
+                        # fallback: use MCTS policy target
+                        sf_policy_targets[i] = policies[i].cpu().numpy()
+
+        except Exception as e:
+            logger.error(f"Error during Stockfish evaluation for batch: {e}")
+            # If SF completely fails, just train on MCTS targets
+            sf_policy_targets = policies.cpu().numpy()
+            sf_value_targets = values.cpu().numpy()
+
+        sf_policy_targets = torch.FloatTensor(sf_policy_targets).to(self.device)
+        sf_value_targets = torch.FloatTensor(sf_value_targets).to(self.device)
+
+        # --- Policy loss: cross-entropy between SF distribution and predicted logits ---
+        log_probs = torch.log_softmax(policy_output, dim=1)  # [B, 4096]
+        policy_loss = -(sf_policy_targets * log_probs).sum(dim=1).mean()
+
+        # --- Value loss: MSE between SF value target and predicted ---
+        value_loss = nn.MSELoss()(value_output, sf_value_targets)
+
+        total_loss = policy_loss + LAMBDA_VALUE * value_loss
+        print("Policy loss: ", policy_loss, "; Value loss: ", value_loss, "; Total Loss: ", total_loss)
         
         # Backward pass
         self.optimizer.zero_grad()
@@ -350,7 +486,107 @@ class OvernightTrainer:
             'policy_loss': policy_loss.item(),
             'value_loss': value_loss.item()
         }
-    
+        
+    def collect_sf_labels(self, board_before, move_chosen):
+        """
+        Only COLLECT labels, DO NOT TRAIN.
+        This avoids BatchNorm(batch=1) crash and greatly improves performance.
+        """
+
+        # Clone positions
+        board_b = board_before.copy()
+        board_a = board_before.copy()
+        board_a.push(move_chosen)
+
+        # Convert board to tensor
+        board_tensor = board_to_tensor(board_b).astype(np.float32)
+
+        try:
+            with chess.engine.SimpleEngine.popen_uci(self.stockfish_path) as engine:
+
+                # --- VALUE TARGET ---
+                info = engine.analyse(board_a, chess.engine.Limit(depth=self.stockfish_depth))
+                cp = info["score"].pov(board_a.turn).score(mate_score=100000)
+                sf_value = cp_to_value(cp)
+
+                # --- POLICY TARGET ---
+                sf_policy_vec = build_sf_policy_vector(
+                    board_b,
+                    engine,
+                    depth=self.stockfish_depth,
+                    vec_size=4096
+                )
+
+                # fallback if no legal moves
+                if sf_policy_vec is None:
+                    legal = list(board_b.legal_moves)
+                    sf_policy_vec = np.zeros(4096, np.float32)
+                    p = 1.0 / len(legal)
+                    for mv in legal:
+                        idx = mv.from_square * 64 + mv.to_square
+                        sf_policy_vec[idx] = p
+
+        except Exception as e:
+            logger.error(f"SF evaluation failed: {e}")
+            return
+
+        # ADD to per-game buffer
+        self.current_game_positions.append(
+            (board_tensor, sf_policy_vec, sf_value)
+        )
+        #print(self.current_game_positions)
+        print("Stockfish evaluation", sf_value)
+
+    def train_after_game(self):
+        """
+        Run ONE batch update after the game using all collected positions.
+        This keeps BatchNorm stable and improves convergence.
+        """
+        if len(self.current_game_positions) == 0:
+            return
+
+        boards = torch.tensor(
+            [b for (b, _, _) in self.current_game_positions],
+            dtype=torch.float32
+        ).to(self.device)
+
+        policies = torch.tensor(
+            [p for (_, p, _) in self.current_game_positions],
+            dtype=torch.float32
+        ).to(self.device)
+
+        values = torch.tensor(
+            [[v] for (_, _, v) in self.current_game_positions],
+            dtype=torch.float32
+        ).to(self.device)
+
+        # forward
+        policy_logits, value_pred = self.network(boards)
+
+        # losses
+        log_probs = torch.log_softmax(policy_logits, dim=1)
+        policy_loss = -(policies * log_probs).sum(dim=1).mean()
+        value_loss = nn.MSELoss()(value_pred, values)
+        total_loss = policy_loss + LAMBDA_VALUE * value_loss
+
+        # backward
+        self.optimizer.zero_grad()
+        total_loss.backward()
+        torch.nn.utils.clip_grad_norm_(self.network.parameters(), 1.0)
+        self.optimizer.step()
+
+        # sync to MCTS
+        self.chess_engine.network.load_state_dict(self.network.state_dict())
+
+        logger.info(
+            f"[Post-Game Training] Total Loss={total_loss.item():.4f} | "
+            f"policy={policy_loss.item():.4f} | value={value_loss.item():.4f}"
+        )
+
+        # clear buffer
+        self.current_game_positions = []
+
+
     def save_checkpoint(self, tag=""):
         """Save model checkpoint"""
         checkpoint_dir = Path("checkpoints")
@@ -414,6 +650,7 @@ class OvernightTrainer:
                 
                 # Play a game (returns game data, result, and list of moves)
                 game_data, result, move_list = self.play_game_vs_stockfish()
+                self.train_after_game()
                 # game index for logging (next game number)
                 game_index = self.games_played + 1
                 # Save per-game move list for inspection
@@ -441,30 +678,30 @@ class OvernightTrainer:
                 logger.info(f"Game result: {result_str}")
                 
                 # Add positions to buffer
-                for position in game_data:
-                    self.buffer.add_position(
-                        position['board'],
-                        position['policy'],
-                        result,
-                        position['player_color']
-                    )
-                    self.total_positions += 1
+                # for position in game_data:
+                #     self.buffer.add_position(
+                #         position['board'],
+                #         position['policy'],
+                #         result,
+                #         position['player_color']
+                #     )
+                #     self.total_positions += 1
                 
                 # Train on buffer
-                if len(self.buffer) >= self.batch_size:
-                    batch = self.buffer.get_batch(self.batch_size)
-                    if batch:
-                        boards, policies, values = batch
-                        losses = self.train_on_batch(boards, policies, values)
-                        self.training_steps += 1
+                # if len(self.buffer) >= self.batch_size:
+                #     batch = self.buffer.get_batch(self.batch_size)
+                #     if batch:
+                #         boards, policies, values, fens = batch
+                #         losses = self.train_on_batch(boards, policies, values, fens)
+                #         self.training_steps += 1
                         
-                        logger.info(
-                            f"Training step {self.training_steps} | "
-                            f"Loss: {losses['total_loss']:.4f} | "
-                            f"Policy: {losses['policy_loss']:.4f} | "
-                            f"Value: {losses['value_loss']:.4f} | "
-                            f"Weights synced to chess engine ✓"
-                        )
+                #         logger.info(
+                #             f"Training step {self.training_steps} | "
+                #             f"Loss: {losses['total_loss']:.4f} | "
+                #             f"Policy: {losses['policy_loss']:.4f} | "
+                #             f"Value: {losses['value_loss']:.4f} | "
+                #             f"Weights synced to chess engine ✓"
+                #         )
                 
                 # Save checkpoint periodically
                 if self.games_played % self.checkpoint_frequency == 0:
@@ -542,6 +779,7 @@ def main():
     # Setup logging
     setup_logging()
     
+    print("Creating trainer...")
     # Create trainer
     trainer = OvernightTrainer(
         stockfish_path=args.stockfish_path,
@@ -550,6 +788,7 @@ def main():
         learning_rate=args.learning_rate
     )
     
+    print("Running training")
     # Run training
     trainer.run(
         num_games=args.games,

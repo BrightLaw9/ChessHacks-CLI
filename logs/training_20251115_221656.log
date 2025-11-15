@@ -1,0 +1,1131 @@
+2025-11-15 22:16:57,091 - INFO - Loaded model from /u201/a44chhab/research/chessml/ChessHacks-CLI/src/models/trained_model.pth
+2025-11-15 22:16:58,305 - INFO - ================================================================================
+2025-11-15 22:16:58,305 - INFO - Starting Overnight Training Loop
+2025-11-15 22:16:58,305 - INFO - Device: cuda
+2025-11-15 22:16:58,305 - INFO - Stockfish Depth: 15
+2025-11-15 22:16:58,305 - INFO - Batch Size: 100
+2025-11-15 22:16:58,305 - INFO - ================================================================================
+2025-11-15 22:16:58,305 - INFO - 
+--- Game 1 ---
+2025-11-15 22:16:59,395 - INFO - Move 1: ChessEngine (White) plays e4 (e2e4) | Top MCTS moves: [('e2e4', 0.9393939393939394), ('a2a3', 0.050505050505050504), ('e2e3', 0.010101010101010102)]
+2025-11-15 22:17:01,606 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:01,727 - INFO - Move 2: Stockfish (Black) plays e5 (e7e5)
+2025-11-15 22:17:02,410 - INFO - Move 3: ChessEngine (White) plays Qg4 (d1g4) | Top MCTS moves: [('d1g4', 0.6363636363636364), ('a2a3', 0.25252525252525254), ('b1a3', 0.050505050505050504)]
+2025-11-15 22:17:05,567 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:05,697 - INFO - Move 4: Stockfish (Black) plays Nf6 (g8f6)
+2025-11-15 22:17:06,441 - INFO - Move 5: ChessEngine (White) plays Be2 (f1e2) | Top MCTS moves: [('f1e2', 0.6464646464646465), ('g4h4', 0.13131313131313133), ('g4e2', 0.08080808080808081)]
+2025-11-15 22:17:08,096 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:08,109 - INFO - Move 6: Stockfish (Black) plays Nxg4 (f6g4)
+2025-11-15 22:17:08,110 - INFO - Injecting random move for our: d2d3
+2025-11-15 22:17:08,117 - INFO - Move 8: Stockfish (Black) plays d5 (d7d5)
+2025-11-15 22:17:09,105 - INFO - Move 9: ChessEngine (White) plays Kf1 (e1f1) | Top MCTS moves: [('e1f1', 0.9494949494949495), ('e4d5', 0.030303030303030304), ('e1d2', 0.010101010101010102)]
+2025-11-15 22:17:09,758 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:09,769 - INFO - Move 10: Stockfish (Black) plays Bc5 (f8c5)
+2025-11-15 22:17:10,718 - INFO - Move 11: ChessEngine (White) plays d4 (d3d4) | Top MCTS moves: [('d3d4', 0.8787878787878788), ('e4d5', 0.08080808080808081), ('a2a3', 0.030303030303030304)]
+2025-11-15 22:17:11,302 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:11,310 - INFO - Move 12: Stockfish (Black) plays exd4 (e5d4)
+2025-11-15 22:17:12,423 - INFO - Move 13: ChessEngine (White) plays exd5 (e4d5) | Top MCTS moves: [('e4d5', 0.8383838383838383), ('b1a3', 0.06060606060606061), ('a2a3', 0.06060606060606061)]
+2025-11-15 22:17:13,021 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:13,022 - INFO - Injecting random move for stockfish: g4e3
+2025-11-15 22:17:14,124 - INFO - Move 15: ChessEngine (White) plays Bxe3 (c1e3) | Top MCTS moves: [('c1e3', 1.0), ('f1e1', 0.0), ('f2e3', 0.0)]
+2025-11-15 22:17:14,410 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:14,428 - INFO - Move 16: Stockfish (Black) plays dxe3 (d4e3)
+2025-11-15 22:17:14,429 - INFO - Injecting random move for our: d5d6
+2025-11-15 22:17:14,451 - INFO - Move 18: Stockfish (Black) plays cxd6 (c7d6)
+2025-11-15 22:17:15,823 - INFO - Move 19: ChessEngine (White) plays a3 (a2a3) | Top MCTS moves: [('a2a3', 0.8383838383838383), ('g1f3', 0.09090909090909091), ('b1a3', 0.04040404040404041)]
+2025-11-15 22:17:16,380 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:16,381 - INFO - Injecting random move for stockfish: d8e7
+2025-11-15 22:17:17,685 - INFO - Move 21: ChessEngine (White) plays Nf3 (g1f3) | Top MCTS moves: [('g1f3', 0.5757575757575758), ('b1c3', 0.3434343434343434), ('e2c4', 0.04040404040404041)]
+2025-11-15 22:17:18,252 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:18,264 - INFO - Move 22: Stockfish (Black) plays Nc6 (b8c6)
+2025-11-15 22:17:19,620 - INFO - Move 23: ChessEngine (White) plays Nc3 (b1c3) | Top MCTS moves: [('b1c3', 0.7070707070707071), ('e2c4', 0.1414141414141414), ('c2c4', 0.06060606060606061)]
+2025-11-15 22:17:20,389 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:20,403 - INFO - Move 24: Stockfish (Black) plays Be6 (c8e6)
+2025-11-15 22:17:21,768 - INFO - Move 25: ChessEngine (White) plays Bd1 (e2d1) | Top MCTS moves: [('e2d1', 0.3333333333333333), ('a1b1', 0.20202020202020202), ('e2c4', 0.15151515151515152)]
+2025-11-15 22:17:22,468 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:22,499 - INFO - Move 26: Stockfish (Black) plays d5 (d6d5)
+2025-11-15 22:17:22,499 - INFO - Injecting random move for our: f1e2
+2025-11-15 22:17:22,524 - INFO - Move 28: Stockfish (Black) plays g5 (g7g5)
+2025-11-15 22:17:24,107 - INFO - Move 29: ChessEngine (White) plays Rf1 (h1f1) | Top MCTS moves: [('h1f1', 0.7171717171717171), ('a1b1', 0.1919191919191919), ('f3g1', 0.010101010101010102)]
+2025-11-15 22:17:24,727 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:24,735 - INFO - Move 30: Stockfish (Black) plays d4 (d5d4)
+2025-11-15 22:17:26,193 - INFO - Move 31: ChessEngine (White) plays Nb1 (c3b1) | Top MCTS moves: [('c3b1', 0.23232323232323232), ('c3a4', 0.20202020202020202), ('f1e1', 0.1717171717171717)]
+2025-11-15 22:17:26,665 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:26,678 - INFO - Move 32: Stockfish (Black) plays Bc4+ (e6c4)
+2025-11-15 22:17:28,109 - INFO - Move 33: ChessEngine (White) plays Ke1 (e2e1) | Top MCTS moves: [('e2e1', 1.0)]
+2025-11-15 22:17:28,370 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:28,371 - INFO - Injecting random move for stockfish: b7b6
+2025-11-15 22:17:29,859 - INFO - Move 35: ChessEngine (White) plays Be2 (d1e2) | Top MCTS moves: [('d1e2', 0.4444444444444444), ('g2g3', 0.30303030303030304), ('b2b3', 0.24242424242424243)]
+2025-11-15 22:17:30,256 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:30,266 - INFO - Move 36: Stockfish (Black) plays Bxe2 (c4e2)
+2025-11-15 22:17:30,267 - INFO - Injecting random move for our: c2c4
+2025-11-15 22:17:30,288 - INFO - Move 38: Stockfish (Black) plays O-O-O (e8c8)
+2025-11-15 22:17:31,799 - INFO - Move 39: ChessEngine (White) plays Kxe2 (e1e2) | Top MCTS moves: [('e1e2', 1.0), ('f3g5', 0.0), ('f3e5', 0.0)]
+2025-11-15 22:17:32,237 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:32,237 - INFO - Injecting random move for stockfish: d8d5
+2025-11-15 22:17:33,913 - INFO - Move 41: ChessEngine (White) plays g3 (g2g3) | Top MCTS moves: [('g2g3', 0.3838383838383838), ('b1c3', 0.32323232323232326), ('f1e1', 0.1414141414141414)]
+2025-11-15 22:17:34,399 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:34,403 - INFO - Move 42: Stockfish (Black) plays d3+ (d4d3)
+2025-11-15 22:17:36,214 - INFO - Move 43: ChessEngine (White) plays Ke1 (e2e1) | Top MCTS moves: [('e2e1', 0.6262626262626263), ('e2d1', 0.37373737373737376)]
+2025-11-15 22:17:36,464 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:36,466 - INFO - Move 44: Stockfish (Black) plays exf2+ (e3f2)
+2025-11-15 22:17:38,143 - INFO - Move 45: ChessEngine (White) plays Kd2 (e1d2) | Top MCTS moves: [('e1d2', 0.8383838383838383), ('e1d1', 0.16161616161616163)]
+2025-11-15 22:17:38,394 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:38,395 - INFO - Move 46: Stockfish (Black) plays Qe2+ (e7e2)
+2025-11-15 22:17:38,396 - INFO - Injecting random move for our: d2c3
+2025-11-15 22:17:38,397 - INFO - Move 48: Stockfish (Black) plays Qc2# (e2c2)
+2025-11-15 22:17:38,398 - INFO - Saved moves for game 1 to logs/moves_game_1_20251115_221738.txt
+2025-11-15 22:17:38,398 - INFO - Game result: LOSS
+2025-11-15 22:17:38,401 - INFO - 
+--- Game 2 ---
+2025-11-15 22:17:38,702 - INFO - Move 1: Stockfish (Black) plays e4 (e2e4)
+2025-11-15 22:17:39,596 - INFO - Move 2: ChessEngine (White) plays e5 (e7e5) | Top MCTS moves: [('e7e5', 0.45454545454545453), ('g7g6', 0.1111111111111111), ('e7e6', 0.08080808080808081)]
+2025-11-15 22:17:41,724 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:41,839 - INFO - Move 3: Stockfish (Black) plays Nf3 (g1f3)
+2025-11-15 22:17:42,377 - INFO - Move 4: ChessEngine (White) plays Nc6 (b8c6) | Top MCTS moves: [('b8c6', 0.20202020202020202), ('f8c5', 0.1919191919191919), ('g8f6', 0.1414141414141414)]
+2025-11-15 22:17:45,389 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:45,389 - INFO - Injecting random move for stockfish: b1a3
+2025-11-15 22:17:45,975 - INFO - Move 6: ChessEngine (White) plays Nf6 (g8f6) | Top MCTS moves: [('g8f6', 0.24242424242424243), ('f8c5', 0.20202020202020202), ('d7d6', 0.13131313131313133)]
+2025-11-15 22:17:49,065 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:49,194 - INFO - Move 7: Stockfish (Black) plays Nc4 (a3c4)
+2025-11-15 22:17:49,194 - INFO - Injecting random move for our: c6b4
+2025-11-15 22:17:49,329 - INFO - Move 9: Stockfish (Black) plays Ncxe5 (c4e5)
+2025-11-15 22:17:50,058 - INFO - Move 10: ChessEngine (White) plays Nxa2 (b4a2) | Top MCTS moves: [('b4a2', 0.20202020202020202), ('g7g6', 0.20202020202020202), ('d8e7', 0.16161616161616163)]
+2025-11-15 22:17:51,657 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:51,674 - INFO - Move 11: Stockfish (Black) plays Rxa2 (a1a2)
+2025-11-15 22:17:52,667 - INFO - Move 12: ChessEngine (White) plays g6 (g7g6) | Top MCTS moves: [('g7g6', 0.25252525252525254), ('d7d6', 0.20202020202020202), ('d8e7', 0.1717171717171717)]
+2025-11-15 22:17:53,536 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:53,553 - INFO - Move 13: Stockfish (Black) plays c3 (c2c3)
+2025-11-15 22:17:54,649 - INFO - Move 14: ChessEngine (White) plays Bg7 (f8g7) | Top MCTS moves: [('f8g7', 0.29292929292929293), ('f8d6', 0.20202020202020202), ('d8e7', 0.16161616161616163)]
+2025-11-15 22:17:55,518 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:55,519 - INFO - Injecting random move for stockfish: e5g6
+2025-11-15 22:17:56,461 - INFO - Move 16: ChessEngine (White) plays Bf8 (g7f8) | Top MCTS moves: [('g7f8', 0.8888888888888888), ('h8g8', 0.010101010101010102), ('d8e7', 0.010101010101010102)]
+2025-11-15 22:17:57,051 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:57,059 - INFO - Move 17: Stockfish (Black) plays Nxh8 (g6h8)
+2025-11-15 22:17:57,060 - INFO - Injecting random move for our: f6g8
+2025-11-15 22:17:57,069 - INFO - Move 19: Stockfish (Black) plays Nxf7 (h8f7)
+2025-11-15 22:17:58,338 - INFO - Move 20: ChessEngine (White) plays Qe7 (d8e7) | Top MCTS moves: [('d8e7', 0.3939393939393939), ('f8e7', 0.10101010101010101), ('f8d6', 0.09090909090909091)]
+2025-11-15 22:17:58,912 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:17:58,913 - INFO - Injecting random move for stockfish: f1d3
+2025-11-15 22:18:00,154 - INFO - Move 22: ChessEngine (White) plays Qxf7 (e7f7) | Top MCTS moves: [('e7f7', 0.6868686868686869), ('e7d6', 0.04040404040404041), ('e7c5', 0.020202020202020204)]
+2025-11-15 22:18:00,750 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:00,810 - INFO - Move 23: Stockfish (Black) plays Ra1 (a2a1)
+2025-11-15 22:18:02,104 - INFO - Move 24: ChessEngine (White) plays Qg6 (f7g6) | Top MCTS moves: [('f7g6', 0.12121212121212122), ('f7h5', 0.12121212121212122), ('f7a2', 0.1111111111111111)]
+2025-11-15 22:18:02,827 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:02,845 - INFO - Move 25: Stockfish (Black) plays Be2 (d3e2)
+2025-11-15 22:18:04,148 - INFO - Move 26: ChessEngine (White) plays Qxg2 (g6g2) | Top MCTS moves: [('g6g2', 0.26262626262626265), ('g6f6', 0.18181818181818182), ('g6b6', 0.1111111111111111)]
+2025-11-15 22:18:04,934 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:04,950 - INFO - Move 27: Stockfish (Black) plays Rg1 (h1g1)
+2025-11-15 22:18:04,950 - INFO - Injecting random move for our: g2h2
+2025-11-15 22:18:04,964 - INFO - Move 29: Stockfish (Black) plays Nxh2 (f3h2)
+2025-11-15 22:18:06,337 - INFO - Move 30: ChessEngine (White) plays Kd8 (e8d8) | Top MCTS moves: [('e8d8', 0.40404040404040403), ('f8d6', 0.24242424242424243), ('g8f6', 0.12121212121212122)]
+2025-11-15 22:18:07,028 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:07,028 - INFO - Injecting random move for stockfish: g1g4
+2025-11-15 22:18:08,550 - INFO - Move 32: ChessEngine (White) plays Bd6 (f8d6) | Top MCTS moves: [('f8d6', 0.2727272727272727), ('g8f6', 0.18181818181818182), ('f8e7', 0.1111111111111111)]
+2025-11-15 22:18:09,264 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:09,288 - INFO - Move 33: Stockfish (Black) plays Rxg8+ (g4g8)
+2025-11-15 22:18:10,784 - INFO - Move 34: ChessEngine (White) plays Bf8 (d6f8) | Top MCTS moves: [('d6f8', 0.5656565656565656), ('d8e7', 0.43434343434343436)]
+2025-11-15 22:18:11,072 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:11,079 - INFO - Move 35: Stockfish (Black) plays d4 (d2d4)
+2025-11-15 22:18:11,079 - INFO - Injecting random move for our: a7a6
+2025-11-15 22:18:11,081 - INFO - Move 37: Stockfish (Black) plays Bg5+ (c1g5)
+2025-11-15 22:18:12,829 - INFO - Move 38: ChessEngine (White) plays Ke8 (d8e8) | Top MCTS moves: [('d8e8', 1.0)]
+2025-11-15 22:18:13,073 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:13,076 - INFO - Move 39: Stockfish (Black) plays Bh5# (e2h5)
+2025-11-15 22:18:13,078 - INFO - Saved moves for game 2 to logs/moves_game_2_20251115_221813.txt
+2025-11-15 22:18:13,078 - INFO - Game result: WIN
+2025-11-15 22:18:13,082 - INFO - 
+--- Game 3 ---
+2025-11-15 22:18:14,109 - INFO - Move 1: ChessEngine (White) plays e4 (e2e4) | Top MCTS moves: [('e2e4', 0.9393939393939394), ('a2a3', 0.050505050505050504), ('e2e3', 0.010101010101010102)]
+2025-11-15 22:18:16,185 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:16,308 - INFO - Move 2: Stockfish (Black) plays e5 (e7e5)
+2025-11-15 22:18:17,025 - INFO - Move 3: ChessEngine (White) plays Qg4 (d1g4) | Top MCTS moves: [('d1g4', 0.6363636363636364), ('a2a3', 0.25252525252525254), ('b1a3', 0.050505050505050504)]
+2025-11-15 22:18:20,481 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:20,583 - INFO - Move 4: Stockfish (Black) plays Nf6 (g8f6)
+2025-11-15 22:18:21,230 - INFO - Move 5: ChessEngine (White) plays Be2 (f1e2) | Top MCTS moves: [('f1e2', 0.6464646464646465), ('g4h4', 0.13131313131313133), ('g4e2', 0.08080808080808081)]
+2025-11-15 22:18:22,906 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:22,918 - INFO - Move 6: Stockfish (Black) plays Nxg4 (f6g4)
+2025-11-15 22:18:22,919 - INFO - Injecting random move for our: g1h3
+2025-11-15 22:18:22,928 - INFO - Move 8: Stockfish (Black) plays d5 (d7d5)
+2025-11-15 22:18:23,905 - INFO - Move 9: ChessEngine (White) plays Kf1 (e1f1) | Top MCTS moves: [('e1f1', 0.898989898989899), ('h1f1', 0.10101010101010101), ('h3g5', 0.0)]
+2025-11-15 22:18:24,423 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:24,436 - INFO - Move 10: Stockfish (Black) plays Nc6 (b8c6)
+2025-11-15 22:18:25,174 - INFO - Move 11: ChessEngine (White) plays exd5 (e4d5) | Top MCTS moves: [('e4d5', 0.43434343434343436), ('b1a3', 0.24242424242424243), ('e2g4', 0.1919191919191919)]
+2025-11-15 22:18:25,729 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:25,731 - INFO - Injecting random move for stockfish: g7g5
+2025-11-15 22:18:26,776 - INFO - Move 13: ChessEngine (White) plays Na3 (b1a3) | Top MCTS moves: [('b1a3', 0.32323232323232326), ('f2f3', 0.26262626262626265), ('a2a3', 0.1717171717171717)]
+2025-11-15 22:18:27,328 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:27,338 - INFO - Move 14: Stockfish (Black) plays Nd4 (c6d4)
+2025-11-15 22:18:28,398 - INFO - Move 15: ChessEngine (White) plays Bxg4 (e2g4) | Top MCTS moves: [('e2g4', 0.3333333333333333), ('e2c4', 0.2727272727272727), ('e2d1', 0.20202020202020202)]
+2025-11-15 22:18:28,937 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:28,967 - INFO - Move 16: Stockfish (Black) plays Bxg4 (c8g4)
+2025-11-15 22:18:29,886 - INFO - Move 17: ChessEngine (White) plays f3 (f2f3) | Top MCTS moves: [('f2f3', 0.5050505050505051), ('a3b1', 0.26262626262626265), ('c2c3', 0.18181818181818182)]
+2025-11-15 22:18:30,325 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:30,339 - INFO - Move 18: Stockfish (Black) plays Bxh3 (g4h3)
+2025-11-15 22:18:30,339 - INFO - Injecting random move for our: c2c3
+2025-11-15 22:18:30,392 - INFO - Move 20: Stockfish (Black) plays Qxd5 (d8d5)
+2025-11-15 22:18:31,203 - INFO - Move 21: ChessEngine (White) plays c4 (c3c4) | Top MCTS moves: [('c3c4', 0.5454545454545454), ('a3b1', 0.45454545454545453), ('a3b5', 0.0)]
+2025-11-15 22:18:31,519 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:31,521 - INFO - Move 22: Stockfish (Black) plays Qxf3+ (d5f3)
+2025-11-15 22:18:32,778 - INFO - Move 23: ChessEngine (White) plays Ke1 (f1e1) | Top MCTS moves: [('f1e1', 0.98989898989899), ('f1g1', 0.010101010101010102)]
+2025-11-15 22:18:33,023 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:33,024 - INFO - Injecting random move for stockfish: h7h6
+2025-11-15 22:18:34,214 - INFO - Move 25: ChessEngine (White) plays Nb1 (a3b1) | Top MCTS moves: [('a3b1', 0.7373737373737373), ('h1f1', 0.24242424242424243), ('c4c5', 0.010101010101010102)]
+2025-11-15 22:18:34,508 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:34,511 - INFO - Move 26: Stockfish (Black) plays Qe2# (f3e2)
+2025-11-15 22:18:34,513 - INFO - Saved moves for game 3 to logs/moves_game_3_20251115_221834.txt
+2025-11-15 22:18:34,513 - INFO - Game result: LOSS
+2025-11-15 22:18:34,519 - INFO - 
+--- Game 4 ---
+2025-11-15 22:18:34,832 - INFO - Move 1: Stockfish (Black) plays e4 (e2e4)
+2025-11-15 22:18:35,387 - INFO - Move 2: ChessEngine (White) plays e5 (e7e5) | Top MCTS moves: [('e7e5', 0.45454545454545453), ('g7g6', 0.1111111111111111), ('e7e6', 0.08080808080808081)]
+2025-11-15 22:18:37,497 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:37,636 - INFO - Move 3: Stockfish (Black) plays Nf3 (g1f3)
+2025-11-15 22:18:38,382 - INFO - Move 4: ChessEngine (White) plays Nc6 (b8c6) | Top MCTS moves: [('b8c6', 0.20202020202020202), ('f8c5', 0.1919191919191919), ('g8f6', 0.1414141414141414)]
+2025-11-15 22:18:41,261 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:41,262 - INFO - Injecting random move for stockfish: b1a3
+2025-11-15 22:18:41,954 - INFO - Move 6: ChessEngine (White) plays Nf6 (g8f6) | Top MCTS moves: [('g8f6', 0.24242424242424243), ('f8c5', 0.20202020202020202), ('d7d6', 0.13131313131313133)]
+2025-11-15 22:18:45,200 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:45,327 - INFO - Move 7: Stockfish (Black) plays Nc4 (a3c4)
+2025-11-15 22:18:45,327 - INFO - Injecting random move for our: h7h5
+2025-11-15 22:18:45,419 - INFO - Move 9: Stockfish (Black) plays Ncxe5 (c4e5)
+2025-11-15 22:18:46,334 - INFO - Move 10: ChessEngine (White) plays Nxe5 (c6e5) | Top MCTS moves: [('c6e5', 0.7070707070707071), ('h8h6', 0.08080808080808081), ('d8e7', 0.050505050505050504)]
+2025-11-15 22:18:48,076 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:48,077 - INFO - Injecting random move for stockfish: h2h3
+2025-11-15 22:18:48,800 - INFO - Move 12: ChessEngine (White) plays Nxf3+ (e5f3) | Top MCTS moves: [('e5f3', 0.7878787878787878), ('e5g6', 0.08080808080808081), ('f8d6', 0.030303030303030304)]
+2025-11-15 22:18:51,793 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:51,814 - INFO - Move 13: Stockfish (Black) plays Qxf3 (d1f3)
+2025-11-15 22:18:51,815 - INFO - Injecting random move for our: f6h7
+2025-11-15 22:18:51,846 - INFO - Move 15: Stockfish (Black) plays Bc4 (f1c4)
+2025-11-15 22:18:52,920 - INFO - Move 16: ChessEngine (White) plays h4 (h5h4) | Top MCTS moves: [('h5h4', 0.16161616161616163), ('h8g8', 0.13131313131313133), ('d8e7', 0.12121212121212122)]
+2025-11-15 22:18:53,750 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:53,752 - INFO - Move 17: Stockfish (Black) plays Qxf7# (f3f7)
+2025-11-15 22:18:53,755 - INFO - Saved moves for game 4 to logs/moves_game_4_20251115_221853.txt
+2025-11-15 22:18:53,755 - INFO - Game result: WIN
+2025-11-15 22:18:53,764 - INFO - 
+--- Game 5 ---
+2025-11-15 22:18:54,684 - INFO - Move 1: ChessEngine (White) plays e4 (e2e4) | Top MCTS moves: [('e2e4', 0.9393939393939394), ('a2a3', 0.050505050505050504), ('e2e3', 0.010101010101010102)]
+2025-11-15 22:18:56,523 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:18:56,678 - INFO - Move 2: Stockfish (Black) plays e5 (e7e5)
+2025-11-15 22:18:57,371 - INFO - Move 3: ChessEngine (White) plays Qg4 (d1g4) | Top MCTS moves: [('d1g4', 0.6363636363636364), ('a2a3', 0.25252525252525254), ('b1a3', 0.050505050505050504)]
+2025-11-15 22:19:00,631 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:19:00,737 - INFO - Move 4: Stockfish (Black) plays Nf6 (g8f6)
+2025-11-15 22:19:01,488 - INFO - Move 5: ChessEngine (White) plays Be2 (f1e2) | Top MCTS moves: [('f1e2', 0.6464646464646465), ('g4h4', 0.13131313131313133), ('g4e2', 0.08080808080808081)]
+2025-11-15 22:19:03,263 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:19:03,275 - INFO - Move 6: Stockfish (Black) plays Nxg4 (f6g4)
+2025-11-15 22:19:03,276 - INFO - Injecting random move for our: e2a6
+2025-11-15 22:19:03,285 - INFO - Move 8: Stockfish (Black) plays Nxf2 (g4f2)
+2025-11-15 22:19:04,036 - INFO - Move 9: ChessEngine (White) plays Kf1 (e1f1) | Top MCTS moves: [('e1f1', 0.5555555555555556), ('e1f2', 0.4444444444444444), ('a6b7', 0.0)]
+2025-11-15 22:19:04,564 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:19:04,574 - INFO - Move 10: Stockfish (Black) plays Nxh1 (f2h1)
+2025-11-15 22:19:05,357 - INFO - Move 11: ChessEngine (White) plays Ke2 (f1e2) | Top MCTS moves: [('f1e2', 0.9797979797979798), ('b1a3', 0.010101010101010102), ('a2a3', 0.010101010101010102)]
+2025-11-15 22:19:05,928 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:19:05,929 - INFO - Injecting random move for stockfish: g7g5
+2025-11-15 22:19:06,876 - INFO - Move 13: ChessEngine (White) plays Bd3 (a6d3) | Top MCTS moves: [('a6d3', 0.5959595959595959), ('b1a3', 0.2222222222222222), ('a2a3', 0.10101010101010101)]
+2025-11-15 22:19:07,459 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:19:07,468 - INFO - Move 14: Stockfish (Black) plays d6 (d7d6)
+2025-11-15 22:19:08,348 - INFO - Move 15: ChessEngine (White) plays Na3 (b1a3) | Top MCTS moves: [('b1a3', 0.5353535353535354), ('a2a3', 0.31313131313131315), ('e2d1', 0.050505050505050504)]
+2025-11-15 22:19:08,798 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:19:08,807 - INFO - Move 16: Stockfish (Black) plays Be6 (c8e6)
+2025-11-15 22:19:08,808 - INFO - Injecting random move for our: a1b1
+2025-11-15 22:19:08,826 - INFO - Move 18: Stockfish (Black) plays Bg7 (f8g7)
+2025-11-15 22:19:09,901 - INFO - Move 19: ChessEngine (White) plays Ke1 (e2e1) | Top MCTS moves: [('e2e1', 0.23232323232323232), ('e2d1', 0.21212121212121213), ('c2c3', 0.1111111111111111)]
+2025-11-15 22:19:10,390 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:19:10,391 - INFO - Injecting random move for stockfish: e8f8
+2025-11-15 22:19:11,510 - INFO - Move 21: ChessEngine (White) plays Kf1 (e1f1) | Top MCTS moves: [('e1f1', 0.8888888888888888), ('d3f1', 0.08080808080808081), ('d3e2', 0.010101010101010102)]
+2025-11-15 22:19:11,943 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:19:11,962 - INFO - Move 22: Stockfish (Black) plays Nc6 (b8c6)
+2025-11-15 22:19:13,161 - INFO - Move 23: ChessEngine (White) plays Ke2 (f1e2) | Top MCTS moves: [('f1e2', 0.9191919191919192), ('d3e2', 0.06060606060606061), ('g1e2', 0.010101010101010102)]
+2025-11-15 22:19:13,786 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:19:13,804 - INFO - Move 24: Stockfish (Black) plays Nd4+ (c6d4)
+2025-11-15 22:19:15,019 - INFO - Move 25: ChessEngine (White) plays Kd1 (e2d1) | Top MCTS moves: [('e2d1', 0.5656565656565656), ('e2e1', 0.42424242424242425), ('e2e3', 0.010101010101010102)]
+2025-11-15 22:19:15,320 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:19:15,334 - INFO - Move 26: Stockfish (Black) plays Nf2+ (h1f2)
+2025-11-15 22:19:15,335 - INFO - Injecting random move for our: d1e1
+2025-11-15 22:19:15,366 - INFO - Move 28: Stockfish (Black) plays Nxd3+ (f2d3)
+2025-11-15 22:19:16,756 - INFO - Move 29: ChessEngine (White) plays Kf1 (e1f1) | Top MCTS moves: [('e1f1', 1.0), ('e1d1', 0.0), ('c2d3', 0.0)]
+2025-11-15 22:19:17,070 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:19:17,089 - INFO - Move 30: Stockfish (Black) plays Nb4 (d3b4)
+2025-11-15 22:19:18,389 - INFO - Move 31: ChessEngine (White) plays c3 (c2c3) | Top MCTS moves: [('c2c3', 0.7676767676767676), ('g1e2', 0.21212121212121213), ('b2b3', 0.010101010101010102)]
+2025-11-15 22:19:18,895 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:19:18,895 - INFO - Injecting random move for stockfish: e6d5
+2025-11-15 22:19:20,064 - INFO - Move 33: ChessEngine (White) plays exd5 (e4d5) | Top MCTS moves: [('e4d5', 0.9393939393939394), ('c3c4', 0.06060606060606061), ('a3b5', 0.0)]
+2025-11-15 22:19:20,560 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:19:20,589 - INFO - Move 34: Stockfish (Black) plays h5 (h7h5)
+2025-11-15 22:19:20,590 - INFO - Injecting random move for our: a3b5
+2025-11-15 22:19:20,621 - INFO - Move 36: Stockfish (Black) plays Nxb5 (d4b5)
+2025-11-15 22:19:21,810 - INFO - Move 37: ChessEngine (White) plays a3 (a2a3) | Top MCTS moves: [('a2a3', 0.8585858585858586), ('f1e2', 0.12121212121212122), ('g1e2', 0.010101010101010102)]
+2025-11-15 22:19:22,256 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:19:22,266 - INFO - Move 38: Stockfish (Black) plays Qc8 (d8c8)
+2025-11-15 22:19:23,493 - INFO - Move 39: ChessEngine (White) plays Ke2 (f1e2) | Top MCTS moves: [('f1e2', 0.8888888888888888), ('g1e2', 0.1111111111111111), ('g1h3', 0.0)]
+2025-11-15 22:19:23,973 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:19:23,974 - INFO - Injecting random move for stockfish: a8b8
+2025-11-15 22:19:25,290 - INFO - Move 41: ChessEngine (White) plays Ke3 (e2e3) | Top MCTS moves: [('e2e3', 0.7171717171717171), ('e2d1', 0.24242424242424243), ('b1a1', 0.010101010101010102)]
+2025-11-15 22:19:25,808 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:19:25,842 - INFO - Move 42: Stockfish (Black) plays Nxd5+ (b4d5)
+2025-11-15 22:19:27,076 - INFO - Move 43: ChessEngine (White) plays Ke4 (e3e4) | Top MCTS moves: [('e3e4', 0.9797979797979798), ('e3f3', 0.010101010101010102), ('e3e2', 0.010101010101010102)]
+2025-11-15 22:19:27,433 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:19:27,457 - INFO - Move 44: Stockfish (Black) plays Nf4 (d5f4)
+2025-11-15 22:19:27,457 - INFO - Injecting random move for our: b1a1
+2025-11-15 22:19:27,477 - INFO - Move 46: Stockfish (Black) plays Nxc3+ (b5c3)
+2025-11-15 22:19:28,817 - INFO - Move 47: ChessEngine (White) plays Kf3 (e4f3) | Top MCTS moves: [('e4f3', 1.0), ('e4e3', 0.0), ('d2c3', 0.0)]
+2025-11-15 22:19:29,101 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:19:29,106 - INFO - Move 48: Stockfish (Black) plays Qg4+ (c8g4)
+2025-11-15 22:19:30,684 - INFO - Move 49: ChessEngine (White) plays Kf2 (f3f2) | Top MCTS moves: [('f3f2', 0.98989898989899), ('f3e3', 0.010101010101010102)]
+2025-11-15 22:19:30,942 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:19:30,942 - INFO - Injecting random move for stockfish: c3a4
+2025-11-15 22:19:32,186 - INFO - Move 51: ChessEngine (White) plays Kf1 (f2f1) | Top MCTS moves: [('f2f1', 0.8383838383838383), ('d2d3', 0.12121212121212122), ('f2e1', 0.010101010101010102)]
+2025-11-15 22:19:32,551 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:19:32,554 - INFO - Move 52: Stockfish (Black) plays Qxg2+ (g4g2)
+2025-11-15 22:19:33,626 - INFO - Move 53: ChessEngine (White) plays Ke1 (f1e1) | Top MCTS moves: [('f1e1', 1.0)]
+2025-11-15 22:19:33,867 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:19:33,868 - INFO - Move 54: Stockfish (Black) plays Qxg1# (g2g1)
+2025-11-15 22:19:33,870 - INFO - Saved moves for game 5 to logs/moves_game_5_20251115_221933.txt
+2025-11-15 22:19:33,870 - INFO - Game result: LOSS
+2025-11-15 22:20:42,706 - INFO - Training step 1 | Loss: 6.2355 | Policy: 5.5494 | Value: 0.6861 | Weights synced to chess engine ✓
+2025-11-15 22:20:42,706 - INFO - 
+--- Game 6 ---
+2025-11-15 22:20:42,976 - INFO - Move 1: Stockfish (Black) plays e4 (e2e4)
+2025-11-15 22:20:43,641 - INFO - Move 2: ChessEngine (White) plays c6 (c7c6) | Top MCTS moves: [('c7c6', 0.35353535353535354), ('b7b6', 0.30303030303030304), ('a7a6', 0.1717171717171717)]
+2025-11-15 22:20:45,725 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:20:45,726 - INFO - Injecting random move for stockfish: f2f3
+2025-11-15 22:20:46,213 - INFO - Move 4: ChessEngine (White) plays a6 (a7a6) | Top MCTS moves: [('a7a6', 0.3939393939393939), ('b7b6', 0.26262626262626265), ('a7a5', 0.2222222222222222)]
+2025-11-15 22:20:48,266 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:20:48,353 - INFO - Move 5: Stockfish (Black) plays d4 (d2d4)
+2025-11-15 22:20:48,353 - INFO - Injecting random move for our: a8a7
+2025-11-15 22:20:48,394 - INFO - Move 7: Stockfish (Black) plays Bd3 (f1d3)
+2025-11-15 22:20:48,923 - INFO - Move 8: ChessEngine (White) plays h6 (h7h6) | Top MCTS moves: [('h7h6', 0.21212121212121213), ('f7f6', 0.21212121212121213), ('b7b6', 0.20202020202020202)]
+2025-11-15 22:20:50,306 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:20:50,393 - INFO - Move 9: Stockfish (Black) plays Be3 (c1e3)
+2025-11-15 22:20:50,992 - INFO - Move 10: ChessEngine (White) plays b6 (b7b6) | Top MCTS moves: [('b7b6', 0.2727272727272727), ('b7b5', 0.25252525252525254), ('f7f6', 0.24242424242424243)]
+2025-11-15 22:20:52,028 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:20:52,065 - INFO - Move 11: Stockfish (Black) plays c4 (c2c4)
+2025-11-15 22:20:52,692 - INFO - Move 12: ChessEngine (White) plays f6 (f7f6) | Top MCTS moves: [('f7f6', 0.35353535353535354), ('f7f5', 0.24242424242424243), ('h8h7', 0.1919191919191919)]
+2025-11-15 22:20:54,139 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:20:54,140 - INFO - Injecting random move for stockfish: d1c2
+2025-11-15 22:20:54,888 - INFO - Move 14: ChessEngine (White) plays Rh7 (h8h7) | Top MCTS moves: [('h8h7', 0.35353535353535354), ('b6b5', 0.24242424242424243), ('g7g5', 0.24242424242424243)]
+2025-11-15 22:20:56,057 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:20:56,097 - INFO - Move 15: Stockfish (Black) plays e5 (e4e5)
+2025-11-15 22:20:56,738 - INFO - Move 16: ChessEngine (White) plays b5 (b6b5) | Top MCTS moves: [('b6b5', 0.4444444444444444), ('g7g6', 0.26262626262626265), ('g7g5', 0.25252525252525254)]
+2025-11-15 22:20:57,145 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:20:57,146 - INFO - Move 17: Stockfish (Black) plays Bg6# (d3g6)
+2025-11-15 22:20:57,149 - INFO - Saved moves for game 6 to logs/moves_game_6_20251115_222057.txt
+2025-11-15 22:20:57,150 - INFO - Game result: WIN
+2025-11-15 22:22:11,760 - INFO - Training step 2 | Loss: 4.5962 | Policy: 4.3128 | Value: 0.2834 | Weights synced to chess engine ✓
+2025-11-15 22:22:11,761 - INFO - 
+--- Game 7 ---
+2025-11-15 22:22:12,602 - INFO - Move 1: ChessEngine (White) plays b4 (b2b4) | Top MCTS moves: [('b2b4', 0.2222222222222222), ('g2g4', 0.1717171717171717), ('b2b3', 0.10101010101010101)]
+2025-11-15 22:22:14,268 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:22:14,358 - INFO - Move 2: Stockfish (Black) plays e5 (e7e5)
+2025-11-15 22:22:14,359 - INFO - Injecting random move for our: d2d3
+2025-11-15 22:22:14,437 - INFO - Move 4: Stockfish (Black) plays Bxb4+ (f8b4)
+2025-11-15 22:22:15,128 - INFO - Move 5: ChessEngine (White) plays Nc3 (b1c3) | Top MCTS moves: [('b1c3', 0.5050505050505051), ('c2c3', 0.32323232323232326), ('b1d2', 0.1111111111111111)]
+2025-11-15 22:22:15,545 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:22:15,546 - INFO - Injecting random move for stockfish: b7b5
+2025-11-15 22:22:16,267 - INFO - Move 7: ChessEngine (White) plays g4 (g2g4) | Top MCTS moves: [('g2g4', 0.3434343434343434), ('g2g3', 0.21212121212121213), ('f2f4', 0.15151515151515152)]
+2025-11-15 22:22:17,358 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:22:17,388 - INFO - Move 8: Stockfish (Black) plays Bxc3+ (b4c3)
+2025-11-15 22:22:18,104 - INFO - Move 9: ChessEngine (White) plays Bd2 (c1d2) | Top MCTS moves: [('c1d2', 0.696969696969697), ('d1d2', 0.30303030303030304)]
+2025-11-15 22:22:18,379 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:22:18,402 - INFO - Move 10: Stockfish (Black) plays Bxd2+ (c3d2)
+2025-11-15 22:22:19,324 - INFO - Move 11: ChessEngine (White) plays Qxd2 (d1d2) | Top MCTS moves: [('d1d2', 0.8080808080808081), ('e1d2', 0.1919191919191919)]
+2025-11-15 22:22:19,612 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:22:19,644 - INFO - Move 12: Stockfish (Black) plays Nc6 (b8c6)
+2025-11-15 22:22:19,645 - INFO - Injecting random move for our: f1h3
+2025-11-15 22:22:19,671 - INFO - Move 14: Stockfish (Black) plays Rb8 (a8b8)
+2025-11-15 22:22:20,524 - INFO - Move 15: ChessEngine (White) plays Nf3 (g1f3) | Top MCTS moves: [('g1f3', 0.16161616161616163), ('c2c4', 0.16161616161616163), ('e1d1', 0.1414141414141414)]
+2025-11-15 22:22:21,263 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:22:21,293 - INFO - Move 16: Stockfish (Black) plays d5 (d7d5)
+2025-11-15 22:22:22,385 - INFO - Move 17: ChessEngine (White) plays Kd1 (e1d1) | Top MCTS moves: [('e1d1', 0.1717171717171717), ('c2c4', 0.16161616161616163), ('a1b1', 0.10101010101010101)]
+2025-11-15 22:22:23,258 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:22:23,258 - INFO - Injecting random move for stockfish: h7h6
+2025-11-15 22:22:24,483 - INFO - Move 19: ChessEngine (White) plays c4 (c2c4) | Top MCTS moves: [('c2c4', 0.20202020202020202), ('e2e4', 0.16161616161616163), ('h1f1', 0.13131313131313133)]
+2025-11-15 22:22:25,308 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:22:25,355 - INFO - Move 20: Stockfish (Black) plays bxc4 (b5c4)
+2025-11-15 22:22:26,617 - INFO - Move 21: ChessEngine (White) plays Rb1 (a1b1) | Top MCTS moves: [('a1b1', 0.1919191919191919), ('f3g5', 0.15151515151515152), ('e2e4', 0.15151515151515152)]
+2025-11-15 22:22:27,437 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:22:27,455 - INFO - Move 22: Stockfish (Black) plays Rxb1+ (b8b1)
+2025-11-15 22:22:28,440 - INFO - Move 23: ChessEngine (White) plays Kc2 (d1c2) | Top MCTS moves: [('d1c2', 0.6565656565656566), ('d2c1', 0.3434343434343434)]
+2025-11-15 22:22:28,716 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:22:28,729 - INFO - Move 24: Stockfish (Black) plays Rb6 (b1b6)
+2025-11-15 22:22:28,729 - INFO - Injecting random move for our: h3g2
+2025-11-15 22:22:28,741 - INFO - Move 26: Stockfish (Black) plays cxd3+ (c4d3)
+2025-11-15 22:22:30,165 - INFO - Move 27: ChessEngine (White) plays Kc3 (c2c3) | Top MCTS moves: [('c2c3', 0.5353535353535354), ('d2d3', 0.29292929292929293), ('e2d3', 0.09090909090909091)]
+2025-11-15 22:22:30,489 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:22:30,489 - INFO - Injecting random move for stockfish: b6b1
+2025-11-15 22:22:31,967 - INFO - Move 29: ChessEngine (White) plays h3 (h2h3) | Top MCTS moves: [('h2h3', 0.31313131313131315), ('h2h4', 0.2727272727272727), ('f3g5', 0.12121212121212122)]
+2025-11-15 22:22:32,667 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:22:32,693 - INFO - Move 30: Stockfish (Black) plays d4+ (d5d4)
+2025-11-15 22:22:34,220 - INFO - Move 31: ChessEngine (White) plays Kc4 (c3c4) | Top MCTS moves: [('c3c4', 0.5151515151515151), ('f3d4', 0.48484848484848486), ('c3d3', 0.0)]
+2025-11-15 22:22:34,485 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:22:34,487 - INFO - Move 32: Stockfish (Black) plays Ba6+ (c8a6)
+2025-11-15 22:22:36,138 - INFO - Move 33: ChessEngine (White) plays Kc5 (c4c5) | Top MCTS moves: [('c4c5', 1.0)]
+2025-11-15 22:22:36,384 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:22:36,386 - INFO - Move 34: Stockfish (Black) plays Qd6# (d8d6)
+2025-11-15 22:22:36,388 - INFO - Saved moves for game 7 to logs/moves_game_7_20251115_222236.txt
+2025-11-15 22:22:36,388 - INFO - Game result: LOSS
+2025-11-15 22:23:44,055 - INFO - Training step 3 | Loss: 5.0472 | Policy: 4.9329 | Value: 0.1143 | Weights synced to chess engine ✓
+2025-11-15 22:23:44,055 - INFO - 
+--- Game 8 ---
+2025-11-15 22:23:44,377 - INFO - Move 1: Stockfish (Black) plays e4 (e2e4)
+2025-11-15 22:23:44,759 - INFO - Move 2: ChessEngine (White) plays f6 (f7f6) | Top MCTS moves: [('f7f6', 0.7272727272727273), ('g7g6', 0.10101010101010101), ('b7b5', 0.08080808080808081)]
+2025-11-15 22:23:46,628 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:23:46,710 - INFO - Move 3: Stockfish (Black) plays d4 (d2d4)
+2025-11-15 22:23:47,445 - INFO - Move 4: ChessEngine (White) plays b5 (b7b5) | Top MCTS moves: [('b7b5', 0.35353535353535354), ('g7g6', 0.23232323232323232), ('g8h6', 0.10101010101010101)]
+2025-11-15 22:23:48,754 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:23:48,755 - INFO - Injecting random move for stockfish: d4d5
+2025-11-15 22:23:49,343 - INFO - Move 6: ChessEngine (White) plays g6 (g7g6) | Top MCTS moves: [('g7g6', 0.30303030303030304), ('c8b7', 0.21212121212121213), ('a7a6', 0.12121212121212122)]
+2025-11-15 22:23:50,150 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:23:50,205 - INFO - Move 7: Stockfish (Black) plays Bxb5 (f1b5)
+2025-11-15 22:23:50,851 - INFO - Move 8: ChessEngine (White) plays c5 (c7c5) | Top MCTS moves: [('c7c5', 0.2828282828282828), ('a7a6', 0.23232323232323232), ('g8h6', 0.15151515151515152)]
+2025-11-15 22:23:51,535 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:23:51,582 - INFO - Move 9: Stockfish (Black) plays Be3 (c1e3)
+2025-11-15 22:23:51,583 - INFO - Injecting random move for our: d8c7
+2025-11-15 22:23:51,604 - INFO - Move 11: Stockfish (Black) plays Qd2 (d1d2)
+2025-11-15 22:23:52,515 - INFO - Move 12: ChessEngine (White) plays Bb7 (c8b7) | Top MCTS moves: [('c8b7', 0.25252525252525254), ('a7a6', 0.18181818181818182), ('g8h6', 0.1111111111111111)]
+2025-11-15 22:23:53,404 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:23:53,424 - INFO - Move 13: Stockfish (Black) plays Nc3 (b1c3)
+2025-11-15 22:23:54,330 - INFO - Move 14: ChessEngine (White) plays Nh6 (g8h6) | Top MCTS moves: [('g8h6', 0.2222222222222222), ('a7a6', 0.1919191919191919), ('e7e6', 0.16161616161616163)]
+2025-11-15 22:23:55,234 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:23:55,264 - INFO - Move 15: Stockfish (Black) plays Bxh6 (e3h6)
+2025-11-15 22:23:56,248 - INFO - Move 16: ChessEngine (White) plays e6 (e7e6) | Top MCTS moves: [('e7e6', 0.24242424242424243), ('a7a6', 0.23232323232323232), ('e8f7', 0.1717171717171717)]
+2025-11-15 22:23:56,924 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:23:56,925 - INFO - Injecting random move for stockfish: b2b3
+2025-11-15 22:23:58,172 - INFO - Move 18: ChessEngine (White) plays Ke7 (e8e7) | Top MCTS moves: [('e8e7', 0.5656565656565656), ('f8e7', 0.09090909090909091), ('a7a6', 0.04040404040404041)]
+2025-11-15 22:23:58,883 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:23:58,910 - INFO - Move 19: Stockfish (Black) plays d6+ (d5d6)
+2025-11-15 22:24:00,298 - INFO - Move 20: ChessEngine (White) plays Kd8 (e7d8) | Top MCTS moves: [('e7d8', 0.9696969696969697), ('e7e8', 0.010101010101010102), ('e7f7', 0.010101010101010102)]
+2025-11-15 22:24:00,581 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:24:00,588 - INFO - Move 21: Stockfish (Black) plays dxc7+ (d6c7)
+2025-11-15 22:24:00,589 - INFO - Injecting random move for our: d8c8
+2025-11-15 22:24:00,612 - INFO - Move 23: Stockfish (Black) plays cxb8=Q+ (c7b8q)
+2025-11-15 22:24:01,997 - INFO - Move 24: ChessEngine (White) plays Rxb8 (a8b8) | Top MCTS moves: [('a8b8', 0.98989898989899), ('c8b8', 0.010101010101010102)]
+2025-11-15 22:24:02,255 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:24:02,257 - INFO - Move 25: Stockfish (Black) plays Qxd7# (d2d7)
+2025-11-15 22:24:02,259 - INFO - Saved moves for game 8 to logs/moves_game_8_20251115_222402.txt
+2025-11-15 22:24:02,259 - INFO - Game result: WIN
+2025-11-15 22:25:20,855 - INFO - Training step 4 | Loss: 4.8120 | Policy: 4.5743 | Value: 0.2377 | Weights synced to chess engine ✓
+2025-11-15 22:25:20,856 - INFO - 
+--- Game 9 ---
+2025-11-15 22:25:21,800 - INFO - Move 1: ChessEngine (White) plays Nf3 (g1f3) | Top MCTS moves: [('g1f3', 0.13131313131313133), ('b2b4', 0.12121212121212122), ('a2a4', 0.12121212121212122)]
+2025-11-15 22:25:24,026 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:25:24,198 - INFO - Move 2: Stockfish (Black) plays Nf6 (g8f6)
+2025-11-15 22:25:24,199 - INFO - Injecting random move for our: a2a3
+2025-11-15 22:25:24,274 - INFO - Move 4: Stockfish (Black) plays c5 (c7c5)
+2025-11-15 22:25:24,940 - INFO - Move 5: ChessEngine (White) plays b4 (b2b4) | Top MCTS moves: [('b2b4', 0.20202020202020202), ('g2g4', 0.15151515151515152), ('h2h3', 0.08080808080808081)]
+2025-11-15 22:25:26,968 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:25:27,055 - INFO - Move 6: Stockfish (Black) plays Nc6 (b8c6)
+2025-11-15 22:25:27,652 - INFO - Move 7: ChessEngine (White) plays g4 (g2g4) | Top MCTS moves: [('g2g4', 0.16161616161616163), ('a3a4', 0.13131313131313133), ('c2c3', 0.12121212121212122)]
+2025-11-15 22:25:29,239 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:25:29,239 - INFO - Injecting random move for stockfish: a8b8
+2025-11-15 22:25:29,847 - INFO - Move 9: ChessEngine (White) plays a4 (a3a4) | Top MCTS moves: [('a3a4', 0.1717171717171717), ('c2c3', 0.15151515151515152), ('b1c3', 0.10101010101010101)]
+2025-11-15 22:25:32,226 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:25:32,327 - INFO - Move 10: Stockfish (Black) plays cxb4 (c5b4)
+2025-11-15 22:25:32,328 - INFO - Injecting random move for our: e2e3
+2025-11-15 22:25:32,363 - INFO - Move 12: Stockfish (Black) plays Nxg4 (f6g4)
+2025-11-15 22:25:33,198 - INFO - Move 13: ChessEngine (White) plays h3 (h2h3) | Top MCTS moves: [('h2h3', 0.2727272727272727), ('c2c3', 0.1111111111111111), ('a1a2', 0.09090909090909091)]
+2025-11-15 22:25:34,203 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:25:34,204 - INFO - Injecting random move for stockfish: g4e5
+2025-11-15 22:25:34,898 - INFO - Move 15: ChessEngine (White) plays d4 (d2d4) | Top MCTS moves: [('d2d4', 0.13131313131313133), ('a1a2', 0.12121212121212122), ('c2c3', 0.1111111111111111)]
+2025-11-15 22:25:35,920 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:25:35,957 - INFO - Move 16: Stockfish (Black) plays Nxf3+ (e5f3)
+2025-11-15 22:25:35,957 - INFO - Injecting random move for our: d1f3
+2025-11-15 22:25:35,974 - INFO - Move 18: Stockfish (Black) plays g6 (g7g6)
+2025-11-15 22:25:36,897 - INFO - Move 19: ChessEngine (White) plays Ba6 (f1a6) | Top MCTS moves: [('f1a6', 0.13131313131313133), ('f1b5', 0.12121212121212122), ('e1d1', 0.1111111111111111)]
+2025-11-15 22:25:38,048 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:25:38,062 - INFO - Move 20: Stockfish (Black) plays bxa6 (b7a6)
+2025-11-15 22:25:39,032 - INFO - Move 21: ChessEngine (White) plays Ra2 (a1a2) | Top MCTS moves: [('a1a2', 0.18181818181818182), ('b1d2', 0.1414141414141414), ('c1d2', 0.12121212121212122)]
+2025-11-15 22:25:39,707 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:25:39,707 - INFO - Injecting random move for stockfish: b8a8
+2025-11-15 22:25:40,753 - INFO - Move 23: ChessEngine (White) plays Nd2 (b1d2) | Top MCTS moves: [('b1d2', 0.29292929292929293), ('c1d2', 0.1414141414141414), ('b1a3', 0.1414141414141414)]
+2025-11-15 22:25:41,460 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:25:41,489 - INFO - Move 24: Stockfish (Black) plays Rb8 (a8b8)
+2025-11-15 22:25:41,489 - INFO - Injecting random move for our: f3d1
+2025-11-15 22:25:41,510 - INFO - Move 26: Stockfish (Black) plays d5 (d7d5)
+2025-11-15 22:25:42,624 - INFO - Move 27: ChessEngine (White) plays f4 (f2f4) | Top MCTS moves: [('f2f4', 0.24242424242424243), ('f2f3', 0.20202020202020202), ('d1f3', 0.1717171717171717)]
+2025-11-15 22:25:43,338 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:25:43,368 - INFO - Move 28: Stockfish (Black) plays Na5 (c6a5)
+2025-11-15 22:25:44,430 - INFO - Move 29: ChessEngine (White) plays c3 (c2c3) | Top MCTS moves: [('c2c3', 0.16161616161616163), ('c2c4', 0.16161616161616163), ('d1f3', 0.15151515151515152)]
+2025-11-15 22:25:44,967 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:25:44,967 - INFO - Injecting random move for stockfish: c8d7
+2025-11-15 22:25:46,049 - INFO - Move 31: ChessEngine (White) plays c4 (c3c4) | Top MCTS moves: [('c3c4', 0.2828282828282828), ('d1f3', 0.16161616161616163), ('d1e2', 0.10101010101010101)]
+2025-11-15 22:25:46,828 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:25:46,854 - INFO - Move 32: Stockfish (Black) plays Nxc4 (a5c4)
+2025-11-15 22:25:46,854 - INFO - Injecting random move for our: e3e4
+2025-11-15 22:25:46,871 - INFO - Move 34: Stockfish (Black) plays Bg7 (f8g7)
+2025-11-15 22:25:48,244 - INFO - Move 35: ChessEngine (White) plays Qe2 (d1e2) | Top MCTS moves: [('d1e2', 0.23232323232323232), ('e1e2', 0.21212121212121213), ('h1g1', 0.16161616161616163)]
+2025-11-15 22:25:48,841 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:25:48,862 - INFO - Move 36: Stockfish (Black) plays Nxd2 (c4d2)
+2025-11-15 22:25:50,310 - INFO - Move 37: ChessEngine (White) plays Bxd2 (c1d2) | Top MCTS moves: [('c1d2', 0.30303030303030304), ('e1d1', 0.1717171717171717), ('e2a6', 0.15151515151515152)]
+2025-11-15 22:25:50,905 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:25:50,905 - INFO - Injecting random move for stockfish: e8g8
+2025-11-15 22:25:52,270 - INFO - Move 39: ChessEngine (White) plays Kd1 (e1d1) | Top MCTS moves: [('e1d1', 0.7878787878787878), ('e2a6', 0.06060606060606061), ('e2f3', 0.050505050505050504)]
+2025-11-15 22:25:52,992 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:25:53,017 - INFO - Move 40: Stockfish (Black) plays dxe4 (d5e4)
+2025-11-15 22:25:54,508 - INFO - Move 41: ChessEngine (White) plays Qf3 (e2f3) | Top MCTS moves: [('e2f3', 0.20202020202020202), ('e2f1', 0.1919191919191919), ('e2d3', 0.16161616161616163)]
+2025-11-15 22:25:55,127 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:25:55,139 - INFO - Move 42: Stockfish (Black) plays exf3 (e4f3)
+2025-11-15 22:25:56,532 - INFO - Move 43: ChessEngine (White) plays Rg1 (h1g1) | Top MCTS moves: [('h1g1', 0.43434343434343436), ('h1f1', 0.26262626262626265), ('d2b4', 0.16161616161616163)]
+2025-11-15 22:25:56,997 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:25:57,039 - INFO - Move 44: Stockfish (Black) plays b3 (b4b3)
+2025-11-15 22:25:57,040 - INFO - Injecting random move for our: f4f5
+2025-11-15 22:25:57,073 - INFO - Move 46: Stockfish (Black) plays bxa2 (b3a2)
+2025-11-15 22:25:58,426 - INFO - Move 47: ChessEngine (White) plays Bc3 (d2c3) | Top MCTS moves: [('d2c3', 0.3838383838383838), ('d2b4', 0.16161616161616163), ('d2f4', 0.13131313131313133)]
+2025-11-15 22:25:58,811 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:25:58,813 - INFO - Injecting random move for stockfish: b8b3
+2025-11-15 22:26:00,305 - INFO - Move 49: ChessEngine (White) plays Bb4 (c3b4) | Top MCTS moves: [('c3b4', 0.47474747474747475), ('g1g2', 0.36363636363636365), ('d1d2', 0.0707070707070707)]
+2025-11-15 22:26:00,770 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:26:00,779 - INFO - Move 50: Stockfish (Black) plays Bxf5 (d7f5)
+2025-11-15 22:26:02,335 - INFO - Move 51: ChessEngine (White) plays Rg2 (g1g2) | Top MCTS moves: [('g1g2', 0.6666666666666666), ('d1d2', 0.2222222222222222), ('b4e1', 0.04040404040404041)]
+2025-11-15 22:26:02,649 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:26:02,652 - INFO - Move 52: Stockfish (Black) plays Qxd4+ (d8d4)
+2025-11-15 22:26:02,652 - INFO - Injecting random move for our: b4d2
+2025-11-15 22:26:02,654 - INFO - Move 54: Stockfish (Black) plays a1=Q# (a2a1q)
+2025-11-15 22:26:02,656 - INFO - Saved moves for game 9 to logs/moves_game_9_20251115_222602.txt
+2025-11-15 22:26:02,656 - INFO - Game result: LOSS
+2025-11-15 22:27:14,465 - INFO - Training step 5 | Loss: 4.3861 | Policy: 4.2951 | Value: 0.0910 | Weights synced to chess engine ✓
+2025-11-15 22:27:14,466 - INFO - 
+--- Game 10 ---
+2025-11-15 22:27:14,786 - INFO - Move 1: Stockfish (Black) plays e4 (e2e4)
+2025-11-15 22:27:15,427 - INFO - Move 2: ChessEngine (White) plays b5 (b7b5) | Top MCTS moves: [('b7b5', 0.2828282828282828), ('g7g5', 0.2727272727272727), ('b8c6', 0.20202020202020202)]
+2025-11-15 22:27:17,511 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:27:17,547 - INFO - Move 3: Stockfish (Black) plays Bxb5 (f1b5)
+2025-11-15 22:27:18,215 - INFO - Move 4: ChessEngine (White) plays Nc6 (b8c6) | Top MCTS moves: [('b8c6', 0.30303030303030304), ('g7g5', 0.29292929292929293), ('c7c5', 0.23232323232323232)]
+2025-11-15 22:27:19,137 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:27:19,159 - INFO - Move 5: Stockfish (Black) plays Nf3 (g1f3)
+2025-11-15 22:27:19,841 - INFO - Move 6: ChessEngine (White) plays Nb8 (c6b8) | Top MCTS moves: [('c6b8', 0.5959595959595959), ('g7g5', 0.09090909090909091), ('f7f6', 0.050505050505050504)]
+2025-11-15 22:27:20,724 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:27:20,724 - INFO - Injecting random move for stockfish: b1c3
+2025-11-15 22:27:21,435 - INFO - Move 8: ChessEngine (White) plays g5 (g7g5) | Top MCTS moves: [('g7g5', 0.6565656565656566), ('b8c6', 0.25252525252525254), ('c7c5', 0.04040404040404041)]
+2025-11-15 22:27:22,266 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:27:22,289 - INFO - Move 9: Stockfish (Black) plays Nxg5 (f3g5)
+2025-11-15 22:27:23,075 - INFO - Move 10: ChessEngine (White) plays f6 (f7f6) | Top MCTS moves: [('f7f6', 0.45454545454545453), ('b8c6', 0.31313131313131315), ('f7f5', 0.1919191919191919)]
+2025-11-15 22:27:23,845 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:27:23,848 - INFO - Move 11: Stockfish (Black) plays Qh5# (d1h5)
+2025-11-15 22:27:23,850 - INFO - Saved moves for game 10 to logs/moves_game_10_20251115_222723.txt
+2025-11-15 22:27:23,850 - INFO - Game result: WIN
+2025-11-15 22:28:35,248 - INFO - Training step 6 | Loss: 4.2841 | Policy: 4.1937 | Value: 0.0903 | Weights synced to chess engine ✓
+2025-11-15 22:28:35,248 - INFO - 
+--- Game 11 ---
+2025-11-15 22:28:36,035 - INFO - Move 1: ChessEngine (White) plays b4 (b2b4) | Top MCTS moves: [('b2b4', 0.1414141414141414), ('g1f3', 0.12121212121212122), ('b2b3', 0.12121212121212122)]
+2025-11-15 22:28:37,748 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:28:37,828 - INFO - Move 2: Stockfish (Black) plays e5 (e7e5)
+2025-11-15 22:28:37,829 - INFO - Injecting random move for our: e2e3
+2025-11-15 22:28:37,863 - INFO - Move 4: Stockfish (Black) plays Bxb4 (f8b4)
+2025-11-15 22:28:38,456 - INFO - Move 5: ChessEngine (White) plays c3 (c2c3) | Top MCTS moves: [('c2c3', 0.1717171717171717), ('b1c3', 0.13131313131313133), ('g1f3', 0.12121212121212122)]
+2025-11-15 22:28:39,929 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:28:40,033 - INFO - Move 6: Stockfish (Black) plays Ba5 (b4a5)
+2025-11-15 22:28:40,629 - INFO - Move 7: ChessEngine (White) plays Na3 (b1a3) | Top MCTS moves: [('b1a3', 0.2727272727272727), ('g1f3', 0.15151515151515152), ('g1e2', 0.10101010101010101)]
+2025-11-15 22:28:42,342 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:28:42,344 - INFO - Injecting random move for stockfish: e5e4
+2025-11-15 22:28:42,985 - INFO - Move 9: ChessEngine (White) plays Nc4 (a3c4) | Top MCTS moves: [('a3c4', 0.23232323232323232), ('a3b5', 0.21212121212121213), ('g1e2', 0.10101010101010101)]
+2025-11-15 22:28:44,764 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:28:44,857 - INFO - Move 10: Stockfish (Black) plays Bb6 (a5b6)
+2025-11-15 22:28:45,617 - INFO - Move 11: ChessEngine (White) plays Ne2 (g1e2) | Top MCTS moves: [('g1e2', 0.20202020202020202), ('c4b6', 0.15151515151515152), ('g1f3', 0.0707070707070707)]
+2025-11-15 22:28:47,636 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:28:47,730 - INFO - Move 12: Stockfish (Black) plays Nf6 (g8f6)
+2025-11-15 22:28:47,730 - INFO - Injecting random move for our: a2a3
+2025-11-15 22:28:47,820 - INFO - Move 14: Stockfish (Black) plays Bc5 (b6c5)
+2025-11-15 22:28:48,762 - INFO - Move 15: ChessEngine (White) plays g3 (g2g3) | Top MCTS moves: [('g2g3', 0.16161616161616163), ('h2h3', 0.12121212121212122), ('c4b6', 0.1111111111111111)]
+2025-11-15 22:28:50,167 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:28:50,168 - INFO - Injecting random move for stockfish: c5d4
+2025-11-15 22:28:50,969 - INFO - Move 17: ChessEngine (White) plays Nb6 (c4b6) | Top MCTS moves: [('c4b6', 0.16161616161616163), ('d1a4', 0.1414141414141414), ('h2h3', 0.1414141414141414)]
+2025-11-15 22:28:53,132 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:28:53,144 - INFO - Move 18: Stockfish (Black) plays Bxb6 (d4b6)
+2025-11-15 22:28:53,959 - INFO - Move 19: ChessEngine (White) plays h4 (h2h4) | Top MCTS moves: [('h2h4', 0.1919191919191919), ('h2h3', 0.18181818181818182), ('d1a4', 0.12121212121212122)]
+2025-11-15 22:28:54,533 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:28:54,545 - INFO - Move 20: Stockfish (Black) plays d5 (d7d5)
+2025-11-15 22:28:54,545 - INFO - Injecting random move for our: h1h2
+2025-11-15 22:28:54,560 - INFO - Move 22: Stockfish (Black) plays O-O (e8g8)
+2025-11-15 22:28:55,492 - INFO - Move 23: ChessEngine (White) plays Rh3 (h2h3) | Top MCTS moves: [('h2h3', 0.23232323232323232), ('d1a4', 0.1414141414141414), ('d1b3', 0.1414141414141414)]
+2025-11-15 22:28:56,158 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:28:56,172 - INFO - Move 24: Stockfish (Black) plays Bg4 (c8g4)
+2025-11-15 22:28:57,335 - INFO - Move 25: ChessEngine (White) plays Qa4 (d1a4) | Top MCTS moves: [('d1a4', 0.25252525252525254), ('d1b3', 0.18181818181818182), ('a1b1', 0.1414141414141414)]
+2025-11-15 22:28:57,894 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:28:57,910 - INFO - Move 26: Stockfish (Black) plays Nbd7 (b8d7)
+2025-11-15 22:28:59,160 - INFO - Move 27: ChessEngine (White) plays Rb1 (a1b1) | Top MCTS moves: [('a1b1', 0.26262626262626265), ('e1d1', 0.23232323232323232), ('c3c4', 0.1717171717171717)]
+2025-11-15 22:29:00,280 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:29:00,282 - INFO - Injecting random move for stockfish: d8b8
+2025-11-15 22:29:01,727 - INFO - Move 29: ChessEngine (White) plays Kd1 (e1d1) | Top MCTS moves: [('e1d1', 0.41414141414141414), ('d2d3', 0.16161616161616163), ('c3c4', 0.15151515151515152)]
+2025-11-15 22:29:02,669 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:29:02,702 - INFO - Move 30: Stockfish (Black) plays Qd8 (b8d8)
+2025-11-15 22:29:03,998 - INFO - Move 31: ChessEngine (White) plays c4 (c3c4) | Top MCTS moves: [('c3c4', 0.24242424242424243), ('d2d3', 0.18181818181818182), ('f2f4', 0.18181818181818182)]
+2025-11-15 22:29:04,830 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:29:04,857 - INFO - Move 32: Stockfish (Black) plays d4 (d5d4)
+2025-11-15 22:29:04,858 - INFO - Injecting random move for our: b1b4
+2025-11-15 22:29:04,872 - INFO - Move 34: Stockfish (Black) plays d3 (d4d3)
+2025-11-15 22:29:05,985 - INFO - Move 35: ChessEngine (White) plays c5 (c4c5) | Top MCTS moves: [('c4c5', 0.7070707070707071), ('f2f4', 0.2222222222222222), ('f1g2', 0.050505050505050504)]
+2025-11-15 22:29:06,584 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:29:06,585 - INFO - Injecting random move for stockfish: a8c8
+2025-11-15 22:29:07,987 - INFO - Move 37: ChessEngine (White) plays f4 (f2f4) | Top MCTS moves: [('f2f4', 0.696969696969697), ('c1b2', 0.1414141414141414), ('f1g2', 0.10101010101010101)]
+2025-11-15 22:29:08,588 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:29:08,605 - INFO - Move 38: Stockfish (Black) plays Nxc5 (d7c5)
+2025-11-15 22:29:08,605 - INFO - Injecting random move for our: f1g2
+2025-11-15 22:29:08,684 - INFO - Move 40: Stockfish (Black) plays dxe2+ (d3e2)
+2025-11-15 22:29:10,299 - INFO - Move 41: ChessEngine (White) plays Kc2 (d1c2) | Top MCTS moves: [('d1c2', 1.0), ('d1e1', 0.0)]
+2025-11-15 22:29:10,524 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:29:10,546 - INFO - Move 42: Stockfish (Black) plays Nxa4 (c5a4)
+2025-11-15 22:29:11,935 - INFO - Move 43: ChessEngine (White) plays d3 (d2d3) | Top MCTS moves: [('d2d3', 0.3939393939393939), ('d2d4', 0.35353535353535354), ('g2f1', 0.12121212121212122)]
+2025-11-15 22:29:12,313 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:29:12,314 - INFO - Injecting random move for stockfish: d8e8
+2025-11-15 22:29:13,657 - INFO - Move 45: ChessEngine (White) plays Bd2 (c1d2) | Top MCTS moves: [('c1d2', 0.898989898989899), ('d3d4', 0.0707070707070707), ('c1b2', 0.030303030303030304)]
+2025-11-15 22:29:14,426 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:29:14,455 - INFO - Move 46: Stockfish (Black) plays exd3+ (e4d3)
+2025-11-15 22:29:15,927 - INFO - Move 47: ChessEngine (White) plays Kxd3 (c2d3) | Top MCTS moves: [('c2d3', 0.9090909090909091), ('c2c1', 0.09090909090909091), ('c2b3', 0.0)]
+2025-11-15 22:29:16,198 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:29:16,214 - INFO - Move 48: Stockfish (Black) plays Qd7+ (e8d7)
+2025-11-15 22:29:17,718 - INFO - Move 49: ChessEngine (White) plays Kc4 (d3c4) | Top MCTS moves: [('d3c4', 1.0), ('d3c2', 0.0), ('b4d4', 0.0)]
+2025-11-15 22:29:17,962 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:29:17,965 - INFO - Move 50: Stockfish (Black) plays Be6+ (g4e6)
+2025-11-15 22:29:17,965 - INFO - Injecting random move for our: g2d5
+2025-11-15 22:29:17,966 - INFO - Move 52: Stockfish (Black) plays Qxd5# (d7d5)
+2025-11-15 22:29:17,968 - INFO - Saved moves for game 11 to logs/moves_game_11_20251115_222917.txt
+2025-11-15 22:29:17,968 - INFO - Game result: LOSS
+2025-11-15 22:30:28,735 - INFO - Training step 7 | Loss: 4.2826 | Policy: 4.1967 | Value: 0.0858 | Weights synced to chess engine ✓
+2025-11-15 22:30:28,736 - INFO - 
+--- Game 12 ---
+2025-11-15 22:30:29,055 - INFO - Move 1: Stockfish (Black) plays e4 (e2e4)
+2025-11-15 22:30:29,589 - INFO - Move 2: ChessEngine (White) plays c6 (c7c6) | Top MCTS moves: [('c7c6', 0.13131313131313133), ('g7g5', 0.1111111111111111), ('g8f6', 0.10101010101010101)]
+2025-11-15 22:30:31,838 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:30:32,054 - INFO - Move 3: Stockfish (Black) plays d4 (d2d4)
+2025-11-15 22:30:32,879 - INFO - Move 4: ChessEngine (White) plays Nf6 (g8f6) | Top MCTS moves: [('g8f6', 0.12121212121212122), ('a7a6', 0.12121212121212122), ('d8c7', 0.10101010101010101)]
+2025-11-15 22:30:34,847 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:30:34,848 - INFO - Injecting random move for stockfish: g1h3
+2025-11-15 22:30:35,484 - INFO - Move 6: ChessEngine (White) plays b6 (b7b6) | Top MCTS moves: [('b7b6', 0.15151515151515152), ('g7g5', 0.15151515151515152), ('g7g6', 0.10101010101010101)]
+2025-11-15 22:30:37,887 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:30:37,996 - INFO - Move 7: Stockfish (Black) plays e5 (e4e5)
+2025-11-15 22:30:37,997 - INFO - Injecting random move for our: d8c7
+2025-11-15 22:30:38,011 - INFO - Move 9: Stockfish (Black) plays exf6 (e5f6)
+2025-11-15 22:30:38,998 - INFO - Move 10: ChessEngine (White) plays Bb7 (c8b7) | Top MCTS moves: [('c8b7', 0.15151515151515152), ('g7g6', 0.1414141414141414), ('g7g5', 0.1111111111111111)]
+2025-11-15 22:30:39,634 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:30:39,645 - INFO - Move 11: Stockfish (Black) plays fxe7 (f6e7)
+2025-11-15 22:30:40,504 - INFO - Move 12: ChessEngine (White) plays g6 (g7g6) | Top MCTS moves: [('g7g6', 0.20202020202020202), ('g7g5', 0.1717171717171717), ('c7h2', 0.1111111111111111)]
+2025-11-15 22:30:41,092 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:30:41,111 - INFO - Move 13: Stockfish (Black) plays exf8=Q+ (e7f8q)
+2025-11-15 22:30:42,037 - INFO - Move 14: ChessEngine (White) plays Kxf8 (e8f8) | Top MCTS moves: [('e8f8', 0.7878787878787878), ('h8f8', 0.21212121212121213)]
+2025-11-15 22:30:42,311 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:30:42,312 - INFO - Injecting random move for stockfish: d4d5
+2025-11-15 22:30:43,079 - INFO - Move 16: ChessEngine (White) plays f5 (f7f5) | Top MCTS moves: [('f7f5', 0.21212121212121213), ('c6c5', 0.1717171717171717), ('f7f6', 0.16161616161616163)]
+2025-11-15 22:30:43,667 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:30:43,686 - INFO - Move 17: Stockfish (Black) plays Qd4 (d1d4)
+2025-11-15 22:30:44,581 - INFO - Move 18: ChessEngine (White) plays c5 (c6c5) | Top MCTS moves: [('c6c5', 0.32323232323232326), ('f8e8', 0.26262626262626265), ('c7h2', 0.20202020202020202)]
+2025-11-15 22:30:45,020 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:30:45,033 - INFO - Move 19: Stockfish (Black) plays Qxh8+ (d4h8)
+2025-11-15 22:30:45,033 - INFO - Injecting random move for our: f8e7
+2025-11-15 22:30:45,040 - INFO - Move 21: Stockfish (Black) plays Bg5+ (c1g5)
+2025-11-15 22:30:46,231 - INFO - Move 22: ChessEngine (White) plays Kd6 (e7d6) | Top MCTS moves: [('e7d6', 0.7171717171717171), ('e7f7', 0.2828282828282828)]
+2025-11-15 22:30:46,484 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:30:46,487 - INFO - Move 23: Stockfish (Black) plays Qf6+ (h8f6)
+2025-11-15 22:30:47,571 - INFO - Move 24: ChessEngine (White) plays Kxd5 (d6d5) | Top MCTS moves: [('d6d5', 1.0)]
+2025-11-15 22:30:47,817 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:30:47,819 - INFO - Move 25: Stockfish (Black) plays Nc3# (b1c3)
+2025-11-15 22:30:47,822 - INFO - Saved moves for game 12 to logs/moves_game_12_20251115_223047.txt
+2025-11-15 22:30:47,822 - INFO - Game result: WIN
+2025-11-15 22:32:04,496 - INFO - Training step 8 | Loss: 3.9098 | Policy: 3.8460 | Value: 0.0638 | Weights synced to chess engine ✓
+2025-11-15 22:32:04,496 - INFO - 
+--- Game 13 ---
+2025-11-15 22:32:05,213 - INFO - Move 1: ChessEngine (White) plays g4 (g2g4) | Top MCTS moves: [('g2g4', 0.16161616161616163), ('b2b4', 0.1414141414141414), ('g2g3', 0.1111111111111111)]
+2025-11-15 22:32:07,391 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:32:07,568 - INFO - Move 2: Stockfish (Black) plays d5 (d7d5)
+2025-11-15 22:32:07,569 - INFO - Injecting random move for our: f1h3
+2025-11-15 22:32:07,635 - INFO - Move 4: Stockfish (Black) plays h5 (h7h5)
+2025-11-15 22:32:08,292 - INFO - Move 5: ChessEngine (White) plays f3 (f2f3) | Top MCTS moves: [('f2f3', 0.1414141414141414), ('f2f4', 0.1414141414141414), ('a2a3', 0.13131313131313133)]
+2025-11-15 22:32:09,496 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:32:09,520 - INFO - Move 6: Stockfish (Black) plays hxg4 (h5g4)
+2025-11-15 22:32:10,208 - INFO - Move 7: ChessEngine (White) plays a3 (a2a3) | Top MCTS moves: [('a2a3', 0.20202020202020202), ('b2b4', 0.13131313131313133), ('b1a3', 0.10101010101010101)]
+2025-11-15 22:32:10,796 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:32:10,810 - INFO - Move 8: Stockfish (Black) plays gxh3 (g4h3)
+2025-11-15 22:32:11,497 - INFO - Move 9: ChessEngine (White) plays b4 (b2b4) | Top MCTS moves: [('b2b4', 0.21212121212121213), ('g1h3', 0.18181818181818182), ('d2d3', 0.12121212121212122)]
+2025-11-15 22:32:11,917 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:32:11,918 - INFO - Injecting random move for stockfish: c7c5
+2025-11-15 22:32:12,729 - INFO - Move 11: ChessEngine (White) plays Nxh3 (g1h3) | Top MCTS moves: [('g1h3', 0.18181818181818182), ('c1b2', 0.12121212121212122), ('d2d3', 0.1111111111111111)]
+2025-11-15 22:32:13,284 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:32:13,307 - INFO - Move 12: Stockfish (Black) plays Bxh3 (c8h3)
+2025-11-15 22:32:13,307 - INFO - Injecting random move for our: a1a2
+2025-11-15 22:32:13,319 - INFO - Move 14: Stockfish (Black) plays e5 (e7e5)
+2025-11-15 22:32:14,096 - INFO - Move 15: ChessEngine (White) plays Bb2 (c1b2) | Top MCTS moves: [('c1b2', 0.1919191919191919), ('b1c3', 0.18181818181818182), ('d2d3', 0.16161616161616163)]
+2025-11-15 22:32:14,474 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:32:14,475 - INFO - Injecting random move for stockfish: a7a5
+2025-11-15 22:32:15,428 - INFO - Move 17: ChessEngine (White) plays e4 (e2e4) | Top MCTS moves: [('e2e4', 0.23232323232323232), ('b1c3', 0.1717171717171717), ('d2d4', 0.1717171717171717)]
+2025-11-15 22:32:15,849 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:32:15,858 - INFO - Move 18: Stockfish (Black) plays Qh4+ (d8h4)
+2025-11-15 22:32:16,951 - INFO - Move 19: ChessEngine (White) plays Ke2 (e1e2) | Top MCTS moves: [('e1e2', 1.0)]
+2025-11-15 22:32:17,214 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:32:17,231 - INFO - Move 20: Stockfish (Black) plays dxe4 (d5e4)
+2025-11-15 22:32:18,385 - INFO - Move 21: ChessEngine (White) plays d3 (d2d3) | Top MCTS moves: [('d2d3', 0.2828282828282828), ('d2d4', 0.1717171717171717), ('b1c3', 0.15151515151515152)]
+2025-11-15 22:32:19,135 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:32:19,151 - INFO - Move 22: Stockfish (Black) plays exf3+ (e4f3)
+2025-11-15 22:32:19,152 - INFO - Injecting random move for our: e2d2
+2025-11-15 22:32:19,156 - INFO - Move 24: Stockfish (Black) plays Qf4+ (h4f4)
+2025-11-15 22:32:20,152 - INFO - Move 25: ChessEngine (White) plays Ke1 (d2e1) | Top MCTS moves: [('d2e1', 0.5050505050505051), ('d2c3', 0.494949494949495)]
+2025-11-15 22:32:20,411 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:32:20,414 - INFO - Move 26: Stockfish (Black) plays Qe3+ (f4e3)
+2025-11-15 22:32:21,507 - INFO - Move 27: ChessEngine (White) plays Qe2 (d1e2) | Top MCTS moves: [('d1e2', 1.0)]
+2025-11-15 22:32:21,748 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:32:21,750 - INFO - Move 28: Stockfish (Black) plays Qxe2# (e3e2)
+2025-11-15 22:32:21,752 - INFO - Saved moves for game 13 to logs/moves_game_13_20251115_223221.txt
+2025-11-15 22:32:21,752 - INFO - Game result: LOSS
+2025-11-15 22:33:26,669 - INFO - Training step 9 | Loss: 3.8737 | Policy: 3.8080 | Value: 0.0657 | Weights synced to chess engine ✓
+2025-11-15 22:33:26,670 - INFO - 
+--- Game 14 ---
+2025-11-15 22:33:26,980 - INFO - Move 1: Stockfish (Black) plays e4 (e2e4)
+2025-11-15 22:33:27,579 - INFO - Move 2: ChessEngine (White) plays Nh6 (g8h6) | Top MCTS moves: [('g8h6', 0.3939393939393939), ('h7h6', 0.32323232323232326), ('g7g5', 0.23232323232323232)]
+2025-11-15 22:33:29,523 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:33:29,524 - INFO - Injecting random move for stockfish: c2c3
+2025-11-15 22:33:30,046 - INFO - Move 4: ChessEngine (White) plays Rg8 (h8g8) | Top MCTS moves: [('h8g8', 0.6262626262626263), ('b8a6', 0.32323232323232326), ('b8c6', 0.010101010101010102)]
+2025-11-15 22:33:32,123 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:33:32,180 - INFO - Move 5: Stockfish (Black) plays d4 (d2d4)
+2025-11-15 22:33:32,701 - INFO - Move 6: ChessEngine (White) plays g5 (g7g5) | Top MCTS moves: [('g7g5', 0.35353535353535354), ('b8c6', 0.24242424242424243), ('b8a6', 0.2222222222222222)]
+2025-11-15 22:33:33,840 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:33:33,923 - INFO - Move 7: Stockfish (Black) plays h4 (h2h4)
+2025-11-15 22:33:33,923 - INFO - Injecting random move for our: h6f5
+2025-11-15 22:33:33,936 - INFO - Move 9: Stockfish (Black) plays exf5 (e4f5)
+2025-11-15 22:33:34,531 - INFO - Move 10: ChessEngine (White) plays h6 (h7h6) | Top MCTS moves: [('h7h6', 0.3939393939393939), ('f8h6', 0.31313131313131315), ('f8g7', 0.24242424242424243)]
+2025-11-15 22:33:35,303 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:33:35,304 - INFO - Injecting random move for stockfish: h4h5
+2025-11-15 22:33:35,901 - INFO - Move 12: ChessEngine (White) plays f6 (f7f6) | Top MCTS moves: [('f7f6', 0.37373737373737376), ('f8g7', 0.3434343434343434), ('b8c6', 0.2222222222222222)]
+2025-11-15 22:33:36,471 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:33:36,490 - INFO - Move 13: Stockfish (Black) plays Bd3 (f1d3)
+2025-11-15 22:33:37,135 - INFO - Move 14: ChessEngine (White) plays Bg7 (f8g7) | Top MCTS moves: [('f8g7', 0.47474747474747475), ('b8c6', 0.4444444444444444), ('e8f7', 0.010101010101010102)]
+2025-11-15 22:33:37,841 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:33:37,859 - INFO - Move 15: Stockfish (Black) plays d5 (d4d5)
+2025-11-15 22:33:38,744 - INFO - Move 16: ChessEngine (White) plays Bf8 (g7f8) | Top MCTS moves: [('g7f8', 0.494949494949495), ('e8f8', 0.45454545454545453), ('e8f7', 0.010101010101010102)]
+2025-11-15 22:33:39,437 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:33:39,470 - INFO - Move 17: Stockfish (Black) plays Be3 (c1e3)
+2025-11-15 22:33:39,471 - INFO - Injecting random move for our: g8h8
+2025-11-15 22:33:39,505 - INFO - Move 19: Stockfish (Black) plays Nf3 (g1f3)
+2025-11-15 22:33:40,593 - INFO - Move 20: ChessEngine (White) plays Rg8 (h8g8) | Top MCTS moves: [('h8g8', 0.9090909090909091), ('h8h7', 0.010101010101010102), ('f8g7', 0.010101010101010102)]
+2025-11-15 22:33:41,229 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:33:41,269 - INFO - Move 21: Stockfish (Black) plays Bc2 (d3c2)
+2025-11-15 22:33:42,165 - INFO - Move 22: ChessEngine (White) plays Bg7 (f8g7) | Top MCTS moves: [('f8g7', 0.7878787878787878), ('b8c6', 0.09090909090909091), ('d7d6', 0.04040404040404041)]
+2025-11-15 22:33:42,895 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:33:42,897 - INFO - Injecting random move for stockfish: a2a3
+2025-11-15 22:33:43,974 - INFO - Move 24: ChessEngine (White) plays Bf8 (g7f8) | Top MCTS moves: [('g7f8', 0.8080808080808081), ('e8f8', 0.12121212121212122), ('e8f7', 0.010101010101010102)]
+2025-11-15 22:33:44,667 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:33:44,716 - INFO - Move 25: Stockfish (Black) plays O-O (e1g1)
+2025-11-15 22:33:45,789 - INFO - Move 26: ChessEngine (White) plays Bg7 (f8g7) | Top MCTS moves: [('f8g7', 0.7575757575757576), ('b8c6', 0.10101010101010101), ('b8a6', 0.050505050505050504)]
+2025-11-15 22:33:46,438 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:33:46,474 - INFO - Move 27: Stockfish (Black) plays Re1 (f1e1)
+2025-11-15 22:33:46,474 - INFO - Injecting random move for our: e7e5
+2025-11-15 22:33:46,510 - INFO - Move 29: Stockfish (Black) plays fxe6 (f5e6)
+2025-11-15 22:33:47,587 - INFO - Move 30: ChessEngine (White) plays Kf8 (e8f8) | Top MCTS moves: [('e8f8', 0.5353535353535354), ('g7f8', 0.23232323232323232), ('d8e7', 0.16161616161616163)]
+2025-11-15 22:33:48,214 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:33:48,243 - INFO - Move 31: Stockfish (Black) plays Bd4 (e3d4)
+2025-11-15 22:33:49,403 - INFO - Move 32: ChessEngine (White) plays Ke7 (f8e7) | Top MCTS moves: [('f8e7', 0.5252525252525253), ('b8c6', 0.2222222222222222), ('d8e8', 0.18181818181818182)]
+2025-11-15 22:33:49,985 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:33:49,986 - INFO - Injecting random move for stockfish: d1c1
+2025-11-15 22:33:51,167 - INFO - Move 34: ChessEngine (White) plays Bf8 (g7f8) | Top MCTS moves: [('g7f8', 0.6161616161616161), ('b8c6', 0.18181818181818182), ('d8e8', 0.1717171717171717)]
+2025-11-15 22:33:51,857 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:33:51,873 - INFO - Move 35: Stockfish (Black) plays exd7+ (e6d7)
+2025-11-15 22:33:53,293 - INFO - Move 36: ChessEngine (White) plays Kf7 (e7f7) | Top MCTS moves: [('e7f7', 0.8686868686868687), ('e7d7', 0.13131313131313133), ('e7d6', 0.0)]
+2025-11-15 22:33:53,587 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:33:53,608 - INFO - Move 37: Stockfish (Black) plays dxc8=Q (d7c8q)
+2025-11-15 22:33:53,608 - INFO - Injecting random move for our: b7b6
+2025-11-15 22:33:53,622 - INFO - Move 39: Stockfish (Black) plays Qe6+ (c8e6)
+2025-11-15 22:33:55,214 - INFO - Move 40: ChessEngine (White) plays Kg7 (f7g7) | Top MCTS moves: [('f7g7', 1.0)]
+2025-11-15 22:33:55,476 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:33:55,485 - INFO - Move 41: Stockfish (Black) plays Nxg5 (f3g5)
+2025-11-15 22:33:57,026 - INFO - Move 42: ChessEngine (White) plays Qe8 (d8e8) | Top MCTS moves: [('d8e8', 0.41414141414141414), ('f8e7', 0.24242424242424243), ('f8c5', 0.15151515151515152)]
+2025-11-15 22:33:57,378 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:33:57,381 - INFO - Move 43: Stockfish (Black) plays Qxf6# (e6f6)
+2025-11-15 22:33:57,383 - INFO - Saved moves for game 14 to logs/moves_game_14_20251115_223357.txt
+2025-11-15 22:33:57,383 - INFO - Game result: WIN
+2025-11-15 22:35:18,745 - INFO - Training step 10 | Loss: 3.8298 | Policy: 3.7764 | Value: 0.0534 | Weights synced to chess engine ✓
+2025-11-15 22:35:18,746 - INFO - 
+--- Game 15 ---
+2025-11-15 22:35:19,705 - INFO - Move 1: ChessEngine (White) plays a3 (a2a3) | Top MCTS moves: [('a2a3', 0.15151515151515152), ('g2g4', 0.1414141414141414), ('b2b4', 0.13131313131313133)]
+2025-11-15 22:35:21,858 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:35:21,997 - INFO - Move 2: Stockfish (Black) plays e5 (e7e5)
+2025-11-15 22:35:22,639 - INFO - Move 3: ChessEngine (White) plays b4 (b2b4) | Top MCTS moves: [('b2b4', 0.2222222222222222), ('g2g3', 0.1919191919191919), ('g2g4', 0.15151515151515152)]
+2025-11-15 22:35:24,407 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:35:24,525 - INFO - Move 4: Stockfish (Black) plays d5 (d7d5)
+2025-11-15 22:35:25,248 - INFO - Move 5: ChessEngine (White) plays g3 (g2g3) | Top MCTS moves: [('g2g3', 0.1919191919191919), ('g2g4', 0.1414141414141414), ('c1b2', 0.09090909090909091)]
+2025-11-15 22:35:27,194 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:35:27,297 - INFO - Move 6: Stockfish (Black) plays Nf6 (g8f6)
+2025-11-15 22:35:27,297 - INFO - Injecting random move for our: h2h4
+2025-11-15 22:35:27,383 - INFO - Move 8: Stockfish (Black) plays a5 (a7a5)
+2025-11-15 22:35:28,152 - INFO - Move 9: ChessEngine (White) plays Nh3 (g1h3) | Top MCTS moves: [('g1h3', 0.18181818181818182), ('c2c3', 0.12121212121212122), ('c1b2', 0.1111111111111111)]
+2025-11-15 22:35:29,451 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:35:29,483 - INFO - Move 10: Stockfish (Black) plays axb4 (a5b4)
+2025-11-15 22:35:30,436 - INFO - Move 11: ChessEngine (White) plays e4 (e2e4) | Top MCTS moves: [('e2e4', 0.15151515151515152), ('c2c3', 0.1111111111111111), ('f2f4', 0.1111111111111111)]
+2025-11-15 22:35:31,363 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:35:31,364 - INFO - Injecting random move for stockfish: h7h5
+2025-11-15 22:35:32,255 - INFO - Move 13: ChessEngine (White) plays Bb2 (c1b2) | Top MCTS moves: [('c1b2', 0.1111111111111111), ('f2f4', 0.1111111111111111), ('f2f3', 0.10101010101010101)]
+2025-11-15 22:35:33,328 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:35:33,353 - INFO - Move 14: Stockfish (Black) plays Nxe4 (f6e4)
+2025-11-15 22:35:34,412 - INFO - Move 15: ChessEngine (White) plays Ke2 (e1e2) | Top MCTS moves: [('e1e2', 0.23232323232323232), ('f2f3', 0.15151515151515152), ('f2f4', 0.15151515151515152)]
+2025-11-15 22:35:35,357 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:35:35,383 - INFO - Move 16: Stockfish (Black) plays Bg4+ (c8g4)
+2025-11-15 22:35:36,443 - INFO - Move 17: ChessEngine (White) plays Ke3 (e2e3) | Top MCTS moves: [('e2e3', 0.5656565656565656), ('f2f3', 0.36363636363636365), ('e2d3', 0.04040404040404041)]
+2025-11-15 22:35:36,741 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:35:36,765 - INFO - Move 18: Stockfish (Black) plays Bxd1 (g4d1)
+2025-11-15 22:35:36,766 - INFO - Injecting random move for our: a3b4
+2025-11-15 22:35:36,779 - INFO - Move 20: Stockfish (Black) plays Rxa1 (a8a1)
+2025-11-15 22:35:37,933 - INFO - Move 21: ChessEngine (White) plays Bb5+ (f1b5) | Top MCTS moves: [('f1b5', 0.13131313131313133), ('f2f4', 0.1111111111111111), ('c2c4', 0.10101010101010101)]
+2025-11-15 22:35:38,488 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:35:38,499 - INFO - Move 22: Stockfish (Black) plays c6 (c7c6)
+2025-11-15 22:35:39,651 - INFO - Move 23: ChessEngine (White) plays Ba6 (b5a6) | Top MCTS moves: [('b5a6', 0.16161616161616163), ('b2c3', 0.16161616161616163), ('h1h2', 0.1414141414141414)]
+2025-11-15 22:35:40,336 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:35:40,337 - INFO - Injecting random move for stockfish: b7a6
+2025-11-15 22:35:41,350 - INFO - Move 25: ChessEngine (White) plays f4 (f2f4) | Top MCTS moves: [('f2f4', 0.18181818181818182), ('h1h2', 0.15151515151515152), ('b2c3', 0.13131313131313133)]
+2025-11-15 22:35:41,922 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:35:41,941 - INFO - Move 26: Stockfish (Black) plays d4+ (d5d4)
+2025-11-15 22:35:43,068 - INFO - Move 27: ChessEngine (White) plays Kxe4 (e3e4) | Top MCTS moves: [('e3e4', 0.9292929292929293), ('e3d3', 0.0707070707070707), ('b2d4', 0.0)]
+2025-11-15 22:35:43,341 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:35:43,344 - INFO - Move 28: Stockfish (Black) plays Qd5+ (d8d5)
+2025-11-15 22:35:43,345 - INFO - Injecting random move for our: e4d3
+2025-11-15 22:35:43,346 - INFO - Move 30: Stockfish (Black) plays e4# (e5e4)
+2025-11-15 22:35:43,349 - INFO - Saved moves for game 15 to logs/moves_game_15_20251115_223543.txt
+2025-11-15 22:35:43,349 - INFO - Game result: LOSS
+2025-11-15 22:36:52,613 - INFO - Training step 11 | Loss: 3.6474 | Policy: 3.6094 | Value: 0.0380 | Weights synced to chess engine ✓
+2025-11-15 22:36:52,614 - INFO - 
+--- Game 16 ---
+2025-11-15 22:36:52,922 - INFO - Move 1: Stockfish (Black) plays e4 (e2e4)
+2025-11-15 22:36:53,401 - INFO - Move 2: ChessEngine (White) plays h5 (h7h5) | Top MCTS moves: [('h7h5', 0.36363636363636365), ('f7f6', 0.1919191919191919), ('a7a6', 0.09090909090909091)]
+2025-11-15 22:36:55,453 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:36:55,534 - INFO - Move 3: Stockfish (Black) plays d4 (d2d4)
+2025-11-15 22:36:56,096 - INFO - Move 4: ChessEngine (White) plays f6 (f7f6) | Top MCTS moves: [('f7f6', 0.47474747474747475), ('a7a6', 0.10101010101010101), ('f7f5', 0.09090909090909091)]
+2025-11-15 22:36:57,465 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:36:57,541 - INFO - Move 5: Stockfish (Black) plays Nf3 (g1f3)
+2025-11-15 22:36:58,173 - INFO - Move 6: ChessEngine (White) plays g5 (g7g5) | Top MCTS moves: [('g7g5', 0.3939393939393939), ('a7a6', 0.16161616161616163), ('a7a5', 0.13131313131313133)]
+2025-11-15 22:36:59,404 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:36:59,406 - INFO - Injecting random move for stockfish: b1c3
+2025-11-15 22:37:00,076 - INFO - Move 8: ChessEngine (White) plays g4 (g5g4) | Top MCTS moves: [('g5g4', 0.21212121212121213), ('a7a6', 0.20202020202020202), ('e7e6', 0.13131313131313133)]
+2025-11-15 22:37:01,201 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:37:01,239 - INFO - Move 9: Stockfish (Black) plays Nh4 (f3h4)
+2025-11-15 22:37:01,971 - INFO - Move 10: ChessEngine (White) plays a6 (a7a6) | Top MCTS moves: [('a7a6', 0.2222222222222222), ('e7e6', 0.15151515151515152), ('h8h7', 0.13131313131313133)]
+2025-11-15 22:37:02,867 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:37:02,907 - INFO - Move 11: Stockfish (Black) plays Ng6 (h4g6)
+2025-11-15 22:37:03,793 - INFO - Move 12: ChessEngine (White) plays b5 (b7b5) | Top MCTS moves: [('b7b5', 0.2727272727272727), ('e7e6', 0.24242424242424243), ('h8h7', 0.1717171717171717)]
+2025-11-15 22:37:04,385 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:37:04,402 - INFO - Move 13: Stockfish (Black) plays h3 (h2h3)
+2025-11-15 22:37:04,403 - INFO - Injecting random move for our: e7e5
+2025-11-15 22:37:04,440 - INFO - Move 15: Stockfish (Black) plays Nxh8 (g6h8)
+2025-11-15 22:37:05,255 - INFO - Move 16: ChessEngine (White) plays Ke7 (e8e7) | Top MCTS moves: [('e8e7', 0.30303030303030304), ('f8e7', 0.1111111111111111), ('f8h6', 0.09090909090909091)]
+2025-11-15 22:37:05,914 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:37:05,933 - INFO - Move 17: Stockfish (Black) plays hxg4 (h3g4)
+2025-11-15 22:37:06,902 - INFO - Move 18: ChessEngine (White) plays Kd6 (e7d6) | Top MCTS moves: [('e7d6', 0.5353535353535354), ('e7e6', 0.3838383838383838), ('g8h6', 0.08080808080808081)]
+2025-11-15 22:37:07,819 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:37:07,840 - INFO - Move 19: Stockfish (Black) plays Nf7+ (h8f7)
+2025-11-15 22:37:08,757 - INFO - Move 20: ChessEngine (White) plays Kc6 (d6c6) | Top MCTS moves: [('d6c6', 0.6565656565656566), ('d6e6', 0.21212121212121213), ('d6e7', 0.13131313131313133)]
+2025-11-15 22:37:09,053 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:37:09,054 - INFO - Injecting random move for stockfish: f7h8
+2025-11-15 22:37:10,144 - INFO - Move 22: ChessEngine (White) plays Be7 (f8e7) | Top MCTS moves: [('f8e7', 0.23232323232323232), ('f8h6', 0.18181818181818182), ('c8b7', 0.16161616161616163)]
+2025-11-15 22:37:10,909 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:37:10,938 - INFO - Move 23: Stockfish (Black) plays d5+ (d4d5)
+2025-11-15 22:37:10,938 - INFO - Injecting random move for our: c6b6
+2025-11-15 22:37:10,978 - INFO - Move 25: Stockfish (Black) plays d6 (d5d6)
+2025-11-15 22:37:12,180 - INFO - Move 26: ChessEngine (White) plays Nh6 (g8h6) | Top MCTS moves: [('g8h6', 0.5656565656565656), ('e7d6', 0.2222222222222222), ('b8c6', 0.12121212121212122)]
+2025-11-15 22:37:12,793 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:37:12,794 - INFO - Injecting random move for stockfish: d1d3
+2025-11-15 22:37:14,092 - INFO - Move 28: ChessEngine (White) plays Bxd6 (e7d6) | Top MCTS moves: [('e7d6', 0.30303030303030304), ('b8c6', 0.20202020202020202), ('e7f8', 0.12121212121212122)]
+2025-11-15 22:37:15,173 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:37:15,198 - INFO - Move 29: Stockfish (Black) plays Bxh6 (c1h6)
+2025-11-15 22:37:16,424 - INFO - Move 30: ChessEngine (White) plays Qe7 (d8e7) | Top MCTS moves: [('d8e7', 0.797979797979798), ('d6f8', 0.20202020202020202), ('d8h8', 0.0)]
+2025-11-15 22:37:17,092 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:37:17,137 - INFO - Move 31: Stockfish (Black) plays Be3+ (h6e3)
+2025-11-15 22:37:18,360 - INFO - Move 32: ChessEngine (White) plays c5 (c7c5) | Top MCTS moves: [('c7c5', 0.40404040404040403), ('b6b7', 0.3434343434343434), ('b6a5', 0.25252525252525254)]
+2025-11-15 22:37:18,687 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:37:18,695 - INFO - Move 33: Stockfish (Black) plays Nf7 (h8f7)
+2025-11-15 22:37:18,695 - INFO - Injecting random move for our: e7f7
+2025-11-15 22:37:18,703 - INFO - Move 35: Stockfish (Black) plays Qxd6+ (d3d6)
+2025-11-15 22:37:20,034 - INFO - Move 36: ChessEngine (White) plays Ka5 (b6a5) | Top MCTS moves: [('b6a5', 0.5959595959595959), ('b6b7', 0.29292929292929293), ('b8c6', 0.1111111111111111)]
+2025-11-15 22:37:20,329 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:37:20,333 - INFO - Move 37: Stockfish (Black) plays Qc7+ (d6c7)
+2025-11-15 22:37:21,666 - INFO - Move 38: ChessEngine (White) plays Kb4 (a5b4) | Top MCTS moves: [('a5b4', 1.0)]
+2025-11-15 22:37:21,942 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:37:21,943 - INFO - Injecting random move for stockfish: e3h6
+2025-11-15 22:37:23,178 - INFO - Move 40: ChessEngine (White) plays Qg7 (f7g7) | Top MCTS moves: [('f7g7', 0.797979797979798), ('c8b7', 0.08080808080808081), ('f7c4', 0.08080808080808081)]
+2025-11-15 22:37:23,494 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:37:23,496 - INFO - Move 41: Stockfish (Black) plays a3# (a2a3)
+2025-11-15 22:37:23,499 - INFO - Saved moves for game 16 to logs/moves_game_16_20251115_223723.txt
+2025-11-15 22:37:23,500 - INFO - Game result: WIN
+2025-11-15 22:38:36,199 - INFO - Training step 12 | Loss: 3.6584 | Policy: 3.6204 | Value: 0.0379 | Weights synced to chess engine ✓
+2025-11-15 22:38:36,199 - INFO - 
+--- Game 17 ---
+2025-11-15 22:38:36,851 - INFO - Move 1: ChessEngine (White) plays h3 (h2h3) | Top MCTS moves: [('h2h3', 0.1414141414141414), ('a2a3', 0.13131313131313133), ('b2b3', 0.10101010101010101)]
+2025-11-15 22:38:38,820 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:38:38,885 - INFO - Move 2: Stockfish (Black) plays e5 (e7e5)
+2025-11-15 22:38:38,885 - INFO - Injecting random move for our: b2b3
+2025-11-15 22:38:38,984 - INFO - Move 4: Stockfish (Black) plays d5 (d7d5)
+2025-11-15 22:38:39,665 - INFO - Move 5: ChessEngine (White) plays Nc3 (b1c3) | Top MCTS moves: [('b1c3', 0.18181818181818182), ('b1a3', 0.10101010101010101), ('g2g4', 0.10101010101010101)]
+2025-11-15 22:38:41,326 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:38:41,465 - INFO - Move 6: Stockfish (Black) plays d4 (d5d4)
+2025-11-15 22:38:42,183 - INFO - Move 7: ChessEngine (White) plays Ba3 (c1a3) | Top MCTS moves: [('c1a3', 0.3838383838383838), ('c1b2', 0.12121212121212122), ('g2g4', 0.08080808080808081)]
+2025-11-15 22:38:42,960 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:38:42,961 - INFO - Injecting random move for stockfish: c7c6
+2025-11-15 22:38:43,809 - INFO - Move 9: ChessEngine (White) plays Nf3 (g1f3) | Top MCTS moves: [('g1f3', 0.13131313131313133), ('a1b1', 0.13131313131313133), ('g2g4', 0.12121212121212122)]
+2025-11-15 22:38:44,639 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:38:44,659 - INFO - Move 10: Stockfish (Black) plays Bxa3 (f8a3)
+2025-11-15 22:38:45,641 - INFO - Move 11: ChessEngine (White) plays Nxd4 (f3d4) | Top MCTS moves: [('f3d4', 0.32323232323232326), ('f3g1', 0.13131313131313133), ('f3h4', 0.10101010101010101)]
+2025-11-15 22:38:46,226 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:38:46,244 - INFO - Move 12: Stockfish (Black) plays exd4 (e5d4)
+2025-11-15 22:38:46,244 - INFO - Injecting random move for our: f2f4
+2025-11-15 22:38:46,248 - INFO - Move 14: Stockfish (Black) plays Qh4+ (d8h4)
+2025-11-15 22:38:47,077 - INFO - Move 15: ChessEngine (White) plays g3 (g2g3) | Top MCTS moves: [('g2g3', 1.0)]
+2025-11-15 22:38:47,325 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:38:47,326 - INFO - Injecting random move for stockfish: h4e7
+2025-11-15 22:38:48,353 - INFO - Move 17: ChessEngine (White) plays e4 (e2e4) | Top MCTS moves: [('e2e4', 0.5858585858585859), ('e2e3', 0.32323232323232326), ('h1g1', 0.030303030303030304)]
+2025-11-15 22:38:48,817 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:38:48,824 - INFO - Move 18: Stockfish (Black) plays dxc3 (d4c3)
+2025-11-15 22:38:49,992 - INFO - Move 19: ChessEngine (White) plays Ke2 (e1e2) | Top MCTS moves: [('e1e2', 0.6464646464646465), ('d1g4', 0.0707070707070707), ('d1f3', 0.06060606060606061)]
+2025-11-15 22:38:50,504 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:38:50,511 - INFO - Move 20: Stockfish (Black) plays Qxe4+ (e7e4)
+2025-11-15 22:38:50,512 - INFO - Injecting random move for our: e2f2
+2025-11-15 22:38:50,615 - INFO - Move 22: Stockfish (Black) plays Bc5+ (a3c5)
+2025-11-15 22:38:51,744 - INFO - Move 23: ChessEngine (White) plays d4 (d2d4) | Top MCTS moves: [('d2d4', 1.0)]
+2025-11-15 22:38:52,063 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:38:52,064 - INFO - Injecting random move for stockfish: c5b6
+2025-11-15 22:38:52,987 - INFO - Move 25: ChessEngine (White) plays Qg4 (d1g4) | Top MCTS moves: [('d1g4', 0.2222222222222222), ('d1f3', 0.12121212121212122), ('d1d2', 0.12121212121212122)]
+2025-11-15 22:38:54,146 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:38:54,149 - INFO - Move 26: Stockfish (Black) plays Bxd4# (b6d4)
+2025-11-15 22:38:54,152 - INFO - Saved moves for game 17 to logs/moves_game_17_20251115_223854.txt
+2025-11-15 22:38:54,153 - INFO - Game result: LOSS
+2025-11-15 22:40:05,297 - INFO - Training step 13 | Loss: 3.6518 | Policy: 3.5975 | Value: 0.0543 | Weights synced to chess engine ✓
+2025-11-15 22:40:05,297 - INFO - 
+--- Game 18 ---
+2025-11-15 22:40:05,622 - INFO - Move 1: Stockfish (Black) plays e4 (e2e4)
+2025-11-15 22:40:06,128 - INFO - Move 2: ChessEngine (White) plays f6 (f7f6) | Top MCTS moves: [('f7f6', 0.35353535353535354), ('f7f5', 0.13131313131313133), ('b7b6', 0.1111111111111111)]
+2025-11-15 22:40:08,116 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:40:08,116 - INFO - Injecting random move for stockfish: d1h5
+2025-11-15 22:40:08,967 - INFO - Move 4: ChessEngine (White) plays g6 (g7g6) | Top MCTS moves: [('g7g6', 1.0)]
+2025-11-15 22:40:09,417 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:40:09,570 - INFO - Move 5: Stockfish (Black) plays Qd1 (h5d1)
+2025-11-15 22:40:10,102 - INFO - Move 6: ChessEngine (White) plays h5 (h7h5) | Top MCTS moves: [('h7h5', 0.21212121212121213), ('h7h6', 0.18181818181818182), ('g6g5', 0.1717171717171717)]
+2025-11-15 22:40:11,898 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:40:11,939 - INFO - Move 7: Stockfish (Black) plays d4 (d2d4)
+2025-11-15 22:40:11,939 - INFO - Injecting random move for our: a7a5
+2025-11-15 22:40:11,962 - INFO - Move 9: Stockfish (Black) plays Nf3 (g1f3)
+2025-11-15 22:40:12,768 - INFO - Move 10: ChessEngine (White) plays Rh7 (h8h7) | Top MCTS moves: [('h8h7', 0.3838383838383838), ('g6g5', 0.1919191919191919), ('b8c6', 0.1717171717171717)]
+2025-11-15 22:40:14,032 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:40:14,064 - INFO - Move 11: Stockfish (Black) plays Nc3 (b1c3)
+2025-11-15 22:40:14,681 - INFO - Move 12: ChessEngine (White) plays Rh6 (h7h6) | Top MCTS moves: [('h7h6', 0.3434343434343434), ('b8c6', 0.1919191919191919), ('e8f7', 0.13131313131313133)]
+2025-11-15 22:40:15,746 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:40:15,746 - INFO - Injecting random move for stockfish: f1b5
+2025-11-15 22:40:16,352 - INFO - Move 14: ChessEngine (White) plays g5 (g6g5) | Top MCTS moves: [('g6g5', 0.3838383838383838), ('e8f7', 0.16161616161616163), ('b8c6', 0.16161616161616163)]
+2025-11-15 22:40:17,067 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:40:17,090 - INFO - Move 15: Stockfish (Black) plays O-O (e1g1)
+2025-11-15 22:40:17,842 - INFO - Move 16: ChessEngine (White) plays h4 (h5h4) | Top MCTS moves: [('h5h4', 0.2727272727272727), ('c7c6', 0.25252525252525254), ('g5g4', 0.24242424242424243)]
+2025-11-15 22:40:18,591 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:40:18,633 - INFO - Move 17: Stockfish (Black) plays Bc4 (b5c4)
+2025-11-15 22:40:19,331 - INFO - Move 18: ChessEngine (White) plays c6 (c7c6) | Top MCTS moves: [('c7c6', 0.29292929292929293), ('b8c6', 0.26262626262626265), ('b7b6', 0.13131313131313133)]
+2025-11-15 22:40:20,534 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:40:20,573 - INFO - Move 19: Stockfish (Black) plays Bxg8 (c4g8)
+2025-11-15 22:40:20,574 - INFO - Injecting random move for our: e7e5
+2025-11-15 22:40:20,595 - INFO - Move 21: Stockfish (Black) plays Bc4 (g8c4)
+2025-11-15 22:40:21,723 - INFO - Move 22: ChessEngine (White) plays g4 (g5g4) | Top MCTS moves: [('g5g4', 0.4444444444444444), ('e8e7', 0.30303030303030304), ('f8a3', 0.20202020202020202)]
+2025-11-15 22:40:22,674 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:40:22,697 - INFO - Move 23: Stockfish (Black) plays Bxh6 (c1h6)
+2025-11-15 22:40:23,787 - INFO - Move 24: ChessEngine (White) plays Ke7 (e8e7) | Top MCTS moves: [('e8e7', 0.35353535353535354), ('f8a3', 0.16161616161616163), ('f8d6', 0.09090909090909091)]
+2025-11-15 22:40:24,415 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:40:24,430 - INFO - Move 25: Stockfish (Black) plays Bxf8+ (h6f8)
+2025-11-15 22:40:25,494 - INFO - Move 26: ChessEngine (White) plays Kxf8 (e7f8) | Top MCTS moves: [('e7f8', 0.5151515151515151), ('e7e8', 0.48484848484848486), ('d8f8', 0.0)]
+2025-11-15 22:40:25,793 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:40:25,793 - INFO - Injecting random move for stockfish: d1c1
+2025-11-15 22:40:26,966 - INFO - Move 28: ChessEngine (White) plays Qe7 (d8e7) | Top MCTS moves: [('d8e7', 0.35353535353535354), ('f8e7', 0.1414141414141414), ('f8e8', 0.13131313131313133)]
+2025-11-15 22:40:27,566 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:40:27,590 - INFO - Move 29: Stockfish (Black) plays Nxh4 (f3h4)
+2025-11-15 22:40:28,849 - INFO - Move 30: ChessEngine (White) plays Qd6 (e7d6) | Top MCTS moves: [('e7d6', 0.3333333333333333), ('e7d8', 0.29292929292929293), ('e7e8', 0.20202020202020202)]
+2025-11-15 22:40:29,625 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:40:29,658 - INFO - Move 31: Stockfish (Black) plays Nf5 (h4f5)
+2025-11-15 22:40:29,659 - INFO - Injecting random move for our: d6e6
+2025-11-15 22:40:29,666 - INFO - Move 33: Stockfish (Black) plays Qh6+ (c1h6)
+2025-11-15 22:40:30,905 - INFO - Move 34: ChessEngine (White) plays Ke8 (f8e8) | Top MCTS moves: [('f8e8', 0.9191919191919192), ('f8g8', 0.08080808080808081), ('f8f7', 0.0)]
+2025-11-15 22:40:31,168 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:40:31,168 - INFO - Injecting random move for stockfish: a2a4
+2025-11-15 22:40:32,449 - INFO - Move 36: ChessEngine (White) plays Qd5 (e6d5) | Top MCTS moves: [('e6d5', 0.35353535353535354), ('e8f7', 0.21212121212121213), ('b8a6', 0.13131313131313133)]
+2025-11-15 22:40:33,020 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:40:33,027 - INFO - Move 37: Stockfish (Black) plays Qh8+ (h6h8)
+2025-11-15 22:40:34,096 - INFO - Move 38: ChessEngine (White) plays Kf7 (e8f7) | Top MCTS moves: [('e8f7', 1.0), ('d5g8', 0.0)]
+2025-11-15 22:40:34,349 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:40:34,351 - INFO - Move 39: Stockfish (Black) plays Qg7+ (h8g7)
+2025-11-15 22:40:34,351 - INFO - Injecting random move for our: f7e8
+2025-11-15 22:40:34,352 - INFO - Move 41: Stockfish (Black) plays Qe7# (g7e7)
+2025-11-15 22:40:34,354 - INFO - Saved moves for game 18 to logs/moves_game_18_20251115_224034.txt
+2025-11-15 22:40:34,354 - INFO - Game result: WIN
+2025-11-15 22:41:39,798 - INFO - Training step 14 | Loss: 3.5672 | Policy: 3.5430 | Value: 0.0241 | Weights synced to chess engine ✓
+2025-11-15 22:41:39,798 - INFO - 
+--- Game 19 ---
+2025-11-15 22:41:40,359 - INFO - Move 1: ChessEngine (White) plays g4 (g2g4) | Top MCTS moves: [('g2g4', 0.2222222222222222), ('a2a3', 0.16161616161616163), ('b2b3', 0.10101010101010101)]
+2025-11-15 22:41:42,596 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:41:42,772 - INFO - Move 2: Stockfish (Black) plays d5 (d7d5)
+2025-11-15 22:41:42,772 - INFO - Injecting random move for our: f2f3
+2025-11-15 22:41:42,819 - INFO - Move 4: Stockfish (Black) plays e5 (e7e5)
+2025-11-15 22:41:43,642 - INFO - Move 5: ChessEngine (White) plays c4 (c2c4) | Top MCTS moves: [('c2c4', 0.15151515151515152), ('a2a3', 0.1414141414141414), ('g1h3', 0.12121212121212122)]
+2025-11-15 22:41:44,307 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:41:44,307 - INFO - Injecting random move for stockfish: d8h4
+2025-11-15 22:41:44,309 - INFO - Saved moves for game 19 to logs/moves_game_19_20251115_224144.txt
+2025-11-15 22:41:44,309 - INFO - Game result: LOSS
+2025-11-15 22:43:00,808 - INFO - Training step 15 | Loss: 3.6767 | Policy: 3.6345 | Value: 0.0423 | Weights synced to chess engine ✓
+2025-11-15 22:43:00,809 - INFO - 
+--- Game 20 ---
+2025-11-15 22:43:01,105 - INFO - Move 1: Stockfish (Black) plays e4 (e2e4)
+2025-11-15 22:43:01,712 - INFO - Move 2: ChessEngine (White) plays g6 (g7g6) | Top MCTS moves: [('g7g6', 0.5656565656565656), ('h7h6', 0.09090909090909091), ('f7f5', 0.08080808080808081)]
+2025-11-15 22:43:04,012 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:43:04,085 - INFO - Move 3: Stockfish (Black) plays d4 (d2d4)
+2025-11-15 22:43:04,720 - INFO - Move 4: ChessEngine (White) plays h6 (h7h6) | Top MCTS moves: [('h7h6', 0.18181818181818182), ('f7f5', 0.15151515151515152), ('b8a6', 0.1111111111111111)]
+2025-11-15 22:43:06,815 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:43:06,816 - INFO - Injecting random move for stockfish: c1g5
+2025-11-15 22:43:07,589 - INFO - Move 6: ChessEngine (White) plays Rh7 (h8h7) | Top MCTS moves: [('h8h7', 0.1919191919191919), ('f7f5', 0.10101010101010101), ('f7f6', 0.08080808080808081)]
+2025-11-15 22:43:09,550 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:43:09,594 - INFO - Move 7: Stockfish (Black) plays Be3 (g5e3)
+2025-11-15 22:43:09,595 - INFO - Injecting random move for our: c7c5
+2025-11-15 22:43:09,644 - INFO - Move 9: Stockfish (Black) plays dxc5 (d4c5)
+2025-11-15 22:43:10,546 - INFO - Move 10: ChessEngine (White) plays e5 (e7e5) | Top MCTS moves: [('e7e5', 0.1717171717171717), ('f8g7', 0.12121212121212122), ('e7e6', 0.10101010101010101)]
+2025-11-15 22:43:11,488 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:43:11,529 - INFO - Move 11: Stockfish (Black) plays Nc3 (b1c3)
+2025-11-15 22:43:12,408 - INFO - Move 12: ChessEngine (White) plays Qg5 (d8g5) | Top MCTS moves: [('d8g5', 0.6868686868686869), ('f8g7', 0.12121212121212122), ('a7a6', 0.06060606060606061)]
+2025-11-15 22:43:13,596 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:43:13,608 - INFO - Move 13: Stockfish (Black) plays Bxg5 (e3g5)
+2025-11-15 22:43:14,454 - INFO - Move 14: ChessEngine (White) plays a6 (a7a6) | Top MCTS moves: [('a7a6', 0.25252525252525254), ('f8g7', 0.21212121212121213), ('b7b6', 0.10101010101010101)]
+2025-11-15 22:43:14,902 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:43:14,903 - INFO - Injecting random move for stockfish: f2f4
+2025-11-15 22:43:15,942 - INFO - Move 16: ChessEngine (White) plays Bg7 (f8g7) | Top MCTS moves: [('f8g7', 0.2222222222222222), ('f7f6', 0.18181818181818182), ('f8d6', 0.09090909090909091)]
+2025-11-15 22:43:16,373 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:43:16,381 - INFO - Move 17: Stockfish (Black) plays Bh4 (g5h4)
+2025-11-15 22:43:17,258 - INFO - Move 18: ChessEngine (White) plays Bh8 (g7h8) | Top MCTS moves: [('g7h8', 0.48484848484848486), ('f7f6', 0.18181818181818182), ('g7f8', 0.1717171717171717)]
+2025-11-15 22:43:17,707 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:43:17,734 - INFO - Move 19: Stockfish (Black) plays fxe5 (f4e5)
+2025-11-15 22:43:18,776 - INFO - Move 20: ChessEngine (White) plays a5 (a6a5) | Top MCTS moves: [('a6a5', 0.3434343434343434), ('e8f8', 0.13131313131313133), ('b7b5', 0.12121212121212122)]
+2025-11-15 22:43:19,221 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:43:19,234 - INFO - Move 21: Stockfish (Black) plays Nd5 (c3d5)
+2025-11-15 22:43:19,234 - INFO - Injecting random move for our: b8c6
+2025-11-15 22:43:19,256 - INFO - Move 23: Stockfish (Black) plays Nc7+ (d5c7)
+2025-11-15 22:43:20,419 - INFO - Move 24: ChessEngine (White) plays Kf8 (e8f8) | Top MCTS moves: [('e8f8', 1.0)]
+2025-11-15 22:43:20,683 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:43:20,695 - INFO - Move 25: Stockfish (Black) plays Qd6+ (d1d6)
+2025-11-15 22:43:21,721 - INFO - Move 26: ChessEngine (White) plays Nce7 (c6e7) | Top MCTS moves: [('c6e7', 0.7373737373737373), ('f8g7', 0.21212121212121213), ('g8e7', 0.050505050505050504)]
+2025-11-15 22:43:22,013 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:43:22,013 - INFO - Injecting random move for stockfish: e1c1
+2025-11-15 22:43:23,015 - INFO - Move 28: ChessEngine (White) plays Rb8 (a8b8) | Top MCTS moves: [('a8b8', 0.23232323232323232), ('f7f5', 0.20202020202020202), ('f7f6', 0.18181818181818182)]
+2025-11-15 22:43:23,417 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:43:23,433 - INFO - Move 29: Stockfish (Black) plays Nd5 (c7d5)
+2025-11-15 22:43:24,325 - INFO - Move 30: ChessEngine (White) plays f5 (f7f5) | Top MCTS moves: [('f7f5', 0.3434343434343434), ('f7f6', 0.21212121212121213), ('b8a8', 0.15151515151515152)]
+2025-11-15 22:43:24,712 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:43:24,733 - INFO - Move 31: Stockfish (Black) plays Bb5 (f1b5)
+2025-11-15 22:43:24,734 - INFO - Injecting random move for our: a5a4
+2025-11-15 22:43:24,763 - INFO - Move 33: Stockfish (Black) plays Qxb8 (d6b8)
+2025-11-15 22:43:26,015 - INFO - Move 34: ChessEngine (White) plays Kg7 (f8g7) | Top MCTS moves: [('f8g7', 0.45454545454545453), ('d7d6', 0.25252525252525254), ('f8e8', 0.15151515151515152)]
+2025-11-15 22:43:26,543 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:43:26,563 - INFO - Move 35: Stockfish (Black) plays Bxa4 (b5a4)
+2025-11-15 22:43:27,760 - INFO - Move 36: ChessEngine (White) plays Kf8 (g7f8) | Top MCTS moves: [('g7f8', 0.7373737373737373), ('g8f6', 0.12121212121212122), ('d7d6', 0.08080808080808081)]
+2025-11-15 22:43:28,153 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:43:28,163 - INFO - Move 37: Stockfish (Black) plays Ne2 (g1e2)
+2025-11-15 22:43:29,359 - INFO - Move 38: ChessEngine (White) plays Kg7 (f8g7) | Top MCTS moves: [('f8g7', 0.29292929292929293), ('g6g5', 0.2222222222222222), ('d7d6', 0.21212121212121213)]
+2025-11-15 22:43:29,819 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:43:29,820 - INFO - Injecting random move for stockfish: c1b1
+2025-11-15 22:43:30,896 - INFO - Move 40: ChessEngine (White) plays Kf8 (g7f8) | Top MCTS moves: [('g7f8', 0.696969696969697), ('g8f6', 0.1414141414141414), ('d7d6', 0.0707070707070707)]
+2025-11-15 22:43:31,325 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:43:31,337 - INFO - Move 41: Stockfish (Black) plays Nec3 (e2c3)
+2025-11-15 22:43:31,338 - INFO - Injecting random move for our: h8e5
+2025-11-15 22:43:31,351 - INFO - Move 43: Stockfish (Black) plays Qxe5 (b8e5)
+2025-11-15 22:43:32,659 - INFO - Move 44: ChessEngine (White) plays b5 (b7b5) | Top MCTS moves: [('b7b5', 0.3434343434343434), ('f8e8', 0.32323232323232326), ('b7b6', 0.12121212121212122)]
+2025-11-15 22:43:33,115 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:43:33,145 - INFO - Move 45: Stockfish (Black) plays Bxb5 (a4b5)
+2025-11-15 22:43:34,420 - INFO - Move 46: ChessEngine (White) plays Ke8 (f8e8) | Top MCTS moves: [('f8e8', 0.37373737373737376), ('c8b7', 0.21212121212121213), ('d7d6', 0.20202020202020202)]
+2025-11-15 22:43:34,893 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:43:34,894 - INFO - Injecting random move for stockfish: e4f5
+2025-11-15 22:43:35,904 - INFO - Move 48: ChessEngine (White) plays Kf7 (e8f7) | Top MCTS moves: [('e8f7', 0.5656565656565656), ('e8f8', 0.20202020202020202), ('c8b7', 0.09090909090909091)]
+2025-11-15 22:43:36,300 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:43:36,310 - INFO - Move 49: Stockfish (Black) plays fxg6+ (f5g6)
+2025-11-15 22:43:37,421 - INFO - Move 50: ChessEngine (White) plays Kxg6 (f7g6) | Top MCTS moves: [('f7g6', 0.6262626262626263), ('f7f8', 0.37373737373737376), ('f7e8', 0.0)]
+2025-11-15 22:43:37,684 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:43:37,687 - INFO - Move 51: Stockfish (Black) plays Bd3+ (b5d3)
+2025-11-15 22:43:37,688 - INFO - Injecting random move for our: g6f7
+2025-11-15 22:43:37,690 - INFO - Move 53: Stockfish (Black) plays Rhf1+ (h1f1)
+2025-11-15 22:43:39,127 - INFO - Move 54: ChessEngine (White) plays Nf6 (g8f6) | Top MCTS moves: [('g8f6', 0.8282828282828283), ('f7e8', 0.1717171717171717), ('e7f5', 0.0)]
+2025-11-15 22:43:39,391 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:43:39,394 - INFO - Move 55: Stockfish (Black) plays Qxf6+ (e5f6)
+2025-11-15 22:43:40,553 - INFO - Move 56: ChessEngine (White) plays Kg8 (f7g8) | Top MCTS moves: [('f7g8', 0.6060606060606061), ('f7e8', 0.3939393939393939)]
+2025-11-15 22:43:40,801 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:43:40,803 - INFO - Move 57: Stockfish (Black) plays Qf8# (f6f8)
+2025-11-15 22:43:40,805 - INFO - Saved moves for game 20 to logs/moves_game_20_20251115_224340.txt
+2025-11-15 22:43:40,805 - INFO - Game result: WIN
+2025-11-15 22:44:50,768 - INFO - Training step 16 | Loss: 3.7410 | Policy: 3.6767 | Value: 0.0644 | Weights synced to chess engine ✓
+2025-11-15 22:44:50,769 - INFO - 
+--- Game 21 ---
+2025-11-15 22:44:51,470 - INFO - Move 1: ChessEngine (White) plays a3 (a2a3) | Top MCTS moves: [('a2a3', 0.2828282828282828), ('b2b4', 0.20202020202020202), ('c2c4', 0.1111111111111111)]
+2025-11-15 22:44:53,283 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:44:53,380 - INFO - Move 2: Stockfish (Black) plays e5 (e7e5)
+2025-11-15 22:44:54,189 - INFO - Move 3: ChessEngine (White) plays b4 (b2b4) | Top MCTS moves: [('b2b4', 0.3838383838383838), ('g2g4', 0.1414141414141414), ('g2g3', 0.10101010101010101)]
+2025-11-15 22:44:55,942 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:44:56,060 - INFO - Move 4: Stockfish (Black) plays d5 (d7d5)
+2025-11-15 22:44:56,781 - INFO - Move 5: ChessEngine (White) plays c4 (c2c4) | Top MCTS moves: [('c2c4', 0.30303030303030304), ('g2g4', 0.12121212121212122), ('g2g3', 0.09090909090909091)]
+2025-11-15 22:44:58,770 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:44:58,944 - INFO - Move 6: Stockfish (Black) plays dxc4 (d5c4)
+2025-11-15 22:44:58,945 - INFO - Injecting random move for our: d2d4
+2025-11-15 22:44:59,006 - INFO - Move 8: Stockfish (Black) plays exd4 (e5d4)
+2025-11-15 22:44:59,810 - INFO - Move 9: ChessEngine (White) plays f4 (f2f4) | Top MCTS moves: [('f2f4', 0.1717171717171717), ('b1c3', 0.1414141414141414), ('d1d2', 0.08080808080808081)]
+2025-11-15 22:45:00,952 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:45:00,953 - INFO - Injecting random move for stockfish: f7f6
+2025-11-15 22:45:01,733 - INFO - Move 11: ChessEngine (White) plays g3 (g2g3) | Top MCTS moves: [('g2g3', 0.2222222222222222), ('d1d2', 0.15151515151515152), ('g2g4', 0.1414141414141414)]
+2025-11-15 22:45:03,062 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:45:03,115 - INFO - Move 12: Stockfish (Black) plays a5 (a7a5)
+2025-11-15 22:45:03,930 - INFO - Move 13: ChessEngine (White) plays Bd2 (c1d2) | Top MCTS moves: [('c1d2', 0.16161616161616163), ('d1d2', 0.13131313131313133), ('d1a4', 0.12121212121212122)]
+2025-11-15 22:45:05,056 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:45:05,077 - INFO - Move 14: Stockfish (Black) plays axb4 (a5b4)
+2025-11-15 22:45:05,077 - INFO - Injecting random move for our: e2e4
+2025-11-15 22:45:05,109 - INFO - Move 16: Stockfish (Black) plays c3 (c4c3)
+2025-11-15 22:45:06,028 - INFO - Move 17: ChessEngine (White) plays Bh3 (f1h3) | Top MCTS moves: [('f1h3', 0.40404040404040403), ('d2c3', 0.10101010101010101), ('h2h4', 0.09090909090909091)]
+2025-11-15 22:45:07,123 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:45:07,149 - INFO - Move 18: Stockfish (Black) plays Ne7 (g8e7)
+2025-11-15 22:45:08,134 - INFO - Move 19: ChessEngine (White) plays Qg4 (d1g4) | Top MCTS moves: [('d1g4', 0.23232323232323232), ('d1h5', 0.1717171717171717), ('e1f1', 0.13131313131313133)]
+2025-11-15 22:45:09,012 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:45:09,013 - INFO - Injecting random move for stockfish: d4d3
+2025-11-15 22:45:09,992 - INFO - Move 21: ChessEngine (White) plays Kf1 (e1f1) | Top MCTS moves: [('e1f1', 0.24242424242424243), ('d2c3', 0.21212121212121213), ('d2e3', 0.20202020202020202)]
+2025-11-15 22:45:10,744 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:45:10,756 - INFO - Move 22: Stockfish (Black) plays Bxg4 (c8g4)
+2025-11-15 22:45:11,507 - INFO - Move 23: ChessEngine (White) plays Be3 (d2e3) | Top MCTS moves: [('d2e3', 0.3838383838383838), ('d2c3', 0.3434343434343434), ('f1g2', 0.1111111111111111)]
+2025-11-15 22:45:11,994 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:45:12,024 - INFO - Move 24: Stockfish (Black) plays Bxh3+ (g4h3)
+2025-11-15 22:45:13,368 - INFO - Move 25: ChessEngine (White) plays Nxh3 (g1h3) | Top MCTS moves: [('g1h3', 0.898989898989899), ('f1e1', 0.0707070707070707), ('f1f2', 0.030303030303030304)]
+2025-11-15 22:45:13,662 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:45:13,677 - INFO - Move 26: Stockfish (Black) plays d2 (d3d2)
+2025-11-15 22:45:13,677 - INFO - Injecting random move for our: e3f2
+2025-11-15 22:45:13,682 - INFO - Move 28: Stockfish (Black) plays Qd3+ (d8d3)
+2025-11-15 22:45:14,753 - INFO - Move 29: ChessEngine (White) plays Kg2 (f1g2) | Top MCTS moves: [('f1g2', 0.5656565656565656), ('f1g1', 0.43434343434343436)]
+2025-11-15 22:45:15,190 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:45:15,193 - INFO - Move 30: Stockfish (Black) plays Qxe4+ (d3e4)
+2025-11-15 22:45:16,131 - INFO - Move 31: ChessEngine (White) plays Kf1 (g2f1) | Top MCTS moves: [('g2f1', 1.0), ('g2g1', 0.0)]
+2025-11-15 22:45:16,389 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:45:16,392 - INFO - Move 32: Stockfish (Black) plays d1=Q+ (d2d1q)
+2025-11-15 22:45:17,372 - INFO - Move 33: ChessEngine (White) plays Be1 (f2e1) | Top MCTS moves: [('f2e1', 1.0)]
+2025-11-15 22:45:17,616 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:45:17,617 - INFO - Injecting random move for stockfish: e7c6
+2025-11-15 22:45:18,921 - INFO - Move 35: ChessEngine (White) plays axb4 (a3b4) | Top MCTS moves: [('a3b4', 0.37373737373737376), ('g3g4', 0.18181818181818182), ('a1a2', 0.10101010101010101)]
+2025-11-15 22:45:19,225 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:45:19,227 - INFO - Move 36: Stockfish (Black) plays Qdxe1# (d1e1)
+2025-11-15 22:45:19,231 - INFO - Saved moves for game 21 to logs/moves_game_21_20251115_224519.txt
+2025-11-15 22:45:19,231 - INFO - Game result: LOSS
+2025-11-15 22:46:29,810 - INFO - Training step 17 | Loss: 3.5405 | Policy: 3.5208 | Value: 0.0197 | Weights synced to chess engine ✓
+2025-11-15 22:46:29,811 - INFO - 
+--- Game 22 ---
+2025-11-15 22:46:30,130 - INFO - Move 1: Stockfish (Black) plays e4 (e2e4)
+2025-11-15 22:46:30,610 - INFO - Move 2: ChessEngine (White) plays b5 (b7b5) | Top MCTS moves: [('b7b5', 0.26262626262626265), ('f7f5', 0.2222222222222222), ('a7a6', 0.1111111111111111)]
+2025-11-15 22:46:32,661 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:46:32,703 - INFO - Move 3: Stockfish (Black) plays Bxb5 (f1b5)
+2025-11-15 22:46:33,413 - INFO - Move 4: ChessEngine (White) plays f5 (f7f5) | Top MCTS moves: [('f7f5', 0.31313131313131315), ('a7a6', 0.16161616161616163), ('a7a5', 0.15151515151515152)]
+2025-11-15 22:46:34,335 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:46:34,336 - INFO - Injecting random move for stockfish: e1f1
+2025-11-15 22:46:34,970 - INFO - Move 6: ChessEngine (White) plays g6 (g7g6) | Top MCTS moves: [('g7g6', 0.29292929292929293), ('h7h6', 0.16161616161616163), ('a7a5', 0.15151515151515152)]
+2025-11-15 22:46:36,032 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:46:36,077 - INFO - Move 7: Stockfish (Black) plays exf5 (e4f5)
+2025-11-15 22:46:36,782 - INFO - Move 8: ChessEngine (White) plays h6 (h7h6) | Top MCTS moves: [('h7h6', 0.3434343434343434), ('a7a5', 0.30303030303030304), ('a7a6', 0.15151515151515152)]
+2025-11-15 22:46:37,555 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:46:37,575 - INFO - Move 9: Stockfish (Black) plays Qg4 (d1g4)
+2025-11-15 22:46:38,268 - INFO - Move 10: ChessEngine (White) plays a5 (a7a5) | Top MCTS moves: [('a7a5', 0.25252525252525254), ('e7e5', 0.18181818181818182), ('a7a6', 0.16161616161616163)]
+2025-11-15 22:46:38,606 - ERROR - train_after_move failed: Expected more than 1 value per channel when training, got input size torch.Size([1, 256])
+2025-11-15 22:46:38,609 - INFO - Move 11: Stockfish (Black) plays Qxg6# (g4g6)
+2025-11-15 22:46:38,612 - INFO - Saved moves for game 22 to logs/moves_game_22_20251115_224638.txt
+2025-11-15 22:46:38,612 - INFO - Game result: WIN
+2025-11-15 22:47:25,807 - INFO - Received signal 2. Finishing current game and saving...
+2025-11-15 22:47:25,838 - INFO - Training step 18 | Loss: 4.6496 | Policy: 4.1413 | Value: 0.5083 | Weights synced to chess engine ✓
+2025-11-15 22:47:25,838 - INFO - 
+================================================================================
+2025-11-15 22:47:25,838 - INFO - Training Complete - Final Stats
+2025-11-15 22:47:25,838 - INFO - ================================================================================
+2025-11-15 22:47:25,957 - INFO - Saved checkpoint: checkpoints/model_22_games_20251115_224725_final.pth
+2025-11-15 22:47:25,957 - INFO - Games: 22 | Positions: 422 | Win Rate: 50.0% | W:11 B:11 D:0 | Training Steps: 18
+2025-11-15 22:47:25,957 - INFO - Total time: 0.51 hours
+2025-11-15 22:47:25,957 - INFO - Games per hour: 43.33
+2025-11-15 22:47:25,957 - INFO - Model saved to: /u201/a44chhab/research/chessml/ChessHacks-CLI/src/models/trained_model.pth

@@ -1,0 +1,1 @@
+1. g4 d5 2. Bg2 Nc6 3. Bxg4 Rg1 4. e5 b4 5. Bxb4 Bf1 6. Bg2 Nf6 7. Bxa3 Bf1 8. Bb2 Bg2 9. Bxa1 Bf1 10. Bg2 e4 11. Bf1 exf3 12. fxe2 Bg2 13. exd1=Q#
