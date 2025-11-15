@@ -30,7 +30,7 @@ from collections import deque
 from .chess_engine import ChessEngine
 from .network_architecture import ChessNetwork
 from .board_state import board_to_tensor
-from .config import MODEL_PATH, BATCH_SIZE, LEARNING_RATE, NUM_SIMULATIONS
+from .config import MODEL_PATH, BATCH_SIZE, BATCHES_PER_CHECKPOINT, LEARNING_RATE, NUM_SIMULATIONS
 from .MCTSAlgorithm import MCTS, MCTSNode
 
 
@@ -164,7 +164,7 @@ class OvernightTrainer:
         self.draws = 0
         
         # Checkpointing
-        self.checkpoint_frequency = 10  # Save every N games
+        self.checkpoint_frequency = BATCH_SIZE * BATCHES_PER_CHECKPOINT  # Save every N games
         
         # Signal handling for graceful shutdown
         signal.signal(signal.SIGINT, self._signal_handler)

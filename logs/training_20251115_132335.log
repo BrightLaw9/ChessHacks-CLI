@@ -1,0 +1,566 @@
+2025-11-15 13:23:35,469 - INFO - Loaded model from C:\Users\lawre\chesshacks-base\src\models\trained_model.pth
+2025-11-15 13:23:38,710 - INFO - ================================================================================
+2025-11-15 13:23:38,710 - INFO - Starting Overnight Training Loop
+2025-11-15 13:23:38,710 - INFO - Device: cpu
+2025-11-15 13:23:38,710 - INFO - Stockfish Depth: 15
+2025-11-15 13:23:38,710 - INFO - Batch Size: 256
+2025-11-15 13:23:38,710 - INFO - ================================================================================
+2025-11-15 13:23:38,710 - INFO - 
+--- Game 1 ---
+2025-11-15 13:23:44,175 - INFO - Move 1: ChessEngine (White) plays e2e4 | Top MCTS moves: [('e2e4', 0.696969696969697), ('d2d4', 0.20202020202020202), ('g1f3', 0.020202020202020204)]
+2025-11-15 13:23:44,316 - INFO - Move 2: Stockfish (Black) plays e7e5
+2025-11-15 13:23:44,316 - INFO - Injecting random move for our: f1a6
+2025-11-15 13:23:44,347 - INFO - Move 4: Stockfish (Black) plays b8a6
+2025-11-15 13:23:46,153 - INFO - Move 5: ChessEngine (White) plays g1f3 | Top MCTS moves: [('g1f3', 0.5555555555555556), ('d1h5', 0.1111111111111111), ('d2d3', 0.09090909090909091)]
+2025-11-15 13:23:46,182 - INFO - Move 6: Stockfish (Black) plays d7d6
+2025-11-15 13:23:47,956 - INFO - Move 7: ChessEngine (White) plays d2d4 | Top MCTS moves: [('d2d4', 0.25252525252525254), ('e1g1', 0.23232323232323232), ('h2h3', 0.15151515151515152)]
+2025-11-15 13:23:47,976 - INFO - Move 8: Stockfish (Black) plays g8f6
+2025-11-15 13:23:50,037 - INFO - Move 9: ChessEngine (White) plays d4e5 | Top MCTS moves: [('d4e5', 0.7676767676767676), ('d4d5', 0.09090909090909091), ('e1g1', 0.030303030303030304)]
+2025-11-15 13:23:50,038 - INFO - Injecting random move for stockfish: f6h5
+2025-11-15 13:23:52,047 - INFO - Move 11: ChessEngine (White) plays e5d6 | Top MCTS moves: [('e5d6', 0.8383838383838383), ('e1g1', 0.06060606060606061), ('d1d5', 0.020202020202020204)]
+2025-11-15 13:23:52,069 - INFO - Move 12: Stockfish (Black) plays d8d6
+2025-11-15 13:23:54,569 - INFO - Move 13: ChessEngine (White) plays d1d6 | Top MCTS moves: [('d1d6', 0.8686868686868687), ('e4e5', 0.08080808080808081), ('e1g1', 0.030303030303030304)]
+2025-11-15 13:23:54,586 - INFO - Move 14: Stockfish (Black) plays f8d6
+2025-11-15 13:23:56,949 - INFO - Move 15: ChessEngine (White) plays e4e5 | Top MCTS moves: [('e4e5', 0.46464646464646464), ('e1g1', 0.2828282828282828), ('c1g5', 0.050505050505050504)]
+2025-11-15 13:23:56,963 - INFO - Move 16: Stockfish (Black) plays d6b4
+2025-11-15 13:23:56,963 - INFO - Injecting random move for our: e1d1
+2025-11-15 13:23:56,986 - INFO - Move 18: Stockfish (Black) plays e8g8
+2025-11-15 13:23:59,384 - INFO - Move 19: ChessEngine (White) plays c2c3 | Top MCTS moves: [('c2c3', 0.494949494949495), ('c1d2', 0.40404040404040403), ('b1c3', 0.04040404040404041)]
+2025-11-15 13:23:59,405 - INFO - Move 20: Stockfish (Black) plays f8d8
+2025-11-15 13:24:02,348 - INFO - Move 21: ChessEngine (White) plays d1c2 | Top MCTS moves: [('d1c2', 0.47474747474747475), ('c1d2', 0.2727272727272727), ('d1e2', 0.18181818181818182)]
+2025-11-15 13:24:02,349 - INFO - Injecting random move for stockfish: d8e8
+2025-11-15 13:24:05,215 - INFO - Move 23: ChessEngine (White) plays a2a3 | Top MCTS moves: [('a2a3', 0.16161616161616163), ('b1d2', 0.1414141414141414), ('c3b4', 0.12121212121212122)]
+2025-11-15 13:24:05,237 - INFO - Move 24: Stockfish (Black) plays c8f5
+2025-11-15 13:24:08,101 - INFO - Move 25: ChessEngine (White) plays c2b3 | Top MCTS moves: [('c2b3', 0.9393939393939394), ('c2d1', 0.050505050505050504), ('c2d2', 0.010101010101010102)]
+2025-11-15 13:24:08,128 - INFO - Move 26: Stockfish (Black) plays b4f8
+2025-11-15 13:24:10,785 - INFO - Move 27: ChessEngine (White) plays f3d4 | Top MCTS moves: [('f3d4', 0.2222222222222222), ('g2g4', 0.18181818181818182), ('h2h3', 0.12121212121212122)]
+2025-11-15 13:24:10,872 - INFO - Move 28: Stockfish (Black) plays a6c5
+2025-11-15 13:24:10,872 - INFO - Injecting random move for our: b3a2
+2025-11-15 13:24:10,892 - INFO - Move 30: Stockfish (Black) plays f5d7
+2025-11-15 13:24:13,954 - INFO - Move 31: ChessEngine (White) plays g2g4 | Top MCTS moves: [('g2g4', 0.1919191919191919), ('c1e3', 0.16161616161616163), ('f2f4', 0.15151515151515152)]
+2025-11-15 13:24:13,955 - INFO - Injecting random move for stockfish: a8b8
+2025-11-15 13:24:16,966 - INFO - Move 33: ChessEngine (White) plays g4h5 | Top MCTS moves: [('g4h5', 0.7272727272727273), ('b2b4', 0.06060606060606061), ('c1e3', 0.04040404040404041)]
+2025-11-15 13:24:16,989 - INFO - Move 34: Stockfish (Black) plays c5d3
+2025-11-15 13:24:20,386 - INFO - Move 35: ChessEngine (White) plays c1e3 | Top MCTS moves: [('c1e3', 0.35353535353535354), ('c1f4', 0.1717171717171717), ('c1d2', 0.08080808080808081)]
+2025-11-15 13:24:20,422 - INFO - Move 36: Stockfish (Black) plays d3e5
+2025-11-15 13:24:20,423 - INFO - Injecting random move for our: f2f3
+2025-11-15 13:24:20,446 - INFO - Move 38: Stockfish (Black) plays e5f3
+2025-11-15 13:24:23,844 - INFO - Move 39: ChessEngine (White) plays b1d2 | Top MCTS moves: [('b1d2', 0.40404040404040403), ('d4f3', 0.24242424242424243), ('h2h4', 0.06060606060606061)]
+2025-11-15 13:24:23,845 - INFO - Injecting random move for stockfish: f3h4
+2025-11-15 13:24:27,653 - INFO - Move 41: ChessEngine (White) plays d2c4 | Top MCTS moves: [('d2c4', 0.1919191919191919), ('e3f4', 0.08080808080808081), ('e3f2', 0.050505050505050504)]
+2025-11-15 13:24:27,694 - INFO - Move 42: Stockfish (Black) plays b7b5
+2025-11-15 13:24:31,593 - INFO - Move 43: ChessEngine (White) plays c4d2 | Top MCTS moves: [('c4d2', 0.2828282828282828), ('c4a5', 0.1717171717171717), ('c4e5', 0.09090909090909091)]
+2025-11-15 13:24:31,609 - INFO - Move 44: Stockfish (Black) plays e8e3
+2025-11-15 13:24:35,452 - INFO - Move 45: ChessEngine (White) plays d2b3 | Top MCTS moves: [('d2b3', 0.2222222222222222), ('d2f1', 0.20202020202020202), ('h1f1', 0.12121212121212122)]
+2025-11-15 13:24:35,463 - INFO - Move 46: Stockfish (Black) plays c7c5
+2025-11-15 13:24:35,471 - INFO - Injecting random move for our: h1g1
+2025-11-15 13:24:35,482 - INFO - Move 48: Stockfish (Black) plays c5d4
+2025-11-15 13:24:39,312 - INFO - Move 49: ChessEngine (White) plays b3d4 | Top MCTS moves: [('b3d4', 0.5151515151515151), ('c3d4', 0.3838383838383838), ('b3c5', 0.010101010101010102)]
+2025-11-15 13:24:39,327 - INFO - Move 50: Stockfish (Black) plays h4f5
+2025-11-15 13:24:43,135 - INFO - Move 51: ChessEngine (White) plays d4f5 | Top MCTS moves: [('d4f5', 0.9696969696969697), ('d4b3', 0.010101010101010102), ('a1f1', 0.010101010101010102)]
+2025-11-15 13:24:43,135 - INFO - Injecting random move for stockfish: e3c3
+2025-11-15 13:24:46,375 - INFO - Move 53: ChessEngine (White) plays b2c3 | Top MCTS moves: [('b2c3', 0.8585858585858586), ('f5g7', 0.010101010101010102), ('f5e7', 0.010101010101010102)]
+2025-11-15 13:24:46,402 - INFO - Move 54: Stockfish (Black) plays d7f5
+2025-11-15 13:24:49,653 - INFO - Move 55: ChessEngine (White) plays g1b1 | Top MCTS moves: [('g1b1', 0.24242424242424243), ('h2h3', 0.1919191919191919), ('g1g5', 0.18181818181818182)]
+2025-11-15 13:24:49,688 - INFO - Move 56: Stockfish (Black) plays f5e6
+2025-11-15 13:24:52,409 - INFO - Move 57: ChessEngine (White) plays c3c4 | Top MCTS moves: [('c3c4', 0.8787878787878788), ('b1b3', 0.1111111111111111), ('a2b2', 0.010101010101010102)]
+2025-11-15 13:24:52,453 - INFO - Move 58: Stockfish (Black) plays e6c4
+2025-11-15 13:24:52,453 - INFO - Injecting random move for our: a2b2
+2025-11-15 13:24:52,495 - INFO - Move 60: Stockfish (Black) plays g7g6
+2025-11-15 13:24:55,470 - INFO - Move 61: ChessEngine (White) plays h5g6 | Top MCTS moves: [('h5g6', 0.6161616161616161), ('b2c3', 0.3333333333333333), ('b2c1', 0.010101010101010102)]
+2025-11-15 13:24:55,499 - INFO - Move 62: Stockfish (Black) plays f8g7
+2025-11-15 13:24:58,746 - INFO - Move 63: ChessEngine (White) plays b2c1 | Top MCTS moves: [('b2c1', 0.9090909090909091), ('b2c2', 0.09090909090909091)]
+2025-11-15 13:24:58,746 - INFO - Injecting random move for stockfish: h7h6
+2025-11-15 13:25:02,286 - INFO - Move 65: ChessEngine (White) plays g6f7 | Top MCTS moves: [('g6f7', 0.6262626262626263), ('a3a4', 0.21212121212121213), ('c1c2', 0.06060606060606061)]
+2025-11-15 13:25:02,312 - INFO - Move 66: Stockfish (Black) plays g8f7
+2025-11-15 13:25:05,920 - INFO - Move 67: ChessEngine (White) plays c1d2 | Top MCTS moves: [('c1d2', 0.3434343434343434), ('a3a4', 0.2828282828282828), ('c1c2', 0.1919191919191919)]
+2025-11-15 13:25:05,939 - INFO - Move 68: Stockfish (Black) plays b8b6
+2025-11-15 13:25:09,822 - INFO - Move 69: ChessEngine (White) plays d2e3 | Top MCTS moves: [('d2e3', 0.5151515151515151), ('a3a4', 0.37373737373737376), ('d2c2', 0.010101010101010102)]
+2025-11-15 13:25:09,853 - INFO - Move 70: Stockfish (Black) plays b6e6
+2025-11-15 13:25:09,853 - INFO - Injecting random move for our: e3d2
+2025-11-15 13:25:09,894 - INFO - Move 72: Stockfish (Black) plays e6e2
+2025-11-15 13:25:13,079 - INFO - Move 73: ChessEngine (White) plays d2d1 | Top MCTS moves: [('d2d1', 0.5555555555555556), ('d2c1', 0.4444444444444444)]
+2025-11-15 13:25:13,079 - INFO - Injecting random move for stockfish: c4a2
+2025-11-15 13:25:16,742 - INFO - Move 75: ChessEngine (White) plays b1b5 | Top MCTS moves: [('b1b5', 0.46464646464646464), ('b1c1', 0.41414141414141414), ('a1a2', 0.0707070707070707)]
+2025-11-15 13:25:16,769 - INFO - Move 76: Stockfish (Black) plays g7a1
+2025-11-15 13:25:16,770 - INFO - Injecting random move for our: b5h5
+2025-11-15 13:25:16,801 - INFO - Move 78: Stockfish (Black) plays e2e6
+2025-11-15 13:25:20,095 - INFO - Move 79: ChessEngine (White) plays h5h6 | Top MCTS moves: [('h5h6', 0.43434343434343436), ('h5h4', 0.37373737373737376), ('h5f5', 0.10101010101010101)]
+2025-11-15 13:25:20,111 - INFO - Move 80: Stockfish (Black) plays e6h6
+2025-11-15 13:25:23,269 - INFO - Move 81: ChessEngine (White) plays d1c1 | Top MCTS moves: [('d1c1', 0.6262626262626263), ('d1c2', 0.10101010101010101), ('h2h3', 0.09090909090909091)]
+2025-11-15 13:25:23,283 - INFO - Move 82: Stockfish (Black) plays h6h2
+2025-11-15 13:25:25,757 - INFO - Move 83: ChessEngine (White) plays c1d1 | Top MCTS moves: [('c1d1', 0.98989898989899), ('a3a4', 0.010101010101010102)]
+2025-11-15 13:25:25,757 - INFO - Injecting random move for stockfish: h2g2
+2025-11-15 13:25:27,992 - INFO - Move 85: ChessEngine (White) plays d1c1 | Top MCTS moves: [('d1c1', 0.696969696969697), ('d1e1', 0.30303030303030304), ('a3a4', 0.0)]
+2025-11-15 13:25:27,999 - INFO - Move 86: Stockfish (Black) plays a2b3
+2025-11-15 13:25:30,182 - INFO - Move 87: ChessEngine (White) plays c1b1 | Top MCTS moves: [('c1b1', 1.0), ('a3a4', 0.0)]
+2025-11-15 13:25:30,184 - INFO - Move 88: Stockfish (Black) plays g2g1
+2025-11-15 13:25:30,186 - INFO - Game result: LOSS
+2025-11-15 13:25:30,193 - INFO - 
+--- Game 2 ---
+2025-11-15 13:25:30,570 - INFO - Move 1: Stockfish (Black) plays e2e4
+2025-11-15 13:25:32,201 - INFO - Move 2: ChessEngine (White) plays e7e5 | Top MCTS moves: [('e7e5', 0.46464646464646464), ('d7d5', 0.1414141414141414), ('c7c5', 0.12121212121212122)]
+2025-11-15 13:25:32,367 - INFO - Move 3: Stockfish (Black) plays g1f3
+2025-11-15 13:25:34,315 - INFO - Move 4: ChessEngine (White) plays b8c6 | Top MCTS moves: [('b8c6', 0.6060606060606061), ('d7d6', 0.1919191919191919), ('g8f6', 0.10101010101010101)]
+2025-11-15 13:25:34,316 - INFO - Injecting random move for stockfish: h1g1
+2025-11-15 13:25:36,374 - INFO - Move 6: ChessEngine (White) plays g8f6 | Top MCTS moves: [('g8f6', 0.5050505050505051), ('f8c5', 0.20202020202020202), ('d7d6', 0.15151515151515152)]
+2025-11-15 13:25:36,593 - INFO - Move 7: Stockfish (Black) plays b1c3
+2025-11-15 13:25:38,548 - INFO - Move 8: ChessEngine (White) plays f8c5 | Top MCTS moves: [('f8c5', 0.21212121212121213), ('d7d6', 0.20202020202020202), ('f8b4', 0.1919191919191919)]
+2025-11-15 13:25:38,818 - INFO - Move 9: Stockfish (Black) plays f3e5
+2025-11-15 13:25:38,819 - INFO - Injecting random move for our: c5a3
+2025-11-15 13:25:38,840 - INFO - Move 11: Stockfish (Black) plays e5c6
+2025-11-15 13:25:41,141 - INFO - Move 12: ChessEngine (White) plays b7c6 | Top MCTS moves: [('b7c6', 0.5858585858585859), ('d7c6', 0.29292929292929293), ('d8e7', 0.020202020202020204)]
+2025-11-15 13:25:41,142 - INFO - Injecting random move for stockfish: b2a3
+2025-11-15 13:25:43,262 - INFO - Move 14: ChessEngine (White) plays d7d5 | Top MCTS moves: [('d7d5', 0.5757575757575758), ('e8g8', 0.23232323232323232), ('f6e4', 0.09090909090909091)]
+2025-11-15 13:25:43,282 - INFO - Move 15: Stockfish (Black) plays d2d4
+2025-11-15 13:25:45,763 - INFO - Move 16: ChessEngine (White) plays f6e4 | Top MCTS moves: [('f6e4', 0.5353535353535354), ('d5e4', 0.24242424242424243), ('e8g8', 0.10101010101010101)]
+2025-11-15 13:25:45,793 - INFO - Move 17: Stockfish (Black) plays c3e4
+2025-11-15 13:25:45,793 - INFO - Injecting random move for our: c8e6
+2025-11-15 13:25:45,808 - INFO - Move 19: Stockfish (Black) plays e4g3
+2025-11-15 13:25:48,486 - INFO - Move 20: ChessEngine (White) plays e8g8 | Top MCTS moves: [('e8g8', 0.47474747474747475), ('d8f6', 0.12121212121212122), ('a8b8', 0.08080808080808081)]
+2025-11-15 13:25:48,486 - INFO - Injecting random move for stockfish: g3h5
+2025-11-15 13:25:50,763 - INFO - Move 22: ChessEngine (White) plays d8f6 | Top MCTS moves: [('d8f6', 0.20202020202020202), ('g7g6', 0.15151515151515152), ('f7f5', 0.08080808080808081)]
+2025-11-15 13:25:50,775 - INFO - Move 23: Stockfish (Black) plays h5f6
+2025-11-15 13:25:53,353 - INFO - Move 24: ChessEngine (White) plays g7f6 | Top MCTS moves: [('g7f6', 1.0), ('g8h8', 0.0)]
+2025-11-15 13:25:53,363 - INFO - Move 25: Stockfish (Black) plays f1d3
+2025-11-15 13:25:53,364 - INFO - Injecting random move for our: g8h8
+2025-11-15 13:25:53,385 - INFO - Move 27: Stockfish (Black) plays d1h5
+2025-11-15 13:25:56,311 - INFO - Move 28: ChessEngine (White) plays f8g8 | Top MCTS moves: [('f8g8', 0.6767676767676768), ('h8g8', 0.10101010101010101), ('f6f5', 0.06060606060606061)]
+2025-11-15 13:25:56,312 - INFO - Injecting random move for stockfish: c1g5
+2025-11-15 13:25:58,992 - INFO - Move 30: ChessEngine (White) plays f6g5 | Top MCTS moves: [('f6g5', 0.6363636363636364), ('g8g5', 0.36363636363636365), ('h8g7', 0.0)]
+2025-11-15 13:25:58,994 - INFO - Move 31: Stockfish (Black) plays h5h7
+2025-11-15 13:25:58,995 - INFO - Game result: WIN
+2025-11-15 13:25:58,998 - INFO - 
+--- Game 3 ---
+2025-11-15 13:26:01,087 - INFO - Move 1: ChessEngine (White) plays e2e4 | Top MCTS moves: [('e2e4', 0.696969696969697), ('d2d4', 0.20202020202020202), ('g1f3', 0.020202020202020204)]
+2025-11-15 13:26:01,228 - INFO - Move 2: Stockfish (Black) plays e7e5
+2025-11-15 13:26:01,230 - INFO - Injecting random move for our: f2f4
+2025-11-15 13:26:01,297 - INFO - Move 4: Stockfish (Black) plays e5f4
+2025-11-15 13:26:03,137 - INFO - Move 5: ChessEngine (White) plays g1f3 | Top MCTS moves: [('g1f3', 0.7171717171717171), ('f1c4', 0.1717171717171717), ('d2d4', 0.030303030303030304)]
+2025-11-15 13:26:03,192 - INFO - Move 6: Stockfish (Black) plays g7g5
+2025-11-15 13:26:05,318 - INFO - Move 7: ChessEngine (White) plays f1c4 | Top MCTS moves: [('f1c4', 0.6464646464646465), ('d2d4', 0.24242424242424243), ('d2d3', 0.030303030303030304)]
+2025-11-15 13:26:05,623 - INFO - Move 8: Stockfish (Black) plays g5g4
+2025-11-15 13:26:07,713 - INFO - Move 9: ChessEngine (White) plays f3g5 | Top MCTS moves: [('f3g5', 0.1919191919191919), ('f3e5', 0.15151515151515152), ('e1g1', 0.1414141414141414)]
+2025-11-15 13:26:07,714 - INFO - Injecting random move for stockfish: g8h6
+2025-11-15 13:26:09,953 - INFO - Move 11: ChessEngine (White) plays g5f7 | Top MCTS moves: [('g5f7', 0.5757575757575758), ('d2d4', 0.12121212121212122), ('d2d3', 0.08080808080808081)]
+2025-11-15 13:26:09,981 - INFO - Move 12: Stockfish (Black) plays d8h4
+2025-11-15 13:26:12,070 - INFO - Move 13: ChessEngine (White) plays g2g3 | Top MCTS moves: [('g2g3', 0.5858585858585859), ('e1f1', 0.36363636363636365), ('e1e2', 0.050505050505050504)]
+2025-11-15 13:26:12,149 - INFO - Move 14: Stockfish (Black) plays f4g3
+2025-11-15 13:26:12,149 - INFO - Injecting random move for our: d1g4
+2025-11-15 13:26:12,158 - INFO - Move 16: Stockfish (Black) plays h4g4
+2025-11-15 13:26:14,597 - INFO - Move 17: ChessEngine (White) plays f7h6 | Top MCTS moves: [('f7h6', 0.4444444444444444), ('f7h8', 0.18181818181818182), ('f7e5', 0.12121212121212122)]
+2025-11-15 13:26:14,608 - INFO - Move 18: Stockfish (Black) plays g4e4
+2025-11-15 13:26:17,029 - INFO - Move 19: ChessEngine (White) plays e1f1 | Top MCTS moves: [('e1f1', 0.696969696969697), ('c4e2', 0.2222222222222222), ('e1d1', 0.08080808080808081)]
+2025-11-15 13:26:17,040 - INFO - Injecting random move for stockfish: d7d5
+2025-11-15 13:26:19,644 - INFO - Move 21: ChessEngine (White) plays c4d3 | Top MCTS moves: [('c4d3', 0.36363636363636365), ('c4e2', 0.1414141414141414), ('c4d5', 0.12121212121212122)]
+2025-11-15 13:26:19,650 - INFO - Move 22: Stockfish (Black) plays c8h3
+2025-11-15 13:26:19,650 - INFO - Injecting random move for our: f1g1
+2025-11-15 13:26:19,653 - INFO - Move 24: Stockfish (Black) plays e4g2
+2025-11-15 13:26:19,653 - INFO - Game result: LOSS
+2025-11-15 13:26:19,655 - INFO - 
+--- Game 4 ---
+2025-11-15 13:26:19,990 - INFO - Move 1: Stockfish (Black) plays e2e4
+2025-11-15 13:26:21,937 - INFO - Move 2: ChessEngine (White) plays e7e5 | Top MCTS moves: [('e7e5', 0.46464646464646464), ('d7d5', 0.1414141414141414), ('c7c5', 0.12121212121212122)]
+2025-11-15 13:26:22,107 - INFO - Move 3: Stockfish (Black) plays g1f3
+2025-11-15 13:26:24,011 - INFO - Move 4: ChessEngine (White) plays b8c6 | Top MCTS moves: [('b8c6', 0.6060606060606061), ('d7d6', 0.1919191919191919), ('g8f6', 0.10101010101010101)]
+2025-11-15 13:26:24,145 - INFO - Move 5: Stockfish (Black) plays f1b5
+2025-11-15 13:26:26,250 - INFO - Move 6: ChessEngine (White) plays g8f6 | Top MCTS moves: [('g8f6', 0.26262626262626265), ('a7a6', 0.23232323232323232), ('f8c5', 0.15151515151515152)]
+2025-11-15 13:26:26,250 - INFO - Injecting random move for stockfish: b5c6
+2025-11-15 13:26:28,576 - INFO - Move 8: ChessEngine (White) plays d7c6 | Top MCTS moves: [('d7c6', 0.8686868686868687), ('b7c6', 0.13131313131313133), ('h8g8', 0.0)]
+2025-11-15 13:26:28,789 - INFO - Move 9: Stockfish (Black) plays b1c3
+2025-11-15 13:26:30,847 - INFO - Move 10: ChessEngine (White) plays c8g4 | Top MCTS moves: [('c8g4', 0.5555555555555556), ('f8d6', 0.10101010101010101), ('f6e4', 0.08080808080808081)]
+2025-11-15 13:26:30,941 - INFO - Move 11: Stockfish (Black) plays h2h3
+2025-11-15 13:26:30,943 - INFO - Injecting random move for our: d8d3
+2025-11-15 13:26:30,953 - INFO - Move 13: Stockfish (Black) plays c2d3
+2025-11-15 13:26:33,408 - INFO - Move 14: ChessEngine (White) plays g4f3 | Top MCTS moves: [('g4f3', 0.8080808080808081), ('g4h5', 0.1717171717171717), ('g4d7', 0.020202020202020204)]
+2025-11-15 13:26:33,417 - INFO - Move 15: Stockfish (Black) plays d1f3
+2025-11-15 13:26:35,823 - INFO - Move 16: ChessEngine (White) plays e8c8 | Top MCTS moves: [('e8c8', 0.30303030303030304), ('f8b4', 0.23232323232323232), ('f8d6', 0.15151515151515152)]
+2025-11-15 13:26:35,824 - INFO - Injecting random move for stockfish: c3d5
+2025-11-15 13:26:38,075 - INFO - Move 18: ChessEngine (White) plays f6d5 | Top MCTS moves: [('f6d5', 0.6464646464646465), ('c6d5', 0.35353535353535354), ('h8g8', 0.0)]
+2025-11-15 13:26:38,085 - INFO - Move 19: Stockfish (Black) plays e4d5
+2025-11-15 13:26:40,486 - INFO - Move 20: ChessEngine (White) plays c6d5 | Top MCTS moves: [('c6d5', 0.9191919191919192), ('d8d5', 0.08080808080808081), ('h8g8', 0.0)]
+2025-11-15 13:26:40,496 - INFO - Move 21: Stockfish (Black) plays d3d4
+2025-11-15 13:26:40,496 - INFO - Injecting random move for our: h8g8
+2025-11-15 13:26:40,508 - INFO - Move 23: Stockfish (Black) plays d4e5
+2025-11-15 13:26:43,186 - INFO - Move 24: ChessEngine (White) plays d5d4 | Top MCTS moves: [('d5d4', 0.20202020202020202), ('f8c5', 0.18181818181818182), ('f7f6', 0.18181818181818182)]
+2025-11-15 13:26:43,197 - INFO - Move 25: Stockfish (Black) plays d2d3
+2025-11-15 13:26:45,955 - INFO - Move 26: ChessEngine (White) plays f8b4 | Top MCTS moves: [('f8b4', 0.2727272727272727), ('f7f6', 0.1414141414141414), ('c7c5', 0.1414141414141414)]
+2025-11-15 13:26:45,956 - INFO - Injecting random move for stockfish: c1d2
+2025-11-15 13:26:48,779 - INFO - Move 28: ChessEngine (White) plays b4d2 | Top MCTS moves: [('b4d2', 0.8080808080808081), ('c7c5', 0.06060606060606061), ('b4e7', 0.04040404040404041)]
+2025-11-15 13:26:48,793 - INFO - Move 29: Stockfish (Black) plays e1d2
+2025-11-15 13:26:51,571 - INFO - Move 30: ChessEngine (White) plays c7c5 | Top MCTS moves: [('c7c5', 0.2828282828282828), ('f7f6', 0.1414141414141414), ('d8e8', 0.1111111111111111)]
+2025-11-15 13:26:51,582 - INFO - Move 31: Stockfish (Black) plays a1c1
+2025-11-15 13:26:51,583 - INFO - Injecting random move for our: f7f5
+2025-11-15 13:26:51,606 - INFO - Move 33: Stockfish (Black) plays f3g3
+2025-11-15 13:26:54,351 - INFO - Move 34: ChessEngine (White) plays g7g5 | Top MCTS moves: [('g7g5', 0.26262626262626265), ('f5f4', 0.12121212121212122), ('g7g6', 0.10101010101010101)]
+2025-11-15 13:26:54,372 - INFO - Move 35: Stockfish (Black) plays e5e6
+2025-11-15 13:26:57,544 - INFO - Move 36: ChessEngine (White) plays f5f4 | Top MCTS moves: [('f5f4', 0.3838383838383838), ('g5g4', 0.3333333333333333), ('h7h5', 0.18181818181818182)]
+2025-11-15 13:26:57,555 - INFO - Move 37: Stockfish (Black) plays g3g4
+2025-11-15 13:27:00,552 - INFO - Move 38: ChessEngine (White) plays c8b8 | Top MCTS moves: [('c8b8', 0.40404040404040403), ('h7h5', 0.31313131313131315), ('g8g6', 0.06060606060606061)]
+2025-11-15 13:27:00,552 - INFO - Injecting random move for stockfish: h3h4
+2025-11-15 13:27:03,520 - INFO - Move 40: ChessEngine (White) plays h7h5 | Top MCTS moves: [('h7h5', 0.3333333333333333), ('h7h6', 0.18181818181818182), ('g5h4', 0.1414141414141414)]
+2025-11-15 13:27:03,529 - INFO - Move 41: Stockfish (Black) plays g4f5
+2025-11-15 13:27:06,729 - INFO - Move 42: ChessEngine (White) plays g5g4 | Top MCTS moves: [('g5g4', 0.5858585858585859), ('g8f8', 0.0707070707070707), ('d8f8', 0.06060606060606061)]
+2025-11-15 13:27:06,740 - INFO - Move 43: Stockfish (Black) plays f5f4
+2025-11-15 13:27:06,741 - INFO - Injecting random move for our: d8d6
+2025-11-15 13:27:06,767 - INFO - Move 45: Stockfish (Black) plays f4d6
+2025-11-15 13:27:09,685 - INFO - Move 46: ChessEngine (White) plays b8a8 | Top MCTS moves: [('b8a8', 0.8080808080808081), ('b8c8', 0.1919191919191919)]
+2025-11-15 13:27:09,687 - INFO - Injecting random move for stockfish: d2d1
+2025-11-15 13:27:12,578 - INFO - Move 48: ChessEngine (White) plays g8d8 | Top MCTS moves: [('g8d8', 0.23232323232323232), ('b7b6', 0.12121212121212122), ('a7a6', 0.12121212121212122)]
+2025-11-15 13:27:12,582 - INFO - Move 49: Stockfish (Black) plays d6d8
+2025-11-15 13:27:12,583 - INFO - Game result: WIN
+2025-11-15 13:27:12,586 - INFO - 
+--- Game 5 ---
+2025-11-15 13:27:14,308 - INFO - Move 1: ChessEngine (White) plays e2e4 | Top MCTS moves: [('e2e4', 0.696969696969697), ('d2d4', 0.20202020202020202), ('g1f3', 0.020202020202020204)]
+2025-11-15 13:27:14,446 - INFO - Move 2: Stockfish (Black) plays e7e5
+2025-11-15 13:27:16,263 - INFO - Move 3: ChessEngine (White) plays g1f3 | Top MCTS moves: [('g1f3', 0.5454545454545454), ('f1c4', 0.16161616161616163), ('f2f4', 0.1111111111111111)]
+2025-11-15 13:27:16,302 - INFO - Move 4: Stockfish (Black) plays b8c6
+2025-11-15 13:27:16,302 - INFO - Injecting random move for our: b1c3
+2025-11-15 13:27:16,380 - INFO - Move 6: Stockfish (Black) plays g8f6
+2025-11-15 13:27:18,281 - INFO - Move 7: ChessEngine (White) plays d2d4 | Top MCTS moves: [('d2d4', 0.2727272727272727), ('f1c4', 0.26262626262626265), ('f1b5', 0.1919191919191919)]
+2025-11-15 13:27:18,362 - INFO - Move 8: Stockfish (Black) plays e5d4
+2025-11-15 13:27:21,062 - INFO - Move 9: ChessEngine (White) plays f3d4 | Top MCTS moves: [('f3d4', 0.9292929292929293), ('c3d5', 0.030303030303030304), ('d1d4', 0.020202020202020204)]
+2025-11-15 13:27:21,062 - INFO - Injecting random move for stockfish: c6b8
+2025-11-15 13:27:23,540 - INFO - Move 11: ChessEngine (White) plays f1c4 | Top MCTS moves: [('f1c4', 0.26262626262626265), ('f1d3', 0.20202020202020202), ('e4e5', 0.1414141414141414)]
+2025-11-15 13:27:23,666 - INFO - Move 12: Stockfish (Black) plays d7d6
+2025-11-15 13:27:26,030 - INFO - Move 13: ChessEngine (White) plays e1g1 | Top MCTS moves: [('e1g1', 0.35353535353535354), ('c1g5', 0.20202020202020202), ('d1f3', 0.06060606060606061)]
+2025-11-15 13:27:26,223 - INFO - Move 14: Stockfish (Black) plays f8e7
+2025-11-15 13:27:28,609 - INFO - Move 15: ChessEngine (White) plays c1g5 | Top MCTS moves: [('c1g5', 0.15151515151515152), ('f2f4', 0.1414141414141414), ('f1e1', 0.13131313131313133)]
+2025-11-15 13:27:28,773 - INFO - Move 16: Stockfish (Black) plays e8g8
+2025-11-15 13:27:28,773 - INFO - Injecting random move for our: a2a3
+2025-11-15 13:27:29,026 - INFO - Move 18: Stockfish (Black) plays b8c6
+2025-11-15 13:27:31,708 - INFO - Move 19: ChessEngine (White) plays d4c6 | Top MCTS moves: [('d4c6', 0.5353535353535354), ('f2f4', 0.08080808080808081), ('g5f6', 0.0707070707070707)]
+2025-11-15 13:27:31,859 - INFO - Move 20: Stockfish (Black) plays b7c6
+2025-11-15 13:27:34,461 - INFO - Move 21: ChessEngine (White) plays g5f6 | Top MCTS moves: [('g5f6', 0.21212121212121213), ('f2f4', 0.16161616161616163), ('e4e5', 0.12121212121212122)]
+2025-11-15 13:27:34,461 - INFO - Injecting random move for stockfish: h7h5
+2025-11-15 13:27:37,117 - INFO - Move 23: ChessEngine (White) plays f6e7 | Top MCTS moves: [('f6e7', 0.5858585858585859), ('f6g7', 0.20202020202020202), ('f6g5', 0.0707070707070707)]
+2025-11-15 13:27:37,160 - INFO - Move 24: Stockfish (Black) plays d8e7
+2025-11-15 13:27:40,077 - INFO - Move 25: ChessEngine (White) plays d1h5 | Top MCTS moves: [('d1h5', 0.24242424242424243), ('f2f4', 0.13131313131313133), ('b2b4', 0.1111111111111111)]
+2025-11-15 13:27:40,095 - INFO - Move 26: Stockfish (Black) plays a8b8
+2025-11-15 13:27:43,215 - INFO - Move 27: ChessEngine (White) plays e4e5 | Top MCTS moves: [('e4e5', 0.1414141414141414), ('b2b4', 0.09090909090909091), ('f2f4', 0.08080808080808081)]
+2025-11-15 13:27:43,238 - INFO - Move 28: Stockfish (Black) plays c8e6
+2025-11-15 13:27:43,238 - INFO - Injecting random move for our: h5h4
+2025-11-15 13:27:43,247 - INFO - Move 30: Stockfish (Black) plays e7h4
+2025-11-15 13:27:46,697 - INFO - Move 31: ChessEngine (White) plays e5d6 | Top MCTS moves: [('e5d6', 0.37373737373737376), ('c4e6', 0.29292929292929293), ('c4d3', 0.09090909090909091)]
+2025-11-15 13:27:46,698 - INFO - Injecting random move for stockfish: b8b5
+2025-11-15 13:27:50,173 - INFO - Move 33: ChessEngine (White) plays c4b5 | Top MCTS moves: [('c4b5', 0.5353535353535354), ('c3b5', 0.23232323232323232), ('d6c7', 0.08080808080808081)]
+2025-11-15 13:27:50,184 - INFO - Move 34: Stockfish (Black) plays c6b5
+2025-11-15 13:27:53,463 - INFO - Move 35: ChessEngine (White) plays d6c7 | Top MCTS moves: [('d6c7', 0.3434343434343434), ('g2g3', 0.29292929292929293), ('c3b5', 0.20202020202020202)]
+2025-11-15 13:27:53,477 - INFO - Move 36: Stockfish (Black) plays h4c4
+2025-11-15 13:27:56,898 - INFO - Move 37: ChessEngine (White) plays f1d1 | Top MCTS moves: [('f1d1', 0.1717171717171717), ('f1e1', 0.13131313131313133), ('b2b3', 0.13131313131313133)]
+2025-11-15 13:27:56,931 - INFO - Move 38: Stockfish (Black) plays c4c7
+2025-11-15 13:27:56,932 - INFO - Injecting random move for our: f2f4
+2025-11-15 13:27:56,974 - INFO - Move 40: Stockfish (Black) plays c7b6
+2025-11-15 13:28:00,744 - INFO - Move 41: ChessEngine (White) plays g1h1 | Top MCTS moves: [('g1h1', 0.5353535353535354), ('d1d4', 0.3333333333333333), ('g1f1', 0.13131313131313133)]
+2025-11-15 13:28:00,786 - INFO - Move 42: Stockfish (Black) plays e6c8
+2025-11-15 13:28:04,368 - INFO - Move 43: ChessEngine (White) plays c3d5 | Top MCTS moves: [('c3d5', 0.30303030303030304), ('d1e1', 0.09090909090909091), ('c3e4', 0.0707070707070707)]
+2025-11-15 13:28:04,396 - INFO - Move 44: Stockfish (Black) plays b6b7
+2025-11-15 13:28:07,820 - INFO - Move 45: ChessEngine (White) plays b2b4 | Top MCTS moves: [('b2b4', 0.18181818181818182), ('c2c4', 0.1414141414141414), ('d5e7', 0.10101010101010101)]
+2025-11-15 13:28:07,821 - INFO - Injecting random move for stockfish: b7b6
+2025-11-15 13:28:10,813 - INFO - Move 47: ChessEngine (White) plays d5b6 | Top MCTS moves: [('d5b6', 0.9696969696969697), ('d5e7', 0.010101010101010102), ('c2c3', 0.010101010101010102)]
+2025-11-15 13:28:10,827 - INFO - Move 48: Stockfish (Black) plays a7b6
+2025-11-15 13:28:13,754 - INFO - Move 49: ChessEngine (White) plays d1d6 | Top MCTS moves: [('d1d6', 0.20202020202020202), ('c2c4', 0.13131313131313133), ('d1e1', 0.09090909090909091)]
+2025-11-15 13:28:13,786 - INFO - Move 50: Stockfish (Black) plays f8e8
+2025-11-15 13:28:16,906 - INFO - Move 51: ChessEngine (White) plays d6b6 | Top MCTS moves: [('d6b6', 0.5050505050505051), ('a1e1', 0.13131313131313133), ('f4f5', 0.06060606060606061)]
+2025-11-15 13:28:16,919 - INFO - Move 52: Stockfish (Black) plays c8d7
+2025-11-15 13:28:16,920 - INFO - Injecting random move for our: b6c6
+2025-11-15 13:28:16,966 - INFO - Move 54: Stockfish (Black) plays d7c6
+2025-11-15 13:28:19,446 - INFO - Move 55: ChessEngine (White) plays a1e1 | Top MCTS moves: [('a1e1', 0.5656565656565656), ('h2h3', 0.10101010101010101), ('h1g1', 0.0707070707070707)]
+2025-11-15 13:28:19,446 - INFO - Move 56: Stockfish (Black) plays e8e1
+2025-11-15 13:28:19,450 - INFO - Game result: LOSS
+2025-11-15 13:28:19,454 - INFO - 
+--- Game 6 ---
+2025-11-15 13:28:19,803 - INFO - Move 1: Stockfish (Black) plays e2e4
+2025-11-15 13:28:21,771 - INFO - Move 2: ChessEngine (White) plays e7e5 | Top MCTS moves: [('e7e5', 0.46464646464646464), ('d7d5', 0.1414141414141414), ('c7c5', 0.12121212121212122)]
+2025-11-15 13:28:21,947 - INFO - Move 3: Stockfish (Black) plays g1f3
+2025-11-15 13:28:23,925 - INFO - Move 4: ChessEngine (White) plays b8c6 | Top MCTS moves: [('b8c6', 0.6060606060606061), ('d7d6', 0.1919191919191919), ('g8f6', 0.10101010101010101)]
+2025-11-15 13:28:24,057 - INFO - Move 5: Stockfish (Black) plays f1b5
+2025-11-15 13:28:26,338 - INFO - Move 6: ChessEngine (White) plays g8f6 | Top MCTS moves: [('g8f6', 0.26262626262626265), ('a7a6', 0.23232323232323232), ('f8c5', 0.15151515151515152)]
+2025-11-15 13:28:26,338 - INFO - Injecting random move for stockfish: b2b3
+2025-11-15 13:28:28,551 - INFO - Move 8: ChessEngine (White) plays f6e4 | Top MCTS moves: [('f6e4', 0.6363636363636364), ('f8c5', 0.08080808080808081), ('d7d6', 0.0707070707070707)]
+2025-11-15 13:28:28,602 - INFO - Move 9: Stockfish (Black) plays e1g1
+2025-11-15 13:28:30,814 - INFO - Move 10: ChessEngine (White) plays e4d6 | Top MCTS moves: [('e4d6', 0.2222222222222222), ('d7d5', 0.1919191919191919), ('e4f6', 0.15151515151515152)]
+2025-11-15 13:28:30,879 - INFO - Move 11: Stockfish (Black) plays b5c6
+2025-11-15 13:28:33,093 - INFO - Move 12: ChessEngine (White) plays d7c6 | Top MCTS moves: [('d7c6', 0.7474747474747475), ('b7c6', 0.25252525252525254), ('h8g8', 0.0)]
+2025-11-15 13:28:33,164 - INFO - Move 13: Stockfish (Black) plays f3e5
+2025-11-15 13:28:33,165 - INFO - Injecting random move for our: d8g5
+2025-11-15 13:28:33,337 - INFO - Move 15: Stockfish (Black) plays f1e1
+2025-11-15 13:28:35,673 - INFO - Move 16: ChessEngine (White) plays g5e5 | Top MCTS moves: [('g5e5', 0.30303030303030304), ('d6f5', 0.1717171717171717), ('c8f5', 0.13131313131313133)]
+2025-11-15 13:28:35,682 - INFO - Move 17: Stockfish (Black) plays e1e5
+2025-11-15 13:28:38,519 - INFO - Move 18: ChessEngine (White) plays f8e7 | Top MCTS moves: [('f8e7', 0.6666666666666666), ('c8e6', 0.23232323232323232), ('e8d8', 0.08080808080808081)]
+2025-11-15 13:28:38,536 - INFO - Move 19: Stockfish (Black) plays e5e7
+2025-11-15 13:28:41,005 - INFO - Move 20: ChessEngine (White) plays e8e7 | Top MCTS moves: [('e8e7', 0.9595959595959596), ('e8f8', 0.020202020202020204), ('e8d8', 0.020202020202020204)]
+2025-11-15 13:28:41,005 - INFO - Injecting random move for stockfish: d1g4
+2025-11-15 13:28:43,394 - INFO - Move 22: ChessEngine (White) plays c8g4 | Top MCTS moves: [('c8g4', 0.7373737373737373), ('f7f5', 0.06060606060606061), ('h7h5', 0.04040404040404041)]
+2025-11-15 13:28:43,409 - INFO - Move 23: Stockfish (Black) plays c1b2
+2025-11-15 13:28:46,437 - INFO - Move 24: ChessEngine (White) plays h8e8 | Top MCTS moves: [('h8e8', 0.1414141414141414), ('g4f5', 0.13131313131313133), ('h7h5', 0.13131313131313133)]
+2025-11-15 13:28:46,451 - INFO - Move 25: Stockfish (Black) plays f2f3
+2025-11-15 13:28:48,948 - INFO - Move 26: ChessEngine (White) plays g4f5 | Top MCTS moves: [('g4f5', 0.32323232323232326), ('g4h5', 0.23232323232323232), ('g4e6', 0.16161616161616163)]
+2025-11-15 13:28:48,960 - INFO - Move 27: Stockfish (Black) plays b2g7
+2025-11-15 13:28:48,961 - INFO - Injecting random move for our: e8d8
+2025-11-15 13:28:48,982 - INFO - Move 29: Stockfish (Black) plays b1a3
+2025-11-15 13:28:51,974 - INFO - Move 30: ChessEngine (White) plays f7f6 | Top MCTS moves: [('f7f6', 0.15151515151515152), ('f5e6', 0.1414141414141414), ('d8g8', 0.13131313131313133)]
+2025-11-15 13:28:51,996 - INFO - Move 31: Stockfish (Black) plays g7h6
+2025-11-15 13:28:55,243 - INFO - Move 32: ChessEngine (White) plays f5g6 | Top MCTS moves: [('f5g6', 0.24242424242424243), ('e7f7', 0.1414141414141414), ('e7d7', 0.10101010101010101)]
+2025-11-15 13:28:55,243 - INFO - Injecting random move for stockfish: g1h1
+2025-11-15 13:28:58,270 - INFO - Move 34: ChessEngine (White) plays d6f5 | Top MCTS moves: [('d6f5', 0.29292929292929293), ('e7d7', 0.1717171717171717), ('d6f7', 0.12121212121212122)]
+2025-11-15 13:28:58,281 - INFO - Move 35: Stockfish (Black) plays h6f4
+2025-11-15 13:28:58,283 - INFO - Injecting random move for our: f5g3
+2025-11-15 13:28:58,392 - INFO - Move 37: Stockfish (Black) plays h2g3
+2025-11-15 13:29:01,452 - INFO - Move 38: ChessEngine (White) plays g6f5 | Top MCTS moves: [('g6f5', 0.13131313131313133), ('e7f7', 0.10101010101010101), ('f6f5', 0.10101010101010101)]
+2025-11-15 13:29:01,523 - INFO - Move 39: Stockfish (Black) plays d2d3
+2025-11-15 13:29:04,839 - INFO - Move 40: ChessEngine (White) plays h7h5 | Top MCTS moves: [('h7h5', 0.24242424242424243), ('f5e6', 0.1919191919191919), ('e7e6', 0.13131313131313133)]
+2025-11-15 13:29:04,840 - INFO - Injecting random move for stockfish: f4e5
+2025-11-15 13:29:08,050 - INFO - Move 42: ChessEngine (White) plays f6e5 | Top MCTS moves: [('f6e5', 0.797979797979798), ('e7f7', 0.0707070707070707), ('e7e6', 0.050505050505050504)]
+2025-11-15 13:29:08,088 - INFO - Move 43: Stockfish (Black) plays h1g1
+2025-11-15 13:29:08,089 - INFO - Injecting random move for our: e7f6
+2025-11-15 13:29:08,106 - INFO - Move 45: Stockfish (Black) plays a3b1
+2025-11-15 13:29:11,378 - INFO - Move 46: ChessEngine (White) plays h5h4 | Top MCTS moves: [('h5h4', 0.7575757575757576), ('d8g8', 0.06060606060606061), ('d8e8', 0.050505050505050504)]
+2025-11-15 13:29:11,418 - INFO - Move 47: Stockfish (Black) plays g3h4
+2025-11-15 13:29:14,557 - INFO - Move 48: ChessEngine (White) plays d8g8 | Top MCTS moves: [('d8g8', 0.2828282828282828), ('d8h8', 0.13131313131313133), ('d8e8', 0.12121212121212122)]
+2025-11-15 13:29:14,583 - INFO - Move 49: Stockfish (Black) plays b1d2
+2025-11-15 13:29:18,064 - INFO - Move 50: ChessEngine (White) plays a8d8 | Top MCTS moves: [('a8d8', 0.21212121212121213), ('a8e8', 0.20202020202020202), ('g8g3', 0.09090909090909091)]
+2025-11-15 13:29:18,064 - INFO - Injecting random move for stockfish: f3f4
+2025-11-15 13:29:21,516 - INFO - Move 52: ChessEngine (White) plays e5f4 | Top MCTS moves: [('e5f4', 0.8383838383838383), ('e5e4', 0.08080808080808081), ('g8g4', 0.020202020202020204)]
+2025-11-15 13:29:21,535 - INFO - Move 53: Stockfish (Black) plays a1f1
+2025-11-15 13:29:25,255 - INFO - Move 54: ChessEngine (White) plays d8e8 | Top MCTS moves: [('d8e8', 0.32323232323232326), ('g8g7', 0.13131313131313133), ('g8g4', 0.13131313131313133)]
+2025-11-15 13:29:25,317 - INFO - Move 55: Stockfish (Black) plays f1f4
+2025-11-15 13:29:25,317 - INFO - Injecting random move for our: b7b5
+2025-11-15 13:29:25,383 - INFO - Move 57: Stockfish (Black) plays d2f3
+2025-11-15 13:29:29,099 - INFO - Move 58: ChessEngine (White) plays e8e6 | Top MCTS moves: [('e8e6', 0.23232323232323232), ('f6g6', 0.12121212121212122), ('f6e6', 0.10101010101010101)]
+2025-11-15 13:29:29,190 - INFO - Move 59: Stockfish (Black) plays a2a4
+2025-11-15 13:29:33,045 - INFO - Move 60: ChessEngine (White) plays b5a4 | Top MCTS moves: [('b5a4', 0.32323232323232326), ('e6e5', 0.10101010101010101), ('a7a6', 0.08080808080808081)]
+2025-11-15 13:29:33,091 - INFO - Move 61: Stockfish (Black) plays f3d4
+2025-11-15 13:29:36,861 - INFO - Move 62: ChessEngine (White) plays e6e5 | Top MCTS moves: [('e6e5', 0.45454545454545453), ('a4b3', 0.3434343434343434), ('f6e5', 0.09090909090909091)]
+2025-11-15 13:29:36,865 - INFO - Injecting random move for stockfish: h4h5
+2025-11-15 13:29:40,722 - INFO - Move 64: ChessEngine (White) plays a4b3 | Top MCTS moves: [('a4b3', 0.494949494949495), ('a4a3', 0.10101010101010101), ('c6c5', 0.08080808080808081)]
+2025-11-15 13:29:40,771 - INFO - Move 65: Stockfish (Black) plays d4b3
+2025-11-15 13:29:40,772 - INFO - Injecting random move for our: g8h8
+2025-11-15 13:29:40,812 - INFO - Move 67: Stockfish (Black) plays b3d2
+2025-11-15 13:29:44,944 - INFO - Move 68: ChessEngine (White) plays h8e8 | Top MCTS moves: [('h8e8', 0.3434343434343434), ('h8h5', 0.2222222222222222), ('h8g8', 0.12121212121212122)]
+2025-11-15 13:29:44,945 - INFO - Injecting random move for stockfish: d2b3
+2025-11-15 13:29:49,284 - INFO - Move 70: ChessEngine (White) plays f6g7 | Top MCTS moves: [('f6g7', 0.24242424242424243), ('f6e6', 0.13131313131313133), ('f6g5', 0.13131313131313133)]
+2025-11-15 13:29:49,310 - INFO - Move 71: Stockfish (Black) plays b3d2
+2025-11-15 13:29:49,311 - INFO - Injecting random move for our: f5c8
+2025-11-15 13:29:49,328 - INFO - Move 73: Stockfish (Black) plays d2e4
+2025-11-15 13:29:53,458 - INFO - Move 74: ChessEngine (White) plays e5h5 | Top MCTS moves: [('e5h5', 0.5555555555555556), ('e8h8', 0.16161616161616163), ('e8e7', 0.050505050505050504)]
+2025-11-15 13:29:53,572 - INFO - Move 75: Stockfish (Black) plays e4f6
+2025-11-15 13:29:57,150 - INFO - Move 76: ChessEngine (White) plays h5h8 | Top MCTS moves: [('h5h8', 0.26262626262626265), ('e8e5', 0.15151515151515152), ('e8d8', 0.12121212121212122)]
+2025-11-15 13:29:57,151 - INFO - Injecting random move for stockfish: f4e4
+2025-11-15 13:30:00,755 - INFO - Move 78: ChessEngine (White) plays g7f6 | Top MCTS moves: [('g7f6', 0.7171717171717171), ('e8d8', 0.16161616161616163), ('e8f8', 0.050505050505050504)]
+2025-11-15 13:30:00,773 - INFO - Move 79: Stockfish (Black) plays e4c4
+2025-11-15 13:30:00,774 - INFO - Injecting random move for our: e8e3
+2025-11-15 13:30:00,787 - INFO - Move 81: Stockfish (Black) plays c4c6
+2025-11-15 13:30:04,705 - INFO - Move 82: ChessEngine (White) plays f6f5 | Top MCTS moves: [('f6f5', 0.30303030303030304), ('f6e5', 0.2828282828282828), ('f6e7', 0.1111111111111111)]
+2025-11-15 13:30:04,707 - INFO - Injecting random move for stockfish: c6f6
+2025-11-15 13:30:08,491 - INFO - Move 84: ChessEngine (White) plays f5f6 | Top MCTS moves: [('f5f6', 0.5656565656565656), ('f5g5', 0.25252525252525254), ('f5g4', 0.12121212121212122)]
+2025-11-15 13:30:08,503 - INFO - Move 85: Stockfish (Black) plays g2g3
+2025-11-15 13:30:10,925 - INFO - Move 86: ChessEngine (White) plays e3g3 | Top MCTS moves: [('e3g3', 0.5555555555555556), ('e3e1', 0.06060606060606061), ('h8g8', 0.010101010101010102)]
+2025-11-15 13:30:10,934 - INFO - Move 87: Stockfish (Black) plays g1f2
+2025-11-15 13:30:10,934 - INFO - Injecting random move for our: g3g8
+2025-11-15 13:30:10,954 - INFO - Move 89: Stockfish (Black) plays c2c4
+2025-11-15 13:30:14,319 - INFO - Move 90: ChessEngine (White) plays f6g7 | Top MCTS moves: [('f6g7', 0.12121212121212122), ('f6e5', 0.12121212121212122), ('c8g4', 0.1111111111111111)]
+2025-11-15 13:30:14,331 - INFO - Move 91: Stockfish (Black) plays f2e3
+2025-11-15 13:30:17,562 - INFO - Move 92: ChessEngine (White) plays c8e6 | Top MCTS moves: [('c8e6', 0.16161616161616163), ('c8h3', 0.15151515151515152), ('c8f5', 0.1414141414141414)]
+2025-11-15 13:30:17,562 - INFO - Injecting random move for stockfish: e3f2
+2025-11-15 13:30:20,837 - INFO - Move 94: ChessEngine (White) plays e6f5 | Top MCTS moves: [('e6f5', 0.3333333333333333), ('e6g4', 0.13131313131313133), ('g7f7', 0.12121212121212122)]
+2025-11-15 13:30:20,852 - INFO - Move 95: Stockfish (Black) plays d3d4
+2025-11-15 13:30:20,852 - INFO - Injecting random move for our: h8h5
+2025-11-15 13:30:20,864 - INFO - Move 97: Stockfish (Black) plays d4d5
+2025-11-15 13:30:24,534 - INFO - Move 98: ChessEngine (White) plays f5c2 | Top MCTS moves: [('f5c2', 0.25252525252525254), ('f5e4', 0.15151515151515152), ('h5h4', 0.1414141414141414)]
+2025-11-15 13:30:24,548 - INFO - Move 99: Stockfish (Black) plays f2e3
+2025-11-15 13:30:27,866 - INFO - Move 100: ChessEngine (White) plays h5h4 | Top MCTS moves: [('h5h4', 0.2222222222222222), ('h5h3', 0.1414141414141414), ('h5f5', 0.13131313131313133)]
+2025-11-15 13:30:27,874 - INFO - Move 101: Stockfish (Black) plays c4c5
+2025-11-15 13:30:31,087 - INFO - Move 102: ChessEngine (White) plays h4h5 | Top MCTS moves: [('h4h5', 0.24242424242424243), ('h4h3', 0.1414141414141414), ('h4h2', 0.1414141414141414)]
+2025-11-15 13:30:31,088 - INFO - Injecting random move for stockfish: c5c6
+2025-11-15 13:30:34,057 - INFO - Move 104: ChessEngine (White) plays h5h4 | Top MCTS moves: [('h5h4', 0.1717171717171717), ('h5h3', 0.1717171717171717), ('g8f8', 0.10101010101010101)]
+2025-11-15 13:30:34,068 - INFO - Move 105: Stockfish (Black) plays d5d6
+2025-11-15 13:30:37,110 - INFO - Move 106: ChessEngine (White) plays c7d6 | Top MCTS moves: [('c7d6', 0.31313131313131315), ('h4h3', 0.12121212121212122), ('h4h2', 0.08080808080808081)]
+2025-11-15 13:30:37,129 - INFO - Move 107: Stockfish (Black) plays e3d2
+2025-11-15 13:30:40,550 - INFO - Move 108: ChessEngine (White) plays c2e4 | Top MCTS moves: [('c2e4', 0.3333333333333333), ('h4h2', 0.12121212121212122), ('h4d4', 0.1111111111111111)]
+2025-11-15 13:30:40,562 - INFO - Move 109: Stockfish (Black) plays c6c7
+2025-11-15 13:30:40,563 - INFO - Injecting random move for our: e4b1
+2025-11-15 13:30:40,587 - INFO - Move 111: Stockfish (Black) plays d2e2
+2025-11-15 13:30:45,098 - INFO - Move 112: ChessEngine (White) plays h4h2 | Top MCTS moves: [('h4h2', 0.31313131313131315), ('b1c2', 0.20202020202020202), ('b1e4', 0.18181818181818182)]
+2025-11-15 13:30:45,105 - INFO - Move 113: Stockfish (Black) plays e2e3
+2025-11-15 13:30:49,661 - INFO - Move 114: ChessEngine (White) plays b1a2 | Top MCTS moves: [('b1a2', 0.1919191919191919), ('b1f5', 0.1717171717171717), ('b1c2', 0.13131313131313133)]
+2025-11-15 13:30:49,661 - INFO - Injecting random move for stockfish: e3f4
+2025-11-15 13:30:53,811 - INFO - Move 116: ChessEngine (White) plays a2f7 | Top MCTS moves: [('a2f7', 0.20202020202020202), ('a2d5', 0.15151515151515152), ('d6d5', 0.15151515151515152)]
+2025-11-15 13:30:53,831 - INFO - Move 117: Stockfish (Black) plays f4e4
+2025-11-15 13:30:57,935 - INFO - Move 118: ChessEngine (White) plays h2a2 | Top MCTS moves: [('h2a2', 0.15151515151515152), ('f7h5', 0.12121212121212122), ('h2h5', 0.12121212121212122)]
+2025-11-15 13:30:57,951 - INFO - Move 119: Stockfish (Black) plays e4f4
+2025-11-15 13:30:57,951 - INFO - Injecting random move for our: a2g2
+2025-11-15 13:30:57,964 - INFO - Move 121: Stockfish (Black) plays f4e4
+2025-11-15 13:31:02,288 - INFO - Move 122: ChessEngine (White) plays f7a2 | Top MCTS moves: [('f7a2', 0.21212121212121213), ('g2g3', 0.16161616161616163), ('g2g1', 0.13131313131313133)]
+2025-11-15 13:31:02,290 - INFO - Injecting random move for stockfish: e4f3
+2025-11-15 13:31:06,498 - INFO - Move 124: ChessEngine (White) plays g2g1 | Top MCTS moves: [('g2g1', 0.36363636363636365), ('a2f7', 0.16161616161616163), ('g2h2', 0.12121212121212122)]
+2025-11-15 13:31:06,509 - INFO - Move 125: Stockfish (Black) plays f3f2
+2025-11-15 13:31:11,063 - INFO - Move 126: ChessEngine (White) plays a2f7 | Top MCTS moves: [('a2f7', 0.29292929292929293), ('g1g4', 0.18181818181818182), ('g1c1', 0.1111111111111111)]
+2025-11-15 13:31:11,074 - INFO - Move 127: Stockfish (Black) plays f2g1
+2025-11-15 13:31:11,075 - INFO - Injecting random move for our: g7f8
+2025-11-15 13:31:11,116 - INFO - Move 129: Stockfish (Black) plays g1f2
+2025-11-15 13:31:14,980 - INFO - Move 130: ChessEngine (White) plays f8g7 | Top MCTS moves: [('f8g7', 0.2727272727272727), ('d6d5', 0.16161616161616163), ('g8g1', 0.13131313131313133)]
+2025-11-15 13:31:14,990 - INFO - Move 131: Stockfish (Black) plays f2e2
+2025-11-15 13:31:19,602 - INFO - Move 132: ChessEngine (White) plays f7a2 | Top MCTS moves: [('f7a2', 0.2727272727272727), ('f7d5', 0.1919191919191919), ('d6d5', 0.16161616161616163)]
+2025-11-15 13:31:19,610 - INFO - Move 133: Stockfish (Black) plays e2d3
+2025-11-15 13:31:24,274 - INFO - Move 134: ChessEngine (White) plays a2d5 | Top MCTS moves: [('a2d5', 0.16161616161616163), ('a2f7', 0.1414141414141414), ('a2b1', 0.1414141414141414)]
+2025-11-15 13:31:24,274 - INFO - Injecting random move for stockfish: c7c8n
+2025-11-15 13:31:28,024 - INFO - Move 136: ChessEngine (White) plays a7a5 | Top MCTS moves: [('a7a5', 0.20202020202020202), ('g8c8', 0.1919191919191919), ('d5c4', 0.12121212121212122)]
+2025-11-15 13:31:28,054 - INFO - Move 137: Stockfish (Black) plays c8d6
+2025-11-15 13:31:33,126 - INFO - Move 138: ChessEngine (White) plays a5a4 | Top MCTS moves: [('a5a4', 0.35353535353535354), ('d5e6', 0.16161616161616163), ('g7f8', 0.1414141414141414)]
+2025-11-15 13:31:33,171 - INFO - Move 139: Stockfish (Black) plays d6f5
+2025-11-15 13:31:38,116 - INFO - Move 140: ChessEngine (White) plays g7f7 | Top MCTS moves: [('g7f7', 0.23232323232323232), ('g7f8', 0.1919191919191919), ('g7f6', 0.16161616161616163)]
+2025-11-15 13:31:38,244 - INFO - Move 141: Stockfish (Black) plays f5h6
+2025-11-15 13:31:38,245 - INFO - Injecting random move for our: f7f8
+2025-11-15 13:31:38,272 - INFO - Move 143: Stockfish (Black) plays h6g8
+2025-11-15 13:31:42,499 - INFO - Move 144: ChessEngine (White) plays f8g8 | Top MCTS moves: [('f8g8', 0.5656565656565656), ('a4a3', 0.20202020202020202), ('d5g8', 0.12121212121212122)]
+2025-11-15 13:31:42,522 - INFO - Move 145: Stockfish (Black) plays d3c2
+2025-11-15 13:31:45,885 - INFO - Move 146: ChessEngine (White) plays a4a3 | Top MCTS moves: [('a4a3', 0.3333333333333333), ('d5c4', 0.2727272727272727), ('g8f7', 0.1111111111111111)]
+2025-11-15 13:31:45,886 - INFO - Injecting random move for stockfish: c2c1
+2025-11-15 13:31:47,830 - INFO - Move 148: ChessEngine (White) plays a3a2 | Top MCTS moves: [('a3a2', 0.797979797979798), ('d5c4', 0.1414141414141414), ('g8f8', 0.010101010101010102)]
+2025-11-15 13:31:48,008 - INFO - Move 149: Stockfish (Black) plays c1b2
+2025-11-15 13:31:49,130 - INFO - Move 150: ChessEngine (White) plays a2a1b | Top MCTS moves: [('a2a1b', 0.1717171717171717), ('a2a1n', 0.1717171717171717), ('a2a1q', 0.15151515151515152)]
+2025-11-15 13:31:49,167 - INFO - Move 151: Stockfish (Black) plays b2a1
+2025-11-15 13:31:49,168 - INFO - Game result: DRAW
+2025-11-15 13:31:49,183 - INFO - 
+--- Game 7 ---
+2025-11-15 13:31:51,127 - INFO - Move 1: ChessEngine (White) plays e2e4 | Top MCTS moves: [('e2e4', 0.696969696969697), ('d2d4', 0.20202020202020202), ('g1f3', 0.020202020202020204)]
+2025-11-15 13:31:51,264 - INFO - Move 2: Stockfish (Black) plays e7e5
+2025-11-15 13:31:52,942 - INFO - Move 3: ChessEngine (White) plays g1f3 | Top MCTS moves: [('g1f3', 0.5454545454545454), ('f1c4', 0.16161616161616163), ('f2f4', 0.1111111111111111)]
+2025-11-15 13:31:52,988 - INFO - Move 4: Stockfish (Black) plays b8c6
+2025-11-15 13:31:54,948 - INFO - Move 5: ChessEngine (White) plays f1c4 | Top MCTS moves: [('f1c4', 0.35353535353535354), ('f1b5', 0.29292929292929293), ('d2d4', 0.23232323232323232)]
+2025-11-15 13:31:55,087 - INFO - Move 6: Stockfish (Black) plays g8f6
+2025-11-15 13:31:55,088 - INFO - Injecting random move for our: c4b5
+2025-11-15 13:31:55,171 - INFO - Move 8: Stockfish (Black) plays f6e4
+2025-11-15 13:31:57,135 - INFO - Move 9: ChessEngine (White) plays b5c6 | Top MCTS moves: [('b5c6', 0.41414141414141414), ('d2d3', 0.26262626262626265), ('e1g1', 0.15151515151515152)]
+2025-11-15 13:31:57,135 - INFO - Injecting random move for stockfish: e4f6
+2025-11-15 13:31:59,253 - INFO - Move 11: ChessEngine (White) plays f3e5 | Top MCTS moves: [('f3e5', 0.20202020202020202), ('e1g1', 0.1717171717171717), ('c6d5', 0.13131313131313133)]
+2025-11-15 13:31:59,304 - INFO - Move 12: Stockfish (Black) plays d7c6
+2025-11-15 13:32:01,921 - INFO - Move 13: ChessEngine (White) plays d2d4 | Top MCTS moves: [('d2d4', 0.3434343434343434), ('e5f3', 0.15151515151515152), ('d1f3', 0.1111111111111111)]
+2025-11-15 13:32:02,158 - INFO - Move 14: Stockfish (Black) plays c6c5
+2025-11-15 13:32:04,684 - INFO - Move 15: ChessEngine (White) plays d4c5 | Top MCTS moves: [('d4c5', 0.21212121212121213), ('c2c3', 0.1919191919191919), ('e1g1', 0.16161616161616163)]
+2025-11-15 13:32:04,833 - INFO - Move 16: Stockfish (Black) plays d8d1
+2025-11-15 13:32:04,834 - INFO - Injecting random move for our: e1d1
+2025-11-15 13:32:04,893 - INFO - Move 18: Stockfish (Black) plays f8c5
+2025-11-15 13:32:07,885 - INFO - Move 19: ChessEngine (White) plays c1g5 | Top MCTS moves: [('c1g5', 0.15151515151515152), ('c1f4', 0.1414141414141414), ('c1e3', 0.1414141414141414)]
+2025-11-15 13:32:07,969 - INFO - Move 20: Stockfish (Black) plays f6e4
+2025-11-15 13:32:11,056 - INFO - Move 21: ChessEngine (White) plays h1e1 | Top MCTS moves: [('h1e1', 0.3434343434343434), ('e5f3', 0.13131313131313133), ('d1e2', 0.08080808080808081)]
+2025-11-15 13:32:11,209 - INFO - Move 22: Stockfish (Black) plays e4g5
+2025-11-15 13:32:14,019 - INFO - Move 23: ChessEngine (White) plays b1c3 | Top MCTS moves: [('b1c3', 0.26262626262626265), ('f2f4', 0.18181818181818182), ('c2c3', 0.09090909090909091)]
+2025-11-15 13:32:14,019 - INFO - Injecting random move for stockfish: h8g8
+2025-11-15 13:32:17,286 - INFO - Move 25: ChessEngine (White) plays c3d5 | Top MCTS moves: [('c3d5', 0.5050505050505051), ('f2f4', 0.12121212121212122), ('d1e2', 0.10101010101010101)]
+2025-11-15 13:32:17,303 - INFO - Move 26: Stockfish (Black) plays g5e6
+2025-11-15 13:32:20,144 - INFO - Move 27: ChessEngine (White) plays d5c7 | Top MCTS moves: [('d5c7', 0.4444444444444444), ('d5e3', 0.09090909090909091), ('c2c4', 0.0707070707070707)]
+2025-11-15 13:32:20,253 - INFO - Move 28: Stockfish (Black) plays e6c7
+2025-11-15 13:32:22,961 - INFO - Move 29: ChessEngine (White) plays d1e2 | Top MCTS moves: [('d1e2', 0.1717171717171717), ('e5f3', 0.12121212121212122), ('e1e2', 0.12121212121212122)]
+2025-11-15 13:32:22,973 - INFO - Move 30: Stockfish (Black) plays f7f6
+2025-11-15 13:32:22,974 - INFO - Injecting random move for our: e5c6
+2025-11-15 13:32:22,985 - INFO - Move 32: Stockfish (Black) plays b7c6
+2025-11-15 13:32:25,856 - INFO - Move 33: ChessEngine (White) plays a1d1 | Top MCTS moves: [('a1d1', 0.3939393939393939), ('c2c3', 0.23232323232323232), ('e2f1', 0.12121212121212122)]
+2025-11-15 13:32:25,876 - INFO - Move 34: Stockfish (Black) plays e8f7
+2025-11-15 13:32:29,018 - INFO - Move 35: ChessEngine (White) plays e2f1 | Top MCTS moves: [('e2f1', 0.37373737373737376), ('e2f3', 0.3333333333333333), ('e2d3', 0.20202020202020202)]
+2025-11-15 13:32:29,034 - INFO - Move 36: Stockfish (Black) plays c8e6
+2025-11-15 13:32:32,309 - INFO - Move 37: ChessEngine (White) plays b2b3 | Top MCTS moves: [('b2b3', 0.23232323232323232), ('f2f4', 0.23232323232323232), ('c2c3', 0.21212121212121213)]
+2025-11-15 13:32:32,310 - INFO - Injecting random move for stockfish: a7a6
+2025-11-15 13:32:35,541 - INFO - Move 39: ChessEngine (White) plays f1e2 | Top MCTS moves: [('f1e2', 0.1919191919191919), ('f2f4', 0.1919191919191919), ('c2c3', 0.1717171717171717)]
+2025-11-15 13:32:35,559 - INFO - Move 40: Stockfish (Black) plays g8e8
+2025-11-15 13:32:38,823 - INFO - Move 41: ChessEngine (White) plays e2d3 | Top MCTS moves: [('e2d3', 0.5353535353535354), ('e2f3', 0.18181818181818182), ('e2f1', 0.13131313131313133)]
+2025-11-15 13:32:38,835 - INFO - Move 42: Stockfish (Black) plays c7d5
+2025-11-15 13:32:42,034 - INFO - Move 43: ChessEngine (White) plays f2f3 | Top MCTS moves: [('f2f3', 0.37373737373737376), ('c2c4', 0.29292929292929293), ('g2g3', 0.20202020202020202)]
+2025-11-15 13:32:42,047 - INFO - Move 44: Stockfish (Black) plays e6f5
+2025-11-15 13:32:42,048 - INFO - Injecting random move for our: e1e4
+2025-11-15 13:32:42,061 - INFO - Move 46: Stockfish (Black) plays c5b6
+2025-11-15 13:32:45,482 - INFO - Move 47: ChessEngine (White) plays d3c4 | Top MCTS moves: [('d3c4', 0.3939393939393939), ('g2g4', 0.29292929292929293), ('c2c4', 0.23232323232323232)]
+2025-11-15 13:32:45,494 - INFO - Move 48: Stockfish (Black) plays f5e4
+2025-11-15 13:32:48,771 - INFO - Move 49: ChessEngine (White) plays f3e4 | Top MCTS moves: [('f3e4', 1.0), ('d1d5', 0.0), ('d1d4', 0.0)]
+2025-11-15 13:32:48,774 - INFO - Move 50: Stockfish (Black) plays e8e4
+2025-11-15 13:32:52,794 - INFO - Move 51: ChessEngine (White) plays c4d3 | Top MCTS moves: [('c4d3', 0.98989898989899), ('d1d4', 0.010101010101010102)]
+2025-11-15 13:32:52,796 - INFO - Injecting random move for stockfish: e4d4
+2025-11-15 13:32:56,054 - INFO - Move 53: ChessEngine (White) plays d3e2 | Top MCTS moves: [('d3e2', 1.0)]
+2025-11-15 13:32:56,058 - INFO - Move 54: Stockfish (Black) plays a8e8
+2025-11-15 13:32:59,202 - INFO - Move 55: ChessEngine (White) plays e2f2 | Top MCTS moves: [('e2f2', 0.5454545454545454), ('e2f3', 0.4444444444444444), ('e2f1', 0.010101010101010102)]
+2025-11-15 13:32:59,204 - INFO - Move 56: Stockfish (Black) plays d4f4
+2025-11-15 13:32:59,204 - INFO - Injecting random move for our: f2g3
+2025-11-15 13:32:59,206 - INFO - Move 58: Stockfish (Black) plays e8e3
+2025-11-15 13:32:59,210 - INFO - Game result: LOSS
+2025-11-15 13:33:00,463 - INFO - 
+--- Game 8 ---
+2025-11-15 13:33:00,835 - INFO - Move 1: Stockfish (Black) plays e2e4
+2025-11-15 13:33:02,397 - INFO - Move 2: ChessEngine (White) plays b8c6 | Top MCTS moves: [('b8c6', 0.29292929292929293), ('e7e5', 0.13131313131313133), ('e7e6', 0.0707070707070707)]
+2025-11-15 13:33:02,398 - INFO - Injecting random move for stockfish: f1a6
+2025-11-15 13:33:04,240 - INFO - Move 4: ChessEngine (White) plays b7a6 | Top MCTS moves: [('b7a6', 0.1717171717171717), ('e7e5', 0.15151515151515152), ('g8f6', 0.09090909090909091)]
+2025-11-15 13:33:04,267 - INFO - Move 5: Stockfish (Black) plays d2d4
+2025-11-15 13:33:04,267 - INFO - Injecting random move for our: a6a5
+2025-11-15 13:33:04,355 - INFO - Move 7: Stockfish (Black) plays d4d5
+2025-11-15 13:33:06,462 - INFO - Move 8: ChessEngine (White) plays c6b4 | Top MCTS moves: [('c6b4', 0.12121212121212122), ('g8f6', 0.10101010101010101), ('c6d4', 0.09090909090909091)]
+2025-11-15 13:33:06,503 - INFO - Move 9: Stockfish (Black) plays b1c3
+2025-11-15 13:33:08,392 - INFO - Move 10: ChessEngine (White) plays g8f6 | Top MCTS moves: [('g8f6', 0.10101010101010101), ('c8a6', 0.09090909090909091), ('e7e5', 0.08080808080808081)]
+2025-11-15 13:33:08,573 - INFO - Move 11: Stockfish (Black) plays a2a3
+2025-11-15 13:33:10,750 - INFO - Move 12: ChessEngine (White) plays b4a6 | Top MCTS moves: [('b4a6', 0.08080808080808081), ('b4c2', 0.08080808080808081), ('e7e5', 0.08080808080808081)]
+2025-11-15 13:33:10,750 - INFO - Injecting random move for stockfish: a1a2
+2025-11-15 13:33:12,833 - INFO - Move 14: ChessEngine (White) plays f6e4 | Top MCTS moves: [('f6e4', 0.1111111111111111), ('e7e6', 0.09090909090909091), ('a6c5', 0.08080808080808081)]
+2025-11-15 13:33:12,938 - INFO - Move 15: Stockfish (Black) plays c3e4
+2025-11-15 13:33:12,938 - INFO - Injecting random move for our: g7g6
+2025-11-15 13:33:13,187 - INFO - Move 17: Stockfish (Black) plays d1d4
+2025-11-15 13:33:16,053 - INFO - Move 18: ChessEngine (White) plays f8g7 | Top MCTS moves: [('f8g7', 0.15151515151515152), ('h7h5', 0.10101010101010101), ('f8h6', 0.08080808080808081)]
+2025-11-15 13:33:16,054 - INFO - Injecting random move for stockfish: e4d2
+2025-11-15 13:33:18,657 - INFO - Move 20: ChessEngine (White) plays e8g8 | Top MCTS moves: [('e8g8', 0.1919191919191919), ('c7c5', 0.10101010101010101), ('h7h5', 0.0707070707070707)]
+2025-11-15 13:33:18,738 - INFO - Move 21: Stockfish (Black) plays d4c4
+2025-11-15 13:33:21,489 - INFO - Move 22: ChessEngine (White) plays d7d6 | Top MCTS moves: [('d7d6', 0.09090909090909091), ('a8b8', 0.08080808080808081), ('a5a4', 0.0707070707070707)]
+2025-11-15 13:33:21,525 - INFO - Move 23: Stockfish (Black) plays d2b3
+2025-11-15 13:33:24,549 - INFO - Move 24: ChessEngine (White) plays c8e6 | Top MCTS moves: [('c8e6', 0.3333333333333333), ('c8g4', 0.06060606060606061), ('a8b8', 0.06060606060606061)]
+2025-11-15 13:33:24,565 - INFO - Move 25: Stockfish (Black) plays d5e6
+2025-11-15 13:33:24,566 - INFO - Injecting random move for our: a6c5
+2025-11-15 13:33:24,593 - INFO - Move 27: Stockfish (Black) plays b3c5
+2025-11-15 13:33:27,687 - INFO - Move 28: ChessEngine (White) plays f7e6 | Top MCTS moves: [('f7e6', 0.18181818181818182), ('h7h5', 0.09090909090909091), ('a5a4', 0.08080808080808081)]
+2025-11-15 13:33:27,755 - INFO - Move 29: Stockfish (Black) plays c5e6
+2025-11-15 13:33:31,155 - INFO - Move 30: ChessEngine (White) plays d8e8 | Top MCTS moves: [('d8e8', 0.12121212121212122), ('f8e8', 0.0707070707070707), ('a8b8', 0.06060606060606061)]
+2025-11-15 13:33:31,165 - INFO - Move 31: Stockfish (Black) plays e6c7
+2025-11-15 13:33:34,870 - INFO - Move 32: ChessEngine (White) plays e8f7 | Top MCTS moves: [('e8f7', 0.45454545454545453), ('g8h8', 0.18181818181818182), ('d6d5', 0.1717171717171717)]
+2025-11-15 13:33:34,871 - INFO - Injecting random move for stockfish: c4d5
+2025-11-15 13:33:38,551 - INFO - Move 34: ChessEngine (White) plays a8c8 | Top MCTS moves: [('a8c8', 0.15151515151515152), ('a8b8', 0.15151515151515152), ('a8d8', 0.08080808080808081)]
+2025-11-15 13:33:38,567 - INFO - Move 35: Stockfish (Black) plays d5f7
+2025-11-15 13:33:41,618 - INFO - Move 36: ChessEngine (White) plays f8f7 | Top MCTS moves: [('f8f7', 0.5555555555555556), ('g8f7', 0.36363636363636365), ('g8h8', 0.08080808080808081)]
+2025-11-15 13:33:41,652 - INFO - Move 37: Stockfish (Black) plays c7d5
+2025-11-15 13:33:41,653 - INFO - Injecting random move for our: g6g5
+2025-11-15 13:33:41,669 - INFO - Move 39: Stockfish (Black) plays c2c3
+2025-11-15 13:33:44,758 - INFO - Move 40: ChessEngine (White) plays h7h5 | Top MCTS moves: [('h7h5', 0.24242424242424243), ('e7e5', 0.08080808080808081), ('g7f8', 0.0707070707070707)]
+2025-11-15 13:33:44,773 - INFO - Move 41: Stockfish (Black) plays g1h3
+2025-11-15 13:33:48,026 - INFO - Move 42: ChessEngine (White) plays g5g4 | Top MCTS moves: [('g5g4', 0.23232323232323232), ('h5h4', 0.0707070707070707), ('g7f8', 0.06060606060606061)]
+2025-11-15 13:33:48,039 - INFO - Move 43: Stockfish (Black) plays h3g5
+2025-11-15 13:33:51,495 - INFO - Move 44: ChessEngine (White) plays h5h4 | Top MCTS moves: [('h5h4', 0.25252525252525254), ('e7e5', 0.08080808080808081), ('g7f8', 0.06060606060606061)]
+2025-11-15 13:33:51,495 - INFO - Injecting random move for stockfish: c3c4
+2025-11-15 13:33:55,062 - INFO - Move 46: ChessEngine (White) plays g7f8 | Top MCTS moves: [('g7f8', 0.09090909090909091), ('f7f8', 0.08080808080808081), ('f7f6', 0.06060606060606061)]
+2025-11-15 13:33:55,073 - INFO - Move 47: Stockfish (Black) plays g5f7
+2025-11-15 13:33:58,752 - INFO - Move 48: ChessEngine (White) plays g8f7 | Top MCTS moves: [('g8f7', 0.2828282828282828), ('g8h7', 0.12121212121212122), ('f8g7', 0.10101010101010101)]
+2025-11-15 13:33:58,770 - INFO - Move 49: Stockfish (Black) plays d5e3
+2025-11-15 13:34:01,764 - INFO - Move 50: ChessEngine (White) plays e7e6 | Top MCTS moves: [('e7e6', 0.16161616161616163), ('f8g7', 0.12121212121212122), ('e7e5', 0.1111111111111111)]
+2025-11-15 13:34:01,779 - INFO - Move 51: Stockfish (Black) plays a2a1
+2025-11-15 13:34:01,780 - INFO - Injecting random move for our: f7f6
+2025-11-15 13:34:01,794 - INFO - Move 53: Stockfish (Black) plays h2h3
+2025-11-15 13:34:05,351 - INFO - Move 54: ChessEngine (White) plays f8g7 | Top MCTS moves: [('f8g7', 0.21212121212121213), ('g4h3', 0.1111111111111111), ('f8h6', 0.09090909090909091)]
+2025-11-15 13:34:05,365 - INFO - Move 55: Stockfish (Black) plays h3g4
+2025-11-15 13:34:09,149 - INFO - Move 56: ChessEngine (White) plays c8b8 | Top MCTS moves: [('c8b8', 0.13131313131313133), ('e6e5', 0.13131313131313133), ('h4h3', 0.10101010101010101)]
+2025-11-15 13:34:09,150 - INFO - Injecting random move for stockfish: h1g1
+2025-11-15 13:34:12,208 - INFO - Move 58: ChessEngine (White) plays h4h3 | Top MCTS moves: [('h4h3', 0.16161616161616163), ('e6e5', 0.15151515151515152), ('f6e5', 0.09090909090909091)]
+2025-11-15 13:34:12,222 - INFO - Move 59: Stockfish (Black) plays g4g5
+2025-11-15 13:34:12,223 - INFO - Injecting random move for our: f6g5
+2025-11-15 13:34:12,277 - INFO - Move 61: Stockfish (Black) plays g2h3
+2025-11-15 13:34:16,287 - INFO - Move 62: ChessEngine (White) plays g5f6 | Top MCTS moves: [('g5f6', 0.42424242424242425), ('g5h4', 0.32323232323232326), ('g5f4', 0.16161616161616163)]
+2025-11-15 13:34:16,301 - INFO - Move 63: Stockfish (Black) plays c1d2
+2025-11-15 13:34:19,319 - INFO - Received signal 2. Finishing current game and saving...
+2025-11-15 13:34:19,510 - INFO - Received signal 2. Finishing current game and saving...
+2025-11-15 13:34:19,651 - INFO - Received signal 2. Finishing current game and saving...
+2025-11-15 13:34:19,810 - INFO - Received signal 2. Finishing current game and saving...
+2025-11-15 13:34:20,112 - INFO - Move 64: ChessEngine (White) plays f6e5 | Top MCTS moves: [('f6e5', 0.1717171717171717), ('b8b2', 0.1414141414141414), ('e6e5', 0.13131313131313133)]
+2025-11-15 13:34:20,112 - ERROR - Error during game: engine event loop dead
+2025-11-15 13:34:20,114 - INFO - Game result: DRAW
+2025-11-15 13:34:21,159 - INFO - 
+================================================================================
+2025-11-15 13:34:21,159 - INFO - Training Complete - Final Stats
+2025-11-15 13:34:21,159 - INFO - ================================================================================
+2025-11-15 13:34:21,228 - INFO - Saved checkpoint: checkpoints\model_8_games_20251115_133421_final.pth
+2025-11-15 13:34:21,230 - INFO - Games: 8 | Positions: 307 | Win Rate: 25.0% | W:2 B:4 D:1 | Training Steps: 2
+2025-11-15 13:34:21,230 - INFO - Total time: 0.18 hours
+2025-11-15 13:34:21,230 - INFO - Games per hour: 44.82
+2025-11-15 13:34:21,230 - INFO - Model saved to: C:\Users\lawre\chesshacks-base\src\models\trained_model.pth
