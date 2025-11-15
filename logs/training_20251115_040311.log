@@ -1,0 +1,91 @@
+2025-11-15 04:03:12,042 - INFO - Loaded model from C:\Users\lawre\chesshacks-base\src\models\trained_model.pth
+2025-11-15 04:03:14,458 - INFO - ================================================================================
+2025-11-15 04:03:14,458 - INFO - Starting Overnight Training Loop
+2025-11-15 04:03:14,458 - INFO - Device: cpu
+2025-11-15 04:03:14,458 - INFO - Stockfish Depth: 15
+2025-11-15 04:03:14,458 - INFO - Batch Size: 256
+2025-11-15 04:03:14,458 - INFO - ================================================================================
+2025-11-15 04:03:14,458 - INFO - 
+--- Game 1 ---
+2025-11-15 04:03:38,613 - INFO - Game result: LOSS
+2025-11-15 04:03:38,624 - INFO - 
+--- Game 2 ---
+2025-11-15 04:04:04,372 - INFO - Game result: LOSS
+2025-11-15 04:04:04,375 - INFO - 
+--- Game 3 ---
+2025-11-15 04:04:29,362 - INFO - Game result: LOSS
+2025-11-15 04:04:29,364 - INFO - 
+--- Game 4 ---
+2025-11-15 04:04:52,710 - INFO - Game result: LOSS
+2025-11-15 04:04:52,711 - INFO - 
+--- Game 5 ---
+2025-11-15 04:05:19,239 - INFO - Game result: LOSS
+2025-11-15 04:05:19,243 - INFO - 
+--- Game 6 ---
+2025-11-15 04:05:41,633 - INFO - Game result: LOSS
+2025-11-15 04:05:41,635 - INFO - 
+--- Game 7 ---
+2025-11-15 04:06:03,639 - INFO - Game result: LOSS
+2025-11-15 04:06:03,642 - INFO - 
+--- Game 8 ---
+2025-11-15 04:06:26,361 - INFO - Game result: LOSS
+2025-11-15 04:06:26,363 - INFO - 
+--- Game 9 ---
+2025-11-15 04:06:49,011 - INFO - Game result: LOSS
+2025-11-15 04:06:49,012 - INFO - 
+--- Game 10 ---
+2025-11-15 04:07:13,423 - INFO - Game result: LOSS
+2025-11-15 04:07:13,426 - INFO - 
+--- Game 11 ---
+2025-11-15 04:07:36,152 - INFO - Game result: LOSS
+2025-11-15 04:07:36,155 - INFO - 
+--- Game 12 ---
+2025-11-15 04:07:58,351 - INFO - Game result: LOSS
+2025-11-15 04:07:58,354 - INFO - 
+--- Game 13 ---
+2025-11-15 04:08:21,698 - INFO - Game result: LOSS
+2025-11-15 04:08:21,700 - INFO - 
+--- Game 14 ---
+2025-11-15 04:08:44,407 - INFO - Game result: LOSS
+2025-11-15 04:08:44,408 - INFO - 
+--- Game 15 ---
+2025-11-15 04:09:06,871 - INFO - Game result: LOSS
+2025-11-15 04:09:06,879 - INFO - 
+--- Game 16 ---
+2025-11-15 04:09:30,677 - INFO - Game result: LOSS
+2025-11-15 04:09:30,680 - INFO - 
+--- Game 17 ---
+2025-11-15 04:09:53,676 - INFO - Game result: LOSS
+2025-11-15 04:09:53,678 - INFO - 
+--- Game 18 ---
+2025-11-15 04:10:16,070 - INFO - Game result: LOSS
+2025-11-15 04:10:16,073 - INFO - 
+--- Game 19 ---
+2025-11-15 04:10:38,742 - INFO - Game result: LOSS
+2025-11-15 04:10:38,744 - INFO - 
+--- Game 20 ---
+2025-11-15 04:11:01,353 - INFO - Game result: LOSS
+2025-11-15 04:11:01,356 - INFO - 
+--- Game 21 ---
+2025-11-15 04:11:24,748 - INFO - Game result: LOSS
+2025-11-15 04:11:24,752 - INFO - 
+--- Game 22 ---
+2025-11-15 04:11:53,102 - INFO - Game result: LOSS
+2025-11-15 04:11:53,104 - INFO - 
+--- Game 23 ---
+2025-11-15 04:12:15,877 - INFO - Game result: LOSS
+2025-11-15 04:12:15,883 - INFO - 
+--- Game 24 ---
+2025-11-15 04:12:36,351 - INFO - Received signal 2. Finishing current game and saving...
+2025-11-15 04:12:38,055 - ERROR - Error during game: engine event loop dead
+2025-11-15 04:12:38,055 - INFO - Game result: DRAW
+2025-11-15 04:12:39,327 - INFO - Training step 1 | Loss: 5.6552 | Policy: 4.4897 | Value: 1.1655
+2025-11-15 04:12:39,327 - INFO - 
+================================================================================
+2025-11-15 04:12:39,329 - INFO - Training Complete - Final Stats
+2025-11-15 04:12:39,329 - INFO - ================================================================================
+2025-11-15 04:12:39,488 - INFO - Saved checkpoint: checkpoints\model_24_games_20251115_041239_final.pth
+2025-11-15 04:12:39,488 - INFO - Games: 24 | Positions: 262 | Win Rate: 0.0% | W:0 B:23 D:0 | Training Steps: 1
+2025-11-15 04:12:39,489 - INFO - Total time: 0.16 hours
+2025-11-15 04:12:39,489 - INFO - Games per hour: 152.91
+2025-11-15 04:12:39,489 - INFO - Model saved to: C:\Users\lawre\chesshacks-base\src\models\trained_model.pth

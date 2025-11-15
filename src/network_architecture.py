@@ -90,17 +90,24 @@ def network_output_to_move_probs(board, policy_output):
         move_idx = from_square * 64 + to_square
         move_to_idx[move] = move_idx
     
-    # Extract probabilities for legal moves only
+    # Extract logits for legal moves and apply a stable softmax
+    idxs = [move_to_idx[m] for m in legal_moves]
+    logits = policy_output[idxs]
+
+    # Numeric stability: subtract max
+    max_logit = float(max(logits)) if len(logits) > 0 else 0.0
+    exp_scores = [float(torch.exp(torch.tensor(l - max_logit)).item()) for l in logits]
+    total = sum(exp_scores)
+
     legal_move_probs = {}
-    total_prob = 0.0
-    
-    for move, idx in move_to_idx.items():
-        prob = policy_output[idx]
-        legal_move_probs[move] = prob
-        total_prob += prob
-    
-    # Renormalize (since we filtered illegal moves)
-    for move in legal_move_probs:
-        legal_move_probs[move] /= total_prob
-    
+    if total <= 0:
+        # Fallback: uniform over legal moves
+        uniform = 1.0 / len(legal_moves) if len(legal_moves) > 0 else 0.0
+        for m in legal_moves:
+            legal_move_probs[m] = uniform
+        return legal_move_probs
+
+    for move, score in zip(legal_moves, exp_scores):
+        legal_move_probs[move] = score / total
+
     return legal_move_probs

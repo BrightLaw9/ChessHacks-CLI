@@ -1,0 +1,22 @@
+2025-11-15 04:56:14,190 - INFO - Loaded model from C:\Users\lawre\chesshacks-base\src\models\trained_model.pth
+2025-11-15 04:56:15,535 - INFO - ================================================================================
+2025-11-15 04:56:15,535 - INFO - Starting Overnight Training Loop
+2025-11-15 04:56:15,535 - INFO - Device: cpu
+2025-11-15 04:56:15,535 - INFO - Stockfish Depth: 2
+2025-11-15 04:56:15,535 - INFO - Batch Size: 256
+2025-11-15 04:56:15,535 - INFO - ================================================================================
+2025-11-15 04:56:15,535 - INFO - 
+--- Game 1 ---
+2025-11-15 04:56:47,090 - INFO - Received signal 2. Finishing current game and saving...
+2025-11-15 04:56:47,286 - INFO - Received signal 2. Finishing current game and saving...
+2025-11-15 04:56:48,192 - ERROR - Error during game: engine event loop dead
+2025-11-15 04:56:48,192 - INFO - Game result: DRAW
+2025-11-15 04:56:48,195 - INFO - 
+================================================================================
+2025-11-15 04:56:48,195 - INFO - Training Complete - Final Stats
+2025-11-15 04:56:48,195 - INFO - ================================================================================
+2025-11-15 04:56:48,262 - INFO - Saved checkpoint: checkpoints\model_1_games_20251115_045648_final.pth
+2025-11-15 04:56:48,263 - INFO - Games: 1 | Positions: 13 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 0
+2025-11-15 04:56:48,263 - INFO - Total time: 0.01 hours
+2025-11-15 04:56:48,263 - INFO - Games per hour: 110.00
+2025-11-15 04:56:48,263 - INFO - Model saved to: C:\Users\lawre\chesshacks-base\src\models\trained_model.pth

@@ -1,0 +1,43 @@
+2025-11-15 04:17:42,488 - INFO - Loaded model from C:\Users\lawre\chesshacks-base\src\models\trained_model.pth
+2025-11-15 04:17:43,869 - INFO - ================================================================================
+2025-11-15 04:17:43,869 - INFO - Starting Overnight Training Loop
+2025-11-15 04:17:43,869 - INFO - Device: cpu
+2025-11-15 04:17:43,869 - INFO - Stockfish Depth: 2
+2025-11-15 04:17:43,870 - INFO - Batch Size: 256
+2025-11-15 04:17:43,870 - INFO - ================================================================================
+2025-11-15 04:17:43,870 - INFO - 
+--- Game 1 ---
+2025-11-15 04:18:46,525 - INFO - Game result: LOSS
+2025-11-15 04:18:46,529 - INFO - 
+--- Game 2 ---
+2025-11-15 04:19:49,979 - INFO - Game result: LOSS
+2025-11-15 04:19:49,983 - INFO - 
+--- Game 3 ---
+2025-11-15 04:20:53,129 - INFO - Game result: LOSS
+2025-11-15 04:20:53,133 - INFO - 
+--- Game 4 ---
+2025-11-15 04:21:54,478 - INFO - Game result: LOSS
+2025-11-15 04:21:54,481 - INFO - 
+--- Game 5 ---
+2025-11-15 04:22:57,016 - INFO - Game result: LOSS
+2025-11-15 04:22:57,020 - INFO - 
+--- Game 6 ---
+2025-11-15 04:23:58,844 - INFO - Game result: LOSS
+2025-11-15 04:23:58,850 - INFO - 
+--- Game 7 ---
+2025-11-15 04:24:19,422 - INFO - Received signal 2. Finishing current game and saving...
+2025-11-15 04:24:19,753 - INFO - Received signal 2. Finishing current game and saving...
+2025-11-15 04:24:19,930 - INFO - Received signal 2. Finishing current game and saving...
+2025-11-15 04:24:20,117 - INFO - Received signal 2. Finishing current game and saving...
+2025-11-15 04:24:20,477 - INFO - Received signal 2. Finishing current game and saving...
+2025-11-15 04:24:21,482 - ERROR - Error during game: engine event loop dead
+2025-11-15 04:24:21,483 - INFO - Game result: DRAW
+2025-11-15 04:24:21,485 - INFO - 
+================================================================================
+2025-11-15 04:24:21,485 - INFO - Training Complete - Final Stats
+2025-11-15 04:24:21,485 - INFO - ================================================================================
+2025-11-15 04:24:21,557 - INFO - Saved checkpoint: checkpoints\model_7_games_20251115_042421_final.pth
+2025-11-15 04:24:21,558 - INFO - Games: 7 | Positions: 161 | Win Rate: 0.0% | W:0 B:6 D:0 | Training Steps: 0
+2025-11-15 04:24:21,558 - INFO - Total time: 0.11 hours
+2025-11-15 04:24:21,558 - INFO - Games per hour: 63.37
+2025-11-15 04:24:21,558 - INFO - Model saved to: C:\Users\lawre\chesshacks-base\src\models\trained_model.pth

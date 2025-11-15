@@ -163,7 +163,7 @@ class OvernightTrainer:
         self.draws = 0
         
         # Checkpointing
-        self.checkpoint_frequency = 50  # Save every N games
+        self.checkpoint_frequency = 10  # Save every N games
         
         # Signal handling for graceful shutdown
         signal.signal(signal.SIGINT, self._signal_handler)
@@ -191,62 +191,77 @@ class OvernightTrainer:
             with chess.engine.SimpleEngine.popen_uci(self.stockfish_path) as engine:
                 move_count = 0
                 
-                while not board.is_game_over() and move_count < 300:
-                    if board.turn:  # Our turn (White)
-                        # Get move from our engine
+                # Before starting each game:
+                if self.games_played % 2 == 0:
+                    white_player = "our"
+                    black_player = "stockfish"
+                else:
+                    white_player = "stockfish"
+                    black_player = "our"
+
+                while not board.is_game_over():
+                    print(board.move_stack)
+                    player = white_player if board.turn else black_player
+
+                    # -----------------------------------------
+                    # OUR ENGINE MOVE
+                    # -----------------------------------------
+                    if player == "our":
                         best_move = self.chess_engine.get_best_move(board)
-                        
+
                         if best_move is None:
                             logger.warning("No legal moves available!")
                             break
-                        
-                        # Collect MCTS statistics before making the move
+
+                        # MCTS rollout and training data collection
                         root = MCTSNode(board)
                         for _ in range(NUM_SIMULATIONS):
                             node = root
                             search_path = [node]
-                            
+
                             while not node.is_leaf() and not node.board.is_game_over():
                                 node = self.chess_engine.mcts._select_child(node)
                                 search_path.append(node)
-                            
-                            value = 0
+
                             if not node.board.is_game_over():
                                 value = self.chess_engine.mcts._expand_node(node)
                             else:
-                                result_str = node.board.result()
-                                value = self.chess_engine.mcts._result_to_value(result_str, board.turn)
-                            
+                                value = self.chess_engine.mcts._result_to_value(
+                                    node.board.result(), board.turn
+                                )
+
                             self.chess_engine.mcts._backpropagate(search_path, value)
-                        
-                        # Build policy from MCTS visits
+
+                        # Build policy
                         mcts_policy = {}
                         total_visits = sum(child.visit_count for child in root.children.values())
-                        
-                        for move, child in root.children.items():
-                            if total_visits > 0:
+                        if total_visits > 0:
+                            for move, child in root.children.items():
                                 mcts_policy[move.uci()] = child.visit_count / total_visits
-                        
-                        # Store training data
+
+                        # Save training data
                         game_data.append({
                             'board': board.copy(),
                             'policy': mcts_policy,
-                            'player_color': chess.WHITE
+                            'player_color': chess.WHITE if white_player == "our" else chess.BLACK
                         })
-                        
+
                         board.push(best_move)
-                    
-                    else:  # Stockfish's turn (Black)
-                        # Get move from Stockfish
+
+                        # -----------------------------------------
+                        # STOCKFISH MOVE
+                        # -----------------------------------------
+                    else:
                         result = engine.play(board, chess.engine.Limit(depth=self.stockfish_depth))
                         board.push(result.move)
-                    
+                            
                     move_count += 1
-        
+            
         except Exception as e:
             logger.error(f"Error during game: {e}")
             return game_data, 0.0
-        
+            
+        print("Ran ", move_count, " number of moves")
         # Determine result
         result_str = board.result()
         if result_str == "1-0":
@@ -300,7 +315,7 @@ class OvernightTrainer:
         torch.save(self.network.state_dict(), checkpoint_path)
         
         # Also update the main model
-        torch.save(self.network.state_dict(), MODEL_PATH)
+        # torch.save(self.network.state_dict(), MODEL_PATH)
         
         logger.info(f"Saved checkpoint: {checkpoint_path}")
     
@@ -417,7 +432,8 @@ def main():
     parser.add_argument(
         "--stockfish-depth",
         type=int,
-        default=15,
+        # default=15,
+        default=2,
         help="Stockfish search depth (default: 15)"
     )
     parser.add_argument(
@@ -447,7 +463,7 @@ def main():
     parser.add_argument(
         "--stockfish-path",
         type=str,
-        default="stockfish",
+        default="C:\\Users\\lawre\\Downloads\\stockfish-windows-x86-64-avx2\\stockfish\\stockfish.exe",
         help="Path to Stockfish executable (default: stockfish)"
     )
     
