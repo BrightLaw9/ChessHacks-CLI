@@ -7,7 +7,7 @@ from .chess_engine import ChessEngine
 
 # Write code here that runs once
 # Can do things like load models from huggingface, make connections to subprocesses, etcwenis
-# engine = ChessEngine()
+engine = ChessEngine()
 
 @chess_manager.entrypoint
 def test_func(ctx: GameContext):
@@ -27,21 +27,21 @@ def test_func(ctx: GameContext):
     total_weight = sum(move_weights)
     # Normalize so probabilities sum to 1
 
-    # best_move, move_stats = engine.get_move_with_stats(ctx.board)
-    move_probs = {
-        move.uci(): weight / total_weight
-        for move, weight in zip(legal_moves, move_weights)
-    }
+    best_move, move_stats = engine.get_move_with_stats(ctx.board)
+    # move_probs = {
+    #     move.uci(): weight / total_weight
+    #     for move, weight in zip(legal_moves, move_weights)
+    # }
     # ctx.logProbabilities(move_probs)
 
-    # move_probs = {
-    #     move: move_stat_dict['prior']
-    #     for move, move_stat_dict in move_stats.items()
-    # }
+    move_probs = {
+        move: move_stat_dict['prior']
+        for move, move_stat_dict in move_stats.items()
+    }
     ctx.logProbabilities(move_probs)
-    # return best_move
+    return best_move
     #return engine.get_best_move(ctx.board)
-    return random.choices(legal_moves, weights=move_weights, k=1)[0]
+    # return random.choices(legal_moves, weights=move_weights, k=1)[0]
 
 
 @chess_manager.reset
