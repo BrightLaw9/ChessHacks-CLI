@@ -37,91 +37,95 @@ def train_loop(rank, world_size, args):
     Each process executes this function.
     rank should match local GPU id (0...world_size-1).
     """
-    # Initialize process group (NCCL backend for GPUs)
-    os.environ.setdefault("MASTER_ADDR", args.master_addr)
-    os.environ.setdefault("MASTER_PORT", str(args.master_port))
-    os.environ["RANK"] = str(rank)
-    os.environ["WORLD_SIZE"] = str(world_size)
+    try:
+        # Initialize process group (NCCL backend for GPUs)
+        os.environ.setdefault("MASTER_ADDR", args.master_addr)
+        os.environ.setdefault("MASTER_PORT", str(args.master_port))
+        os.environ["RANK"] = str(rank)
+        os.environ["WORLD_SIZE"] = str(world_size)
 
-    dist.init_process_group(backend="nccl", rank=rank, world_size=world_size)
+        dist.init_process_group(backend="nccl", rank=rank, world_size=world_size)
 
-    device = torch.device(f"cuda:{rank}")
-    print(f"[rank {rank}] Using device {device}")
+        device = torch.device(f"cuda:{rank}")
+        print(f"[rank {rank}] Using device {device}")
 
-    # Set seeds (optionally offset by rank for determinism)
-    setup_seed(42 + rank)
+        # Set seeds (optionally offset by rank for determinism)
+        setup_seed(42 + rank)
 
-    # Dataset and DataLoader: iterable dataset will shard based on RANK and DataLoader worker id
-    dataset = ChessIterablePGN(
-        pgn_folder=args.pgn_folder,
-        min_elo=args.min_elo,
-        skip_early_moves=args.skip_early_moves,
-        max_games_per_file=args.max_games_per_file,
-    )
+        # Dataset and DataLoader: iterable dataset will shard based on RANK and DataLoader worker id
+        dataset = ChessIterablePGN(
+            pgn_folder=args.pgn_folder,
+            min_elo=args.min_elo,
+            skip_early_moves=args.skip_early_moves,
+            max_games_per_file=args.max_games_per_file,
+        )
 
-    # Important: for IterableDataset, set shuffle False and don't use DistributedSampler.
-    dataloader = DataLoader(
-        dataset,
-        batch_size=args.batch_size,
-        num_workers=args.num_workers,
-        collate_fn=collate_batch,
-        pin_memory=True,
-    )
+        # Important: for IterableDataset, set shuffle False and don't use DistributedSampler.
+        dataloader = DataLoader(
+            dataset,
+            batch_size=args.batch_size,
+            num_workers=args.num_workers,
+            collate_fn=collate_batch,
+            pin_memory=True,
+        )
 
-    # Model
-    model = ChessNetwork().to(device)
-    model = DDP(model, device_ids=[rank], output_device=rank, find_unused_parameters=False)
+        # Model
+        model = ChessNetwork().to(device)
+        model.train()  # Ensure model is in training mode
+        model = DDP(model, device_ids=[rank], output_device=rank, find_unused_parameters=True)
 
-    optimizer = optim.AdamW(model.parameters(), lr=args.lr, weight_decay=1e-4)
-    value_loss_fn = nn.MSELoss()
-    # policy loss computed via cross-entropy style using softmax + kl/neg-log-likelihood:
-    # We'll compute negative log-likelihood of the target distribution
-    model.train()
+        optimizer = optim.AdamW(model.parameters(), lr=args.lr, weight_decay=1e-4)
+        value_loss_fn = nn.MSELoss()
+        # policy loss computed via cross-entropy style using softmax + kl/neg-log-likelihood:
+        # We'll compute negative log-likelihood of the target distribution
+        model.train()
 
-    global_step = 0
-    for epoch in range(args.epochs):
-        print(f"[rank {rank}] Starting epoch {epoch+1}/{args.epochs}")
-        epoch_losses = []
-        for batch_idx, (positions, policies, values) in enumerate(dataloader):
-            # Move to device
-            positions = positions.to(device, non_blocking=True)  # shape [B, ...]
-            policies = policies.to(device, non_blocking=True)    # shape [B, 4096]
-            values = values.to(device, non_blocking=True)        # shape [B, 1]
+        global_step = 0
+        for epoch in range(args.epochs):
+            print(f"[rank {rank}] Starting epoch {epoch+1}/{args.epochs}")
+            epoch_losses = []
+            for batch_idx, (positions, policies, values) in enumerate(dataloader):
+                # Move to device
+                positions = positions.to(device, non_blocking=True)  # shape [B, ...]
+                policies = policies.to(device, non_blocking=True)    # shape [B, 4096]
+                values = values.to(device, non_blocking=True)        # shape [B, 1]
 
-            # Forward
-            policy_logits, value_pred = model(positions)  # policy_logits: [B, 4096], value_pred: [B, 1] or [B]
-            # Policy loss: KL / cross-entropy between target distribution and model logits
-            log_probs = torch.log_softmax(policy_logits, dim=1)
-            # Avoid log(0) by clamping
-            policy_loss = -torch.sum(policies * log_probs, dim=1).mean()
+                # Forward
+                policy_logits, value_pred = model(positions)  # policy_logits: [B, 4096], value_pred: [B, 1] or [B]
+                # Policy loss: KL / cross-entropy between target distribution and model logits
+                log_probs = torch.log_softmax(policy_logits, dim=1)
+                # Avoid log(0) by clamping
+                policy_loss = -torch.sum(policies * log_probs, dim=1).mean()
 
-            value_loss = value_loss_fn(value_pred.view(-1,1), values)
-            loss = args.policy_weight * policy_loss + args.value_weight * value_loss
+                value_loss = value_loss_fn(value_pred.view(-1,1), values)
+                loss = args.policy_weight * policy_loss + args.value_weight * value_loss
 
-            print(f"Loss at {batch_idx}: ", loss.item())
-            optimizer.zero_grad()
-            loss.backward()
-            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=args.max_grad_norm)
-            optimizer.step()
+                print(f"Loss at {batch_idx}: ", loss.item())
+                optimizer.zero_grad()
+                loss.backward()
+                torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=args.max_grad_norm)
+                optimizer.step()
 
-            epoch_losses.append(loss.item())
-            global_step += 1
+                epoch_losses.append(loss.item())
+                global_step += 1
 
-            # Logging (only rank 0)
-            if (batch_idx + 1) % args.log_every == 0 and rank == 0:
-                avg = sum(epoch_losses[-args.log_every:]) / len(epoch_losses[-args.log_every:])
-                print(f"[rank {rank}] Epoch {epoch+1} step {batch_idx+1} | loss {avg:.4f}")
+                # Logging (only rank 0)
+                if (batch_idx + 1) % args.log_every == 0 and rank == 0:
+                    avg = sum(epoch_losses[-args.log_every:]) / len(epoch_losses[-args.log_every:])
+                    print(f"[rank {rank}] Epoch {epoch+1} step {batch_idx+1} | loss {avg:.4f}")
 
-        # Optionally save checkpoint at epoch end (rank 0 only)
-        if rank == 0:
-            os.makedirs(os.path.dirname(args.model_path) or ".", exist_ok=True)
-            model_filename = args.model_path + f"_epoch_{epoch}.pth"
-            torch.save(model.module.state_dict(), model_filename)
-            print(f"[rank {rank}] Saved checkpoint to {model_filename}")
+            # Optionally save checkpoint at epoch end (rank 0 only)
+            if rank == 0:
+                os.makedirs(os.path.dirname(args.model_path) or ".", exist_ok=True)
+                model_filename = args.model_path + f"_epoch_{epoch}.pth"
+                torch.save(model.module.state_dict(), model_filename)
+                print(f"[rank {rank}] Saved checkpoint to {model_filename}")
 
-    # Cleanup
-    dist.destroy_process_group()
-    print(f"[rank {rank}] Training finished.")
+    finally:
+        # Cleanup
+        if dist.is_available() and dist.is_initialized():
+            dist.destroy_process_group()
+        print(f"[rank {rank}] Training finished.")
 
 
 def spawn_training(world_size, args):

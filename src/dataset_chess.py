@@ -36,7 +36,7 @@ class ChessIterablePGN(IterableDataset):
         self.max_games_per_file = max_games_per_file
 
         # Precompute list of pgn file paths (sorted for deterministic sharding)
-        files = [os.path.join(pgn_folder, f) for f in os.listdir(pgn_folder) if f.endswith(".pgn")]
+        files = [os.path.join(pgn_folder, f) for f in os.listdir(pgn_folder) if f.endswith(".pgn") or f.endswith(".pgn.zst") or f.endswith(".zst")]
         files.sort()
         self.files = files
 
@@ -64,6 +64,7 @@ class ChessIterablePGN(IterableDataset):
 
         # Deterministic round-robin file assignment
         selected = [p for i, p in enumerate(self.files) if (i % total_shards) == shard_id]
+        print(f"[DIAGNOSTIC] _files_for_worker: total_files={len(self.files)}, world_size={world_size}, num_workers={num_workers}, rank={rank}, worker_id={worker_id}, shard_id={shard_id}/{total_shards}, assigned_files={len(selected)}")
         return selected
 
     def _iter_file(self, path):
@@ -102,12 +103,12 @@ class ChessIterablePGN(IterableDataset):
                     avg_elo = (white_elo + black_elo) / 2
                 except Exception:
                     avg_elo = 0
-                if avg_elo < self.min_elo:
-                    continue
+                # DISABLED for diagnostics: if avg_elo < self.min_elo:
+                #     continue
 
                 moves_list = list(game.mainline_moves())
-                if len(moves_list) < 6:
-                    continue
+                # DISABLED for diagnostics: if len(moves_list) < 6:
+                #     continue
 
                 board = chess.Board()
                 outcome = game.headers.get("Result", "*")
@@ -116,17 +117,18 @@ class ChessIterablePGN(IterableDataset):
 
                 total_moves = len(moves_list)
                 for move_number, move in enumerate(moves_list, start=1):
-                    if move_number <= self.skip_early_moves:
-                        board.push(move)
-                        continue
+                    # DISABLED for diagnostics: if move_number <= self.skip_early_moves:
+                    #     board.push(move)
+                    #     continue
 
-                    if len(list(board.legal_moves)) < 2:
-                        board.push(move)
-                        continue
-                    if board.is_checkmate() or board.is_stalemate():
-                        board.push(move)
-                        continue
+                    # DISABLED for diagnostics: if len(list(board.legal_moves)) < 2:
+                    #     board.push(move)
+                    #     continue
+                    # DISABLED for diagnostics: if board.is_checkmate() or board.is_stalemate():
+                    #     board.push(move)
+                    #     continue
 
+                    board.push(move)
                     pos_tensor = board_to_tensor(board)
 
                     # policy target
@@ -149,8 +151,6 @@ class ChessIterablePGN(IterableDataset):
                         np.array([value], dtype=np.float32)
                     )
 
-                    board.push(move)
-
                     if self.max_games_per_file is not None and games_read >= self.max_games_per_file:
                         return
 
@@ -163,10 +163,15 @@ class ChessIterablePGN(IterableDataset):
 
 
     def __iter__(self):
+        print("[DIAGNOSTIC] __iter__: starting iterator")
         files = self._files_for_worker()
+        print(f"[DIAGNOSTIC] __iter__: files_for_worker returned {len(files)} files")
         if not files:
             # If this worker got no files (e.g., fewer files than shards), return empty iterator
+            print("[DIAGNOSTIC] __iter__: WARNING - no files assigned to this worker, returning empty iterator")
             return iter(())
         # Iterate through assigned files
         for path in files:
+            print(f"[DIAGNOSTIC] __iter__: processing file {path}")
             yield from self._iter_file(path)
+        print("[DIAGNOSTIC] __iter__: iterator complete")

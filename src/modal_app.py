@@ -60,7 +60,7 @@ def train():
     print("Files on /app:", os.listdir("/app"))
 
     # Path inside container to PGNs
-    pgn_path = "/"
+    pgn_path = "/pgns"
 
     # Path for checkpoints
     model_path_prefix = "/models/checkpoint_model"
