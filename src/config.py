@@ -26,5 +26,5 @@ import os
 # the package is imported from the repo root or when the process
 # current working directory is different (avoids fragile ".." paths).
 MODEL_PATH = os.path.abspath(
-	os.path.join(os.path.dirname(__file__), "models", "checkpoint_model_epoch_0.pth")
+	os.path.join(os.path.dirname(__file__), "models", "checkpoint_model_epoch_1.pth")
 )
