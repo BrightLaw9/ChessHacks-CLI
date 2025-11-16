@@ -1,0 +1,2 @@
+modal volume put chess-dataset /path/to/local/file /remote/path/in/volume
+
