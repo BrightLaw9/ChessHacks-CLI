@@ -134,10 +134,11 @@ def train_loop(rank, world_size, args):
                 global_step += 1
 
                 # Logging (only rank 0)
-                if (batch_idx + 1) % args.log_every == 0 and rank == 0:
-                    avg = sum(epoch_losses[-args.log_every:]) / len(epoch_losses[-args.log_every:])
+                if (batch_idx + 1) % 1800 == 0 and rank == 0:
+                    avg = sum(epoch_losses[-1800:]) / len(epoch_losses[-1800:])
                     logger.warning(f"[rank {rank}] Epoch {epoch+1} step {batch_idx+1} | loss {avg:.4f}")
                     print(f"[rank {rank}] Epoch {epoch+1} step {batch_idx+1} | loss {avg:.4f}", flush=True)
+                    model_filename = args.model_path + f"_epoch_{epoch}.pth"
                     torch.save(model.module.state_dict(), model_filename)
                     print(f"[rank {rank}] Saved checkpoint to {model_filename}", flush=True)
 
@@ -147,6 +148,10 @@ def train_loop(rank, world_size, args):
                 model_filename = args.model_path + f"_epoch_{epoch}.pth"
                 torch.save(model.module.state_dict(), model_filename)
                 print(f"[rank {rank}] Saved checkpoint to {model_filename}", flush=True)
+    except Exception as e: 
+        model_filename = args.model_path + f"_epoch_{epoch}.pth"
+        torch.save(model.module.state_dict(), model_filename)
+        print(f"[rank {rank}] Saved checkpoint to {model_filename}", flush=True)
 
     finally:
         # Cleanup
