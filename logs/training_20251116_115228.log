@@ -2913,3 +2913,16 @@
 2025-11-16 13:19:51,152 - INFO - Move 31: Stockfish (Black) plays e5+ (e4e5)
 2025-11-16 13:19:51,982 - INFO - Received signal 2. Finishing current game and saving...
 2025-11-16 13:19:56,020 - INFO - Move 32: ChessEngine (White) plays Ke7 (d6e7) | Top MCTS moves: [('d6e7', 0.9849624060150376), ('d6e6', 0.015037593984962405)]
+2025-11-16 13:19:56,299 - ERROR - Error during game: engine event loop dead
+2025-11-16 13:19:56,334 - INFO - [Post-Game Training] Total Loss=5.5644 | policy=5.5391 | value=0.0506
+2025-11-16 13:19:56,337 - INFO - Saved moves for game 82 to logs/moves_game_82_20251116_131956.txt
+2025-11-16 13:19:56,338 - INFO - Game result: DRAW
+2025-11-16 13:19:56,338 - INFO - 
+================================================================================
+2025-11-16 13:19:56,338 - INFO - Training Complete - Final Stats
+2025-11-16 13:19:56,338 - INFO - ================================================================================
+2025-11-16 13:19:56,516 - INFO - Saved checkpoint: checkpoints/model_82_games_20251116_131956_final.pth
+2025-11-16 13:19:56,516 - INFO - Games: 82 | Positions: 980 | Win Rate: 48.8% | W:40 B:41 D:0 | Training Steps: 82
+2025-11-16 13:19:56,516 - INFO - Total time: 1.46 hours
+2025-11-16 13:19:56,516 - INFO - Games per hour: 56.26
+2025-11-16 13:19:56,516 - INFO - Model saved to: /u201/a44chhab/research/chessml/ChessHacks-CLI/src/models/checkpoint_model_epoch_0.pth
