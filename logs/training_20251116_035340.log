@@ -1,0 +1,41 @@
+2025-11-16 03:53:42,190 - INFO - ================================================================================
+2025-11-16 03:53:42,190 - INFO - Starting Overnight Training Loop
+2025-11-16 03:53:42,190 - INFO - Device: cuda
+2025-11-16 03:53:42,190 - INFO - Stockfish Depth: 15
+2025-11-16 03:53:42,190 - INFO - Batch Size: 192
+2025-11-16 03:53:42,190 - INFO - ================================================================================
+2025-11-16 03:53:42,190 - INFO - 
+--- Game 1 ---
+2025-11-16 03:53:44,607 - INFO - Move 1: ChessEngine (White) plays Nh3 (g1h3) | Top MCTS moves: [('g1h3', 0.050980392156862744), ('g1f3', 0.050980392156862744), ('b1c3', 0.050980392156862744)]
+2025-11-16 03:53:46,840 - INFO - Move 2: Stockfish (Black) plays d5 (d7d5)
+2025-11-16 03:53:48,571 - INFO - Move 3: ChessEngine (White) plays Ng5 (h3g5) | Top MCTS moves: [('h3g5', 0.050980392156862744), ('h1g1', 0.050980392156862744), ('b1c3', 0.050980392156862744)]
+2025-11-16 03:53:50,599 - INFO - Move 4: Stockfish (Black) plays e5 (e7e5)
+2025-11-16 03:53:52,546 - INFO - Move 5: ChessEngine (White) plays g3 (g2g3) | Top MCTS moves: [('g2g3', 0.043137254901960784), ('f2f3', 0.043137254901960784), ('h2h4', 0.043137254901960784)]
+2025-11-16 03:53:53,779 - INFO - Move 6: Stockfish (Black) plays Qxg5 (d8g5)
+2025-11-16 03:53:53,780 - INFO - Injecting random move for our: c2c4
+2025-11-16 03:53:53,796 - INFO - Move 8: Stockfish (Black) plays d4 (d5d4)
+2025-11-16 03:53:55,510 - INFO - Move 9: ChessEngine (White) plays Qa4+ (d1a4) | Top MCTS moves: [('d1a4', 0.058823529411764705), ('h1g1', 0.047058823529411764), ('f1h3', 0.047058823529411764)]
+2025-11-16 03:53:56,311 - INFO - Move 10: Stockfish (Black) plays Bd7 (c8d7)
+2025-11-16 03:53:58,365 - INFO - Move 11: ChessEngine (White) plays Qxd7+ (a4d7) | Top MCTS moves: [('a4d7', 0.047058823529411764), ('a4a7', 0.03529411764705882), ('a4b5', 0.03529411764705882)]
+2025-11-16 03:53:59,062 - INFO - Move 12: Stockfish (Black) plays Nxd7 (b8d7)
+2025-11-16 03:54:01,276 - INFO - Move 13: ChessEngine (White) plays Rg1 (h1g1) | Top MCTS moves: [('h1g1', 0.054901960784313725), ('b1a3', 0.054901960784313725), ('c4c5', 0.054901960784313725)]
+2025-11-16 03:54:01,653 - INFO - Injecting random move for stockfish: e8e7
+2025-11-16 03:54:03,989 - INFO - Move 15: ChessEngine (White) plays Rg2 (g1g2) | Top MCTS moves: [('g1g2', 0.050980392156862744), ('g1h1', 0.050980392156862744), ('f1h3', 0.050980392156862744)]
+2025-11-16 03:54:04,416 - INFO - Move 16: Stockfish (Black) plays c6 (c7c6)
+2025-11-16 03:54:06,631 - INFO - Move 17: ChessEngine (White) plays h4 (h2h4) | Top MCTS moves: [('h2h4', 0.06274509803921569), ('e2e4', 0.06274509803921569), ('e1d1', 0.058823529411764705)]
+2025-11-16 03:54:07,059 - INFO - Move 18: Stockfish (Black) plays Qh6 (g5h6)
+2025-11-16 03:54:09,331 - INFO - Move 19: ChessEngine (White) plays d3 (d2d3) | Top MCTS moves: [('d2d3', 0.08235294117647059), ('g2h2', 0.058823529411764705), ('e1d1', 0.058823529411764705)]
+2025-11-16 03:54:09,737 - INFO - Move 20: Stockfish (Black) plays Qxc1# (h6c1)
+2025-11-16 03:54:10,169 - INFO - [Post-Game Training] Total Loss=8.7726 | policy=8.3055 | value=0.9343
+2025-11-16 03:54:10,171 - INFO - Saved moves for game 1 to logs/moves_game_1_20251116_035410.txt
+2025-11-16 03:54:10,171 - INFO - Game result: LOSS
+2025-11-16 03:54:10,171 - INFO - Reached max games: 1
+2025-11-16 03:54:10,171 - INFO - 
+================================================================================
+2025-11-16 03:54:10,171 - INFO - Training Complete - Final Stats
+2025-11-16 03:54:10,171 - INFO - ================================================================================
+2025-11-16 03:54:10,287 - INFO - Saved checkpoint: checkpoints/model_1_games_20251116_035410_final.pth
+2025-11-16 03:54:10,287 - INFO - Games: 1 | Positions: 0 | Win Rate: 0.0% | W:0 B:1 D:0 | Training Steps: 0
+2025-11-16 03:54:10,287 - INFO - Total time: 0.01 hours
+2025-11-16 03:54:10,287 - INFO - Games per hour: 128.13
+2025-11-16 03:54:10,287 - INFO - Model saved to: /u201/a44chhab/research/chessml/ChessHacks-CLI/src/models/trained_model_test.pth

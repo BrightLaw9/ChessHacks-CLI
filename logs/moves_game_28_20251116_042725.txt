@@ -1,0 +1,1 @@
+1. e4 f5 2. Na6 exf5 3. h6 Ne5 4. e6 Qh5+ 5. Qxg6+ Ke7 6. Bxa6 c6 7. fxe6 b6 8. b5 exd7 9. a5 Nxc6#

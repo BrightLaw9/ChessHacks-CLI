@@ -1,0 +1,1 @@
+1. d3 d5 2. e5 Kd2 3. Nc6 e3 4. c3 a4 5. e4 a3 6. Qe1 axb2 7. bxa1=Q Qe2 8. Qe3 Qxa2+ 9. Bb2 Qxb2+ 10. Rxa3 h3 11. Rh2 Ra1+ 12. Rxc1#
