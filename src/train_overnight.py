@@ -42,7 +42,7 @@ from .MCTSAlgorithm import MCTS, MCTSNode
 LOGISTIC_K = 0.00368208   # from lichess-style mapping
 CP_CLIP = 1000             # clip centipawns
 POLICY_TAU = 200.0         # temperature for policy softmax
-LAMBDA_VALUE = 1.0         # weight on value loss vs policy loss
+LAMBDA_VALUE = 0.5         # weight on value loss vs policy loss
 
 
 def cp_to_value(cp, k=LOGISTIC_K, clip=CP_CLIP):
@@ -212,6 +212,12 @@ class OvernightTrainer:
         # Initialize optimizer
         self.optimizer = optim.Adam(self.network.parameters(), lr=learning_rate)
         
+        self.scheduler = optim.lr_scheduler.StepLR(
+            self.optimizer,
+            step_size=200,     # every 200 updates (games, in your setup)
+            gamma=0.9          # multiply LR by 0.9
+        )
+
         # Initialize MCTS engine
         self.chess_engine = ChessEngine(num_simulations=NUM_SIMULATIONS, device=self.device)
         
@@ -575,6 +581,10 @@ class OvernightTrainer:
         torch.nn.utils.clip_grad_norm_(self.network.parameters(), 1.0)
         self.optimizer.step()
 
+        if hasattr(self, "scheduler"):
+            self.scheduler.step()
+
+
         # sync to MCTS
         self.chess_engine.network.load_state_dict(self.network.state_dict())
 
@@ -582,6 +592,10 @@ class OvernightTrainer:
             f"[Post-Game Training] Total Loss={total_loss.item():.4f} | "
             f"policy={policy_loss.item():.4f} | value={value_loss.item():.4f}"
         )
+
+        # update stats
+        self.training_steps += 1
+        self.total_positions += len(self.current_game_positions)
 
         # clear buffer
         self.current_game_positions = []

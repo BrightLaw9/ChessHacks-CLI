@@ -1,0 +1,1 @@
+1. e4 e5 2. d3 Nf6 3. Be2 Nc6 4. Bc5 Nc3 5. d6 Nb1 6. Nc3 Nc6 7. Nb1 h5 8. Nc3 Ng4 9. Nxf2 g3 10. Nxd1 Kxd1 11. Nd4 Nf3 12. Ng5 Be6 13. Nxe6 Nxe6 14. axb6 Rf1 15. Rb1 Rxa2 16. exf4 Bd2 17. fxg3 Kc1 18. Be3 Qxe3+ 19. Kd1 Qg1+ 20. Kc2 Nd4+ 21. Qxb1 Kd2 22. Qxb2+ Kd1 23. Qd2#
