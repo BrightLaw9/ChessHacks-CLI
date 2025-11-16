@@ -64,6 +64,21 @@ class ChessIterablePGN(IterableDataset):
 
         # Deterministic round-robin file assignment
         selected = [p for i, p in enumerate(self.files) if (i % total_shards) == shard_id]
+        return selected
+
+    def _files_for_worker(self):
+        worker_info = get_worker_info()
+        worker_id = worker_info.id if worker_info else 0
+        num_workers = worker_info.num_workers if worker_info else 1
+
+        rank = int(os.environ.get("RANK", 0))
+        world_size = int(os.environ.get("WORLD_SIZE", 1))
+
+        # Prevent oversharding
+        total_shards = min(world_size * num_workers, len(self.files))
+        shard_id = (rank * num_workers + worker_id) % total_shards
+
+        selected = [p for i,p in enumerate(self.files) if i % total_shards == shard_id]
         print(f"[DIAGNOSTIC] _files_for_worker: total_files={len(self.files)}, world_size={world_size}, num_workers={num_workers}, rank={rank}, worker_id={worker_id}, shard_id={shard_id}/{total_shards}, assigned_files={len(selected)}")
         return selected
 
@@ -156,22 +171,22 @@ class ChessIterablePGN(IterableDataset):
 
         finally:
             # Close files safely
-            print("Games read: ", games_read)
+            print("Games read: ", games_read, flush=True)
             text_f.close()
             if path.endswith(".zst"):
                 fh.close()
 
 
     def __iter__(self):
-        print("[DIAGNOSTIC] __iter__: starting iterator")
+        print("[DIAGNOSTIC] __iter__: starting iterator", flush=True)
         files = self._files_for_worker()
-        print(f"[DIAGNOSTIC] __iter__: files_for_worker returned {len(files)} files")
+        print(f"[DIAGNOSTIC] __iter__: files_for_worker returned {len(files)} files", flush=True)
         if not files:
             # If this worker got no files (e.g., fewer files than shards), return empty iterator
-            print("[DIAGNOSTIC] __iter__: WARNING - no files assigned to this worker, returning empty iterator")
+            print("[DIAGNOSTIC] __iter__: WARNING - no files assigned to this worker, returning empty iterator", flush=True)
             return iter(())
         # Iterate through assigned files
         for path in files:
-            print(f"[DIAGNOSTIC] __iter__: processing file {path}")
+            print(f"[DIAGNOSTIC] __iter__: processing file {path}", flush=True)
             yield from self._iter_file(path)
-        print("[DIAGNOSTIC] __iter__: iterator complete")
+        print("[DIAGNOSTIC] __iter__: iterator complete", flush=True)

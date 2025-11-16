@@ -14,7 +14,18 @@ from torch.nn.parallel import DistributedDataParallel as DDP
 
 from .dataset_chess import ChessIterablePGN
 from .network_architecture import ChessNetwork  # user-provided
+import sys
+import logging
 # board_state.board_to_tensor is used from dataset; not needed here
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)s | %(name)s | %(message)s"
+)
+
+logger = logging.getLogger(__name__)
+
+
 
 def collate_batch(batch):
     """
@@ -38,6 +49,10 @@ def train_loop(rank, world_size, args):
     rank should match local GPU id (0...world_size-1).
     """
     try:
+        logger.warning("Entering training loop!")
+        print("Enter train loop", flush=True)
+        sys.stdout.reconfigure(line_buffering=True)
+        sys.stderr.reconfigure(line_buffering=True)
         # Initialize process group (NCCL backend for GPUs)
         os.environ.setdefault("MASTER_ADDR", args.master_addr)
         os.environ.setdefault("MASTER_PORT", str(args.master_port))
@@ -59,6 +74,13 @@ def train_loop(rank, world_size, args):
             skip_early_moves=args.skip_early_moves,
             max_games_per_file=args.max_games_per_file,
         )
+        print(f"[rank {rank}] Dataset created. Files found in {args.pgn_folder}: {len(dataset.files)} files", flush=True)
+        if len(dataset.files) == 0:
+            print(f"[rank {rank}] WARNING: No PGN files found! Checking if folder exists...", flush=True)
+            print(f"[rank {rank}] Folder exists: {os.path.isdir(args.pgn_folder)}", flush=True)
+            if os.path.isdir(args.pgn_folder):
+                contents = os.listdir(args.pgn_folder)
+                print(f"[rank {rank}] Folder contents: {contents}", flush=True)
 
         # Important: for IterableDataset, set shuffle False and don't use DistributedSampler.
         dataloader = DataLoader(
@@ -68,6 +90,7 @@ def train_loop(rank, world_size, args):
             collate_fn=collate_batch,
             pin_memory=True,
         )
+        print(f"[rank {rank}] DataLoader created with batch_size={args.batch_size}, num_workers={args.num_workers}", flush=True)
 
         # Model
         model = ChessNetwork().to(device)
@@ -81,6 +104,7 @@ def train_loop(rank, world_size, args):
         model.train()
 
         global_step = 0
+        epoch = -1  # Initialize in case loop doesn't run
         for epoch in range(args.epochs):
             print(f"[rank {rank}] Starting epoch {epoch+1}/{args.epochs}")
             epoch_losses = []
@@ -112,20 +136,32 @@ def train_loop(rank, world_size, args):
                 # Logging (only rank 0)
                 if (batch_idx + 1) % args.log_every == 0 and rank == 0:
                     avg = sum(epoch_losses[-args.log_every:]) / len(epoch_losses[-args.log_every:])
-                    print(f"[rank {rank}] Epoch {epoch+1} step {batch_idx+1} | loss {avg:.4f}")
+                    logger.warning(f"[rank {rank}] Epoch {epoch+1} step {batch_idx+1} | loss {avg:.4f}")
+                    print(f"[rank {rank}] Epoch {epoch+1} step {batch_idx+1} | loss {avg:.4f}", flush=True)
+                    torch.save(model.module.state_dict(), model_filename)
+                    print(f"[rank {rank}] Saved checkpoint to {model_filename}", flush=True)
 
             # Optionally save checkpoint at epoch end (rank 0 only)
             if rank == 0:
                 os.makedirs(os.path.dirname(args.model_path) or ".", exist_ok=True)
                 model_filename = args.model_path + f"_epoch_{epoch}.pth"
                 torch.save(model.module.state_dict(), model_filename)
-                print(f"[rank {rank}] Saved checkpoint to {model_filename}")
+                print(f"[rank {rank}] Saved checkpoint to {model_filename}", flush=True)
 
     finally:
         # Cleanup
         if dist.is_available() and dist.is_initialized():
             dist.destroy_process_group()
-        print(f"[rank {rank}] Training finished.")
+        
+        print(f"[rank {rank}] Training finished. (epoch={epoch})", flush=True)
+        
+        # Only save if we actually trained (epoch >= 0)
+        if epoch >= 0:
+            os.makedirs(os.path.dirname(args.model_path) or ".", exist_ok=True)
+            model_filename = args.model_path + f"_epoch_{epoch}_rank_{rank}.pth"
+            if 'model' in locals():
+                torch.save(model.module.state_dict(), model_filename)
+                print(f"[rank {rank}] Saved checkpoint to {model_filename}", flush=True)
 
 
 def spawn_training(world_size, args):
@@ -141,7 +177,7 @@ if __name__ == "__main__":
     parser.add_argument("--pgn-folder", type=str, required=True)
     parser.add_argument("--epochs", type=int, default=5)
     parser.add_argument("--batch-size", type=int, default=64)
-    parser.add_argument("--num-workers", type=int, default=4)
+    parser.add_argument("--num-workers", type=int, default=8)
     parser.add_argument("--lr", type=float, default=1e-4)
     parser.add_argument("--model-path", type=str, default="models/ddp_model.pth")
     parser.add_argument("--master-addr", type=str, default="127.0.0.1")
@@ -153,8 +189,8 @@ if __name__ == "__main__":
     parser.add_argument("--max-games-per-file", type=int, default=None)
     parser.add_argument("--log-every", type=int, default=50)
     parser.add_argument("--max-grad-norm", type=float, default=1.0)
-    parser.add_argument("--world-size", type=int, default=1, help="number of GPUs/processes to spawn")
-    parser.add_argument("--num-nodes", type=int, default=1, help="set >1 for multi-node; not covered here")
+    parser.add_argument("--world-size", type=int, default=8, help="number of GPUs/processes to spawn")
+    parser.add_argument("--num-nodes", type=int, default=8, help="set >1 for multi-node; not covered here")
 
     args = parser.parse_args()
     # quick validation

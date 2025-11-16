@@ -68,11 +68,12 @@ def train():
     # Command to launch mp.spawn training
     cmd = [
         sys.executable,
-        "-m"
+        "-u",
+        "-m",
         "app.train_ddp_stream",
         "--pgn-folder", pgn_path,
         "--world-size", str(NUM_GPUS),
-        "--num-workers", "4",
+        "--num-workers", "8",
         "--batch-size", str(BATCH_SIZE),
         "--epochs", str(EPOCHS),
         "--model-path", model_path_prefix,
@@ -82,10 +83,10 @@ def train():
         "--value-weight", str(VALUE_WEIGHT),
     ]
 
-    print("Launching training with command:")
-    print(" ".join(cmd))
+    print("Launching training with command:", flush=True)
+    print(" ".join(cmd), flush=True)
 
-    result = subprocess.run(cmd, capture_output=True, text=True)
+    result = subprocess.run(cmd, text=True)
     print("STDOUT:")
     print(result.stdout)
     print("STDERR:")
