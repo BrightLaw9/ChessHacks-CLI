@@ -68,7 +68,7 @@ def train():
     # Command to launch mp.spawn training
     cmd = [
         sys.executable,
-        "-m"
+        "-m",
         "app.train_ddp_stream",
         "--pgn-folder", pgn_path,
         "--world-size", str(NUM_GPUS),

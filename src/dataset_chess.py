@@ -40,6 +40,7 @@ class ChessIterablePGN(IterableDataset):
         files.sort()
         self.files = files
 
+
     def _files_for_worker(self):
         """
         Determine which subset of files this DataLoader worker should read.
@@ -165,12 +166,18 @@ class ChessIterablePGN(IterableDataset):
     def __iter__(self):
         print("[DIAGNOSTIC] __iter__: starting iterator")
         files = self._files_for_worker()
+<<<<<<< HEAD
         print(f"[DIAGNOSTIC] __iter__: files_for_worker returned {len(files)} files")
         if not files:
             # If this worker got no files (e.g., fewer files than shards), return empty iterator
             print("[DIAGNOSTIC] __iter__: WARNING - no files assigned to this worker, returning empty iterator")
+=======
+        rank = os.environ.get("RANK", "0")
+        if not files:
+            print(f"[dataset][rank {rank}] No files assigned to this worker! pgn_folder={self.pgn_folder}")
+>>>>>>> 41bbe7e (Modal Files Fixes)
             return iter(())
-        # Iterate through assigned files
+        print(f"[dataset][rank {rank}] Processing {len(files)} files. Example: {files[:3]}")
         for path in files:
             print(f"[DIAGNOSTIC] __iter__: processing file {path}")
             yield from self._iter_file(path)

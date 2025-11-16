@@ -1,0 +1,40 @@
+2025-11-16 11:50:00,084 - INFO - Loaded model from /u201/a44chhab/research/chessml/ChessHacks-CLI/src/models/checkpoint_model_epoch_0.pth
+2025-11-16 11:50:01,313 - INFO - ================================================================================
+2025-11-16 11:50:01,313 - INFO - Starting Overnight Training Loop
+2025-11-16 11:50:01,313 - INFO - Device: cuda
+2025-11-16 11:50:01,313 - INFO - Stockfish Depth: 15
+2025-11-16 11:50:01,313 - INFO - Batch Size: 512
+2025-11-16 11:50:01,313 - INFO - ================================================================================
+2025-11-16 11:50:01,313 - INFO - 
+--- Game 1 ---
+2025-11-16 11:50:04,653 - INFO - Move 1: ChessEngine (White) plays d3 (d2d3) | Top MCTS moves: [('d2d3', 0.05263157894736842), ('a2a3', 0.05263157894736842), ('e2e4', 0.05263157894736842)]
+2025-11-16 11:50:06,762 - INFO - Move 2: Stockfish (Black) plays d5 (d7d5)
+2025-11-16 11:50:08,945 - INFO - Move 3: ChessEngine (White) plays a3 (a2a3) | Top MCTS moves: [('a2a3', 0.040100250626566414), ('g1h3', 0.03759398496240601), ('d1d2', 0.03759398496240601)]
+2025-11-16 11:50:11,692 - INFO - Move 4: Stockfish (Black) plays Nf6 (g8f6)
+2025-11-16 11:50:11,692 - INFO - Injecting random move for our: b2b4
+2025-11-16 11:50:11,750 - INFO - Move 6: Stockfish (Black) plays a5 (a7a5)
+2025-11-16 11:50:15,225 - INFO - Move 7: ChessEngine (White) plays e4 (e2e4) | Top MCTS moves: [('e2e4', 0.040100250626566414), ('g1h3', 0.03759398496240601), ('d1d2', 0.03759398496240601)]
+2025-11-16 11:50:17,244 - INFO - Injecting random move for stockfish: c8g4
+2025-11-16 11:50:20,804 - INFO - Move 9: ChessEngine (White) plays Qf3 (d1f3) | Top MCTS moves: [('d1f3', 0.03508771929824561), ('c1g5', 0.03508771929824561), ('b4b5', 0.03508771929824561)]
+2025-11-16 11:50:21,784 - INFO - Move 10: Stockfish (Black) plays Bxf3 (g4f3)
+2025-11-16 11:50:21,784 - INFO - Injecting random move for our: e4e5
+2025-11-16 11:50:21,795 - INFO - Move 12: Stockfish (Black) plays Bg4 (f3g4)
+2025-11-16 11:50:26,164 - INFO - Move 13: ChessEngine (White) plays Bg5 (c1g5) | Top MCTS moves: [('c1g5', 0.040100250626566414), ('b4b5', 0.040100250626566414), ('g1h3', 0.03759398496240601)]
+2025-11-16 11:50:26,801 - INFO - Move 14: Stockfish (Black) plays axb4 (a5b4)
+2025-11-16 11:50:30,676 - INFO - Move 15: ChessEngine (White) plays Bh6 (g5h6) | Top MCTS moves: [('g5h6', 0.040100250626566414), ('g5c1', 0.040100250626566414), ('g5f6', 0.03759398496240601)]
+2025-11-16 11:50:31,272 - INFO - Injecting random move for stockfish: a8a4
+2025-11-16 11:50:33,755 - INFO - Received signal 2. Finishing current game and saving...
+2025-11-16 11:50:34,526 - INFO - Move 17: ChessEngine (White) plays Bg5 (h6g5) | Top MCTS moves: [('h6g5', 0.042606516290726815), ('h6f4', 0.042606516290726815), ('h6e3', 0.042606516290726815)]
+2025-11-16 11:50:34,995 - ERROR - Error during game: engine event loop dead
+2025-11-16 11:50:35,529 - INFO - [Post-Game Training] Total Loss=8.8446 | policy=8.4700 | value=0.7493
+2025-11-16 11:50:35,531 - INFO - Saved moves for game 1 to logs/moves_game_1_20251116_115035.txt
+2025-11-16 11:50:35,531 - INFO - Game result: DRAW
+2025-11-16 11:50:35,531 - INFO - 
+================================================================================
+2025-11-16 11:50:35,531 - INFO - Training Complete - Final Stats
+2025-11-16 11:50:35,531 - INFO - ================================================================================
+2025-11-16 11:50:35,668 - INFO - Saved checkpoint: checkpoints/model_1_games_20251116_115035_final.pth
+2025-11-16 11:50:35,668 - INFO - Games: 1 | Positions: 7 | Win Rate: 0.0% | W:0 B:0 D:0 | Training Steps: 1
+2025-11-16 11:50:35,668 - INFO - Total time: 0.01 hours
+2025-11-16 11:50:35,668 - INFO - Games per hour: 104.79
+2025-11-16 11:50:35,668 - INFO - Model saved to: /u201/a44chhab/research/chessml/ChessHacks-CLI/src/models/checkpoint_model_epoch_0.pth
